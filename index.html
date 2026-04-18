@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<!-- saved from url=(0154)file:///Users/joel/Library/Containers/net.whatsapp.WhatsApp/Data/tmp/documents/DE25AC95-BE9B-4893-9E99-7071DEEA3C18/SSC%20CGL%20Maths%20Study%20Guide.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSC CGL — Complete Study Sheet (Maths + English)</title>
+<link href="./SSC CGL Maths — Complete Study Sheet_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f12;
+    --surface: #13161b;
+    --surface2: #1a1e26;
+    --border: #252a34;
+    --accent1: #f5c842;
+    --accent2: #e05c3a;
+    --accent3: #3ab8f5;
+    --accent4: #6fdd8b;
+    --text: #e8eaf0;
+    --muted: #7a8099;
+    --heading-font: 'Syne', sans-serif;
+    --mono-font: 'IBM Plex Mono', monospace;
+    --body-font: 'Spectral', serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body-font);
+    line-height: 1.6;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0d0f12 0%, #161b24 50%, #0f1318 100%);
+    border-bottom: 2px solid var(--accent1);
+    padding: 48px 40px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "∑";
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 200px;
+    color: rgba(245,200,66,0.04);
+    font-family: var(--heading-font);
+    font-weight: 800;
+    line-height: 1;
+    pointer-events: none;
+  }
+  .hero-tag {
+    font-family: var(--mono-font);
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .hero h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 800;
+    color: var(--accent1);
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+  .hero p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* NAV TABS */
+  .nav-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-tabs::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    font-family: var(--mono-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 22px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    transition: all 0.2s;
+  }
+  .tab-btn:hover { color: var(--text); background: var(--surface2); }
+  .tab-btn.active { color: var(--accent1); border-bottom-color: var(--accent1); }
+
+  /* CONTENT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px 60px; }
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* SECTION HEADER */
+  .section-header {
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-header h2 {
+    font-family: var(--heading-font);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text);
+  }
+  .section-header h2 span { color: var(--accent1); }
+  .section-header p { color: var(--muted); font-size: 14px; margin-top: 4px; font-style: italic; }
+
+  /* TABLES */
+  .table-wrap { overflow-x: auto; margin-bottom: 32px; border-radius: 8px; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-family: var(--mono-font); font-size: 13.5px; }
+  thead tr { background: var(--surface2); }
+  thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent1);
+    border-bottom: 2px solid var(--border);
+  }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--surface2); }
+  tbody td { padding: 10px 16px; color: var(--text); }
+  tbody td:first-child { color: var(--accent3); font-weight: 600; }
+  .highlight-row td { background: rgba(245,200,66,0.06) !important; }
+  .highlight-row td:first-child { color: var(--accent1) !important; }
+
+  /* NUMBER VALUE */
+  .val-primary { color: var(--accent4) !important; font-weight: 600; }
+  .val-secondary { color: var(--accent2) !important; font-weight: 600; }
+  .val-frac { color: var(--accent3) !important; }
+
+  /* TRICK CARDS */
+  .tricks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 16px; margin-bottom: 32px; }
+  .trick-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .trick-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+  }
+  .trick-card.yellow::before { background: var(--accent1); }
+  .trick-card.red::before { background: var(--accent2); }
+  .trick-card.blue::before { background: var(--accent3); }
+  .trick-card.green::before { background: var(--accent4); }
+
+  .trick-card h3 {
+    font-family: var(--heading-font);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .trick-card.yellow h3 { color: var(--accent1); }
+  .trick-card.red h3 { color: var(--accent2); }
+  .trick-card.blue h3 { color: var(--accent3); }
+  .trick-card.green h3 { color: var(--accent4); }
+
+  .trick-card p { font-size: 14px; color: var(--muted); line-height: 1.7; font-family: var(--body-font); }
+  .trick-card code {
+    display: inline-block;
+    background: var(--surface2);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-family: var(--mono-font);
+    font-size: 12.5px;
+    color: var(--accent3);
+    margin: 2px 1px;
+  }
+  .trick-card .example {
+    margin-top: 12px;
+    padding: 10px 12px;
+    background: var(--surface2);
+    border-radius: 6px;
+    font-family: var(--mono-font);
+    font-size: 12px;
+    color: var(--accent4);
+    line-height: 1.8;
+  }
+
+  /* DIGITAL SUM SECTION */
+  .ds-rule {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent3);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+  .ds-rule h4 { font-family: var(--heading-font); font-size: 13px; font-weight: 700; color: var(--accent3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .ds-rule p { font-size: 14px; color: var(--muted); font-family: var(--body-font); }
+  .ds-rule .ds-ex { font-family: var(--mono-font); font-size: 13px; color: var(--accent4); margin-top: 8px; }
+
+  /* TIPS LIST */
+  .tips-list { list-style: none; padding: 0; }
+  .tips-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--muted);
+    font-family: var(--body-font);
+    transition: border-color 0.2s;
+  }
+  .tips-list li:hover { border-color: var(--accent1); }
+  .tips-list li .num {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    background: var(--accent1);
+    color: #0d0f12;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono-font);
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+  .tips-list li strong { color: var(--text); display: block; margin-bottom: 2px; font-family: var(--heading-font); font-size: 14px; }
+
+  /* FORMULA BOX */
+  .formula-box {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: var(--mono-font);
+    font-size: 13px;
+    color: var(--accent3);
+    margin: 16px 0;
+    line-height: 2;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-family: var(--mono-font);
+    font-size: 11px;
+    border-top: 1px solid var(--border);
+    letter-spacing: 1px;
+  }
+
+  /* SCROLL BADGE */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-family: var(--mono-font);
+    font-size: 11px;
+    color: var(--muted);
+    margin-right: 8px;
+    margin-bottom: 16px;
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+  .tab-btn.eng { color: #a78bfa; }
+  .tab-btn.eng.active { color: #a78bfa; border-bottom-color: #a78bfa; }
+  .tab-btn.eng:hover { color: #c4b5fd; }
+
+  .tab-btn.lr { color: #34d399; }
+  .tab-btn.lr.active { color: #34d399; border-bottom-color: #34d399; }
+  .tab-btn.lr:hover { color: #6ee7b7; }
+
+  /* ENGLISH PILL BADGES */
+  .eng-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-family: var(--mono-font);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .badge-q  { background: rgba(224,92,58,0.18); color: var(--accent2); }
+  .badge-v  { background: rgba(111,221,139,0.15); color: var(--accent4); }
+  .badge-g  { background: rgba(58,184,245,0.15); color: var(--accent3); }
+
+  /* WORD PATTERN CARDS */
+  .pattern-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .pattern-card h3 {
+    font-family: var(--heading-font);
+    font-size: 15px;
+    font-weight: 800;
+    color: #a78bfa;
+    margin-bottom: 6px;
+  }
+  .pattern-card .def {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-family: var(--body-font);
+  }
+  .pattern-card .ex-label {
+    font-family: var(--mono-font);
+    font-size: 10px;
+    color: var(--accent2);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .pattern-card .examples {
+    background: var(--surface2);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-family: var(--mono-font);
+    font-size: 12.5px;
+    color: var(--accent4);
+    line-height: 1.9;
+  }
+  .pattern-card .tip {
+    margin-top: 8px;
+    font-size: 12.5px;
+    color: var(--accent1);
+    font-family: var(--body-font);
+    font-style: italic;
+  }
+
+  /* VOCAB TABLE ACCENTS */
+  .v-word  { color: #a78bfa !important; font-weight: 600; }
+  .v-syn   { color: var(--accent4) !important; }
+  .v-ant   { color: var(--accent2) !important; }
+  .v-mean  { color: var(--text) !important; }
+
+  /* GRAMMAR RULE BLOCKS */
+  .gram-rule {
+    background: var(--surface);
+    border-left: 4px solid #a78bfa;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+  .gram-rule h4 { font-family: var(--heading-font); font-size: 13px; font-weight: 700; color: #a78bfa; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .gram-rule p { font-size: 13.5px; color: var(--muted); font-family: var(--body-font); }
+  .gram-rule .gex { font-family: var(--mono-font); font-size: 12.5px; color: var(--accent4); margin-top: 8px; line-height: 1.8; }
+  .gram-rule .wrong { color: var(--accent2); }
+  .gram-rule .right { color: var(--accent4); }
+
+  /* IDIOM TABLE */
+  .i-idiom { color: #a78bfa !important; font-weight: 600; }
+  .i-mean  { color: var(--text) !important; }
+  .i-ex    { color: var(--muted) !important; font-style: italic; }
+
+  /* ENG TIPS LIST */
+  .tips-list li .num-eng {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    background: #7c3aed;
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono-font);
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+
+  /* LR CARDS */
+  .lr-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid #34d399;
+    border-radius: 0 10px 10px 0;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .lr-card h3 { font-family: var(--heading-font); font-size: 15px; font-weight: 800; color: #34d399; margin-bottom: 6px; }
+  .lr-card .def { font-size: 13.5px; color: var(--muted); margin-bottom: 10px; font-family: var(--body-font); }
+  .lr-card .ex-label { font-family: var(--mono-font); font-size: 10px; color: var(--accent2); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+  .lr-card .examples { background: var(--surface2); border-radius: 6px; padding: 10px 12px; font-family: var(--mono-font); font-size: 12.5px; color: var(--accent4); line-height: 1.9; }
+  .lr-card .tip { margin-top: 8px; font-size: 12.5px; color: var(--accent1); font-family: var(--body-font); font-style: italic; }
+  .lr-card.red-card { border-left-color: var(--accent2); }
+  .lr-card.red-card h3 { color: var(--accent2); }
+  .lr-card.blue-card { border-left-color: var(--accent3); }
+  .lr-card.blue-card h3 { color: var(--accent3); }
+  .lr-card.yellow-card { border-left-color: var(--accent1); }
+  .lr-card.yellow-card h3 { color: var(--accent1); }
+  .lr-card.purple-card { border-left-color: #a78bfa; }
+  .lr-card.purple-card h3 { color: #a78bfa; }
+
+  /* HOW TO IDENTIFY TABLE */
+  .identify-table { width: 100%; border-collapse: collapse; font-family: var(--mono-font); font-size: 13px; }
+  .identify-table th { background: #1e1a2e; color: #a78bfa; padding: 10px 14px; text-align: left; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 2px solid #252a34; }
+  .identify-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .identify-table tr:last-child td { border-bottom: none; }
+  .identify-table tr:hover td { background: var(--surface2); }
+  .id-device { color: #a78bfa; font-weight: 700; }
+  .id-signal { color: var(--accent3); }
+  .id-ex { color: var(--accent4); font-style: italic; }
+  .id-trap { color: var(--accent2); }
+
+  .tips-list li .num-lr {
+    flex-shrink: 0; width: 28px; height: 28px; background: #065f46; color: #34d399;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono-font); font-size: 11px; font-weight: 700; margin-top: 1px; border: 1px solid #34d399;
+  }
+
+  /* =============================================
+     RESPONSIVE — MOBILE FIRST
+     ============================================= */
+
+  /* Tablets (≤768px) */
+  @media (max-width: 768px) {
+    .hero { padding: 28px 16px 20px; }
+    .hero h1 { font-size: clamp(24px, 7vw, 40px); }
+    .hero p { font-size: 13px; }
+    .container { padding: 20px 12px 48px; }
+
+    /* Nav tabs: smaller text, more compact */
+    .tab-btn { font-size: 11px; padding: 12px 14px; letter-spacing: 0.5px; }
+
+    /* Trick cards: single column */
+    .tricks-grid { grid-template-columns: 1fr; gap: 12px; }
+
+    /* Tables: all scrollable, no text overflow */
+    .table-wrap { border-radius: 6px; }
+    table { font-size: 12.5px; }
+    thead th { font-size: 10px; padding: 10px 12px; letter-spacing: 1px; }
+    tbody td { padding: 9px 12px; }
+
+    /* Identify table: scroll on mobile */
+    .identify-table { font-size: 11.5px; }
+    .identify-table th, .identify-table td { padding: 8px 10px; }
+
+    /* Pattern cards */
+    .pattern-card { padding: 14px 14px; }
+    .pattern-card h3 { font-size: 14px; }
+    .pattern-card .examples { font-size: 11.5px; padding: 8px 10px; }
+
+    /* LR cards */
+    .lr-card { padding: 14px 14px; }
+    .lr-card h3 { font-size: 14px; }
+    .lr-card .examples { font-size: 11.5px; padding: 8px 10px; }
+
+    /* Trick cards content */
+    .trick-card { padding: 16px 16px; }
+    .trick-card .example { font-size: 11.5px; line-height: 1.7; }
+
+    /* Tips list */
+    .tips-list li { padding: 12px 12px; gap: 10px; font-size: 13px; }
+    .section-header h2 { font-size: 22px; }
+  }
+
+  /* Phones (≤480px) */
+  @media (max-width: 480px) {
+    .hero { padding: 20px 14px 16px; }
+    .hero-tag { font-size: 10px; letter-spacing: 2px; }
+    .hero h1 { font-size: clamp(22px, 8vw, 32px); letter-spacing: -0.5px; }
+    .hero p { font-size: 12px; line-height: 1.5; }
+    .hero::before { font-size: 120px; right: 10px; }
+
+    .container { padding: 16px 10px 40px; }
+
+    /* Nav: very compact, scrollable */
+    .tab-btn { font-size: 10.5px; padding: 10px 11px; }
+
+    /* Tables: force horizontal scroll, fix min-width */
+    .table-wrap { -webkit-overflow-scrolling: touch; }
+    table { min-width: 500px; font-size: 12px; }
+    thead th { font-size: 9.5px; padding: 8px 10px; }
+    tbody td { padding: 8px 10px; }
+
+    /* Identify table gets a min-width for scroll */
+    .identify-table { min-width: 600px; font-size: 11px; }
+
+    /* Pattern & LR cards */
+    .pattern-card, .lr-card { padding: 12px 12px; margin-bottom: 10px; border-radius: 8px; }
+    .pattern-card h3, .lr-card h3 { font-size: 13.5px; margin-bottom: 5px; }
+    .pattern-card .def, .lr-card .def { font-size: 12.5px; }
+    .pattern-card .examples, .lr-card .examples { font-size: 11px; padding: 8px 10px; line-height: 1.75; }
+    .pattern-card .tip, .lr-card .tip { font-size: 11.5px; }
+    .pattern-card .ex-label, .lr-card .ex-label { font-size: 9px; }
+
+    /* Trick cards */
+    .trick-card { padding: 14px 14px; }
+    .trick-card h3 { font-size: 12.5px; }
+    .trick-card p { font-size: 12.5px; }
+    .trick-card .example { font-size: 11px; line-height: 1.65; padding: 8px 10px; }
+
+    /* Tips list */
+    .tips-list li { padding: 10px 10px; gap: 8px; font-size: 12.5px; }
+    .tips-list li .num, .tips-list li .num-eng, .tips-list li .num-lr {
+      width: 24px; height: 24px; font-size: 10px; flex-shrink: 0;
+    }
+    .tips-list li strong { font-size: 13px; }
+
+    /* Section headers */
+    .section-header h2 { font-size: 20px; }
+    .section-header p { font-size: 12.5px; }
+
+    /* DS rules */
+    .ds-rule { padding: 12px 14px; }
+    .ds-rule .ds-ex { font-size: 11.5px; }
+
+    /* Grammar rules */
+    .gram-rule { padding: 12px 14px; }
+    .gram-rule .gex { font-size: 11.5px; }
+
+    /* Badge */
+    .badge { font-size: 10px; padding: 3px 10px; }
+  }
+
+  /* Very small phones (≤360px) */
+  @media (max-width: 360px) {
+    .container { padding: 12px 8px 32px; }
+    table { min-width: 460px; font-size: 11.5px; }
+    .tab-btn { font-size: 10px; padding: 9px 9px; }
+    .pattern-card .examples, .lr-card .examples { font-size: 10.5px; }
+    .hero h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">SSC CGL · Quantitative Aptitude + English Language</div>
+  <h1>Complete<br>Study Sheet</h1>
+  <p>Maths: Squares · Cubes · Percentages · Digital Sum · Tips &amp; Tricks &nbsp;|&nbsp; English: Vocabulary · Grammar · Idioms · Word Patterns &nbsp;|&nbsp; Reasoning: Series · Analogy · Syllogism · Coding · Puzzles</p>
+</div>
+
+<nav class="nav-tabs">
+  <button class="tab-btn active" onclick="showTab('squares-cubes')">Squares &amp; Cubes</button>
+  <button class="tab-btn" onclick="showTab('percentages')">Percentages</button>
+  <button class="tab-btn" onclick="showTab('digital-sum')">Digital Sum</button>
+  <button class="tab-btn" onclick="showTab('tricks')">Tricks &amp; Shortcuts</button>
+  <button class="tab-btn" onclick="showTab('exam-tips')">Maths Tips</button>
+  <button class="tab-btn eng" onclick="showTab('eng-overview')">📘 English Overview</button>
+  <button class="tab-btn eng" onclick="showTab('eng-vocab')">📗 Vocabulary</button>
+  <button class="tab-btn eng" onclick="showTab('eng-patterns')">📙 Word Patterns</button>
+  <button class="tab-btn eng" onclick="showTab('eng-grammar')">📕 Grammar</button>
+  <button class="tab-btn eng" onclick="showTab('eng-idioms')">📒 Idioms &amp; Phrases</button>
+  <button class="tab-btn eng" onclick="showTab('eng-tips')">🎯 English Tips</button>
+  <button class="tab-btn lr" onclick="showTab('lr')">🧠 Reasoning (LR)</button>
+</nav>
+
+<div class="container">
+
+  <!-- ===== SQUARES & CUBES ===== -->
+  <div id="squares-cubes" class="section active">
+    <div class="section-header">
+      <h2>Squares <span>&amp;</span> Cubes — 1 to 20</h2>
+      <p>Memorize these. They appear in almost every SSC CGL paper.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>n</th>
+            <th>n² (Square)</th>
+            <th>n³ (Cube)</th>
+            <th>Digit Sum of n²</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td class="val-primary">1</td><td class="val-secondary">1</td><td class="val-frac">1</td></tr>
+          <tr><td>2</td><td class="val-primary">4</td><td class="val-secondary">8</td><td class="val-frac">4</td></tr>
+          <tr><td>3</td><td class="val-primary">9</td><td class="val-secondary">27</td><td class="val-frac">9</td></tr>
+          <tr><td>4</td><td class="val-primary">16</td><td class="val-secondary">64</td><td class="val-frac">7</td></tr>
+          <tr><td>5</td><td class="val-primary">25</td><td class="val-secondary">125</td><td class="val-frac">7</td></tr>
+          <tr class="highlight-row"><td>6</td><td class="val-primary">36</td><td class="val-secondary">216</td><td class="val-frac">9</td></tr>
+          <tr><td>7</td><td class="val-primary">49</td><td class="val-secondary">343</td><td class="val-frac">4</td></tr>
+          <tr><td>8</td><td class="val-primary">64</td><td class="val-secondary">512</td><td class="val-frac">1</td></tr>
+          <tr><td>9</td><td class="val-primary">81</td><td class="val-secondary">729</td><td class="val-frac">9</td></tr>
+          <tr class="highlight-row"><td>10</td><td class="val-primary">100</td><td class="val-secondary">1000</td><td class="val-frac">1</td></tr>
+          <tr><td>11</td><td class="val-primary">121</td><td class="val-secondary">1331</td><td class="val-frac">4</td></tr>
+          <tr><td>12</td><td class="val-primary">144</td><td class="val-secondary">1728</td><td class="val-frac">9</td></tr>
+          <tr><td>13</td><td class="val-primary">169</td><td class="val-secondary">2197</td><td class="val-frac">7</td></tr>
+          <tr><td>14</td><td class="val-primary">196</td><td class="val-secondary">2744</td><td class="val-frac">7</td></tr>
+          <tr class="highlight-row"><td>15</td><td class="val-primary">225</td><td class="val-secondary">3375</td><td class="val-frac">9</td></tr>
+          <tr><td>16</td><td class="val-primary">256</td><td class="val-secondary">4096</td><td class="val-frac">4</td></tr>
+          <tr><td>17</td><td class="val-primary">289</td><td class="val-secondary">4913</td><td class="val-frac">1</td></tr>
+          <tr><td>18</td><td class="val-primary">324</td><td class="val-secondary">5832</td><td class="val-frac">9</td></tr>
+          <tr><td>19</td><td class="val-primary">361</td><td class="val-secondary">6859</td><td class="val-frac">1</td></tr>
+          <tr class="highlight-row"><td>20</td><td class="val-primary">400</td><td class="val-secondary">8000</td><td class="val-frac">4</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top: 32px;">
+      <h2>Quick <span>Memory</span> Patterns</h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>🟡 Square ending digits</h3>
+        <p>A perfect square <strong>NEVER</strong> ends in <code>2</code>, <code>3</code>, <code>7</code>, or <code>8</code>. Use this to instantly eliminate options!</p>
+        <div class="example">
+          Valid endings: 0, 1, 4, 5, 6, 9<br>
+          e.g. 482? → ends in 2 → NOT a perfect square ✗
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔵 Square of numbers ending in 5</h3>
+        <p>For any number ending in 5: multiply the tens digit by (tens digit + 1), then append <code>25</code>.</p>
+        <div class="example">
+          35² → 3×4 = 12 → append 25 → 1225 ✓<br>
+          65² → 6×7 = 42 → append 25 → 4225 ✓<br>
+          75² → 7×8 = 56 → append 25 → 5625 ✓
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🟢 Cubes: Digital sum pattern</h3>
+        <p>The digital sum of n³ follows a fixed cycle: <strong>1, 8, 9, 1, 8, 9…</strong> (for n = 1,2,3,4…). Use this to verify cube values.</p>
+        <div class="example">
+          1³=1 → DS=1 | 2³=8 → DS=8<br>
+          3³=27 → DS=9 | 4³=64 → DS=10→1
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>🔴 (a+b)² shortcut</h3>
+        <p>Split the number near a round base. <br><code>(a+b)² = a² + 2ab + b²</code></p>
+        <div class="example">
+          98² = (100-2)² = 10000 - 400 + 4 = 9604<br>
+          52² = (50+2)² = 2500 + 200 + 4 = 2704
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PERCENTAGES ===== -->
+  <div id="percentages" class="section">
+    <div class="section-header">
+      <h2>Percentages — <span>1/1 to 1/20</span></h2>
+      <p>Know these as reflexes. SSC CGL tests them constantly.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fraction</th>
+            <th>Percentage</th>
+            <th>Exact Form</th>
+            <th>Quick use tip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row"><td>1/1</td><td class="val-primary">100%</td><td class="val-frac">100%</td><td>The whole</td></tr>
+          <tr><td>1/2</td><td class="val-primary">50%</td><td class="val-frac">50%</td><td>Half — most used</td></tr>
+          <tr><td>1/3</td><td class="val-primary">33.33%</td><td class="val-frac">33 1/3 %</td><td>Repeating; 2/3 = 66.67%</td></tr>
+          <tr><td>1/4</td><td class="val-primary">25%</td><td class="val-frac">25%</td><td>Quarter; 3/4 = 75%</td></tr>
+          <tr class="highlight-row"><td>1/5</td><td class="val-primary">20%</td><td class="val-frac">20%</td><td>Divide by 5</td></tr>
+          <tr><td>1/6</td><td class="val-primary">16.67%</td><td class="val-frac">16 2/3 %</td><td>⭐ Very common in CGL</td></tr>
+          <tr><td>1/7</td><td class="val-primary">14.28%</td><td class="val-frac">14 2/7 %</td><td>⭐ Memorise this one</td></tr>
+          <tr><td>1/8</td><td class="val-primary">12.5%</td><td class="val-frac">12 1/2 %</td><td>⭐ = 12½%; 3/8=37.5%</td></tr>
+          <tr><td>1/9</td><td class="val-primary">11.11%</td><td class="val-frac">11 1/9 %</td><td>Repeating 1s</td></tr>
+          <tr class="highlight-row"><td>1/10</td><td class="val-primary">10%</td><td class="val-frac">10%</td><td>Move decimal left ← anchor</td></tr>
+          <tr><td>1/11</td><td class="val-primary">9.09%</td><td class="val-frac">9 1/11 %</td><td>Repeating 09</td></tr>
+          <tr><td>1/12</td><td class="val-primary">8.33%</td><td class="val-frac">8 1/3 %</td><td>= 1/6 ÷ 2</td></tr>
+          <tr><td>1/13</td><td class="val-primary">7.69%</td><td class="val-frac">7 9/13 %</td><td>—</td></tr>
+          <tr><td>1/14</td><td class="val-primary">7.14%</td><td class="val-frac">7 1/7 %</td><td>= 1/7 ÷ 2</td></tr>
+          <tr class="highlight-row"><td>1/15</td><td class="val-primary">6.67%</td><td class="val-frac">6 2/3 %</td><td>= 1/3 ÷ 5</td></tr>
+          <tr><td>1/16</td><td class="val-primary">6.25%</td><td class="val-frac">6 1/4 %</td><td>= 1/8 ÷ 2</td></tr>
+          <tr><td>1/17</td><td class="val-primary">5.88%</td><td class="val-frac">5 15/17 %</td><td>—</td></tr>
+          <tr><td>1/18</td><td class="val-primary">5.56%</td><td class="val-frac">5 5/9 %</td><td>= 1/9 ÷ 2</td></tr>
+          <tr><td>1/19</td><td class="val-primary">5.26%</td><td class="val-frac">5 5/19 %</td><td>—</td></tr>
+          <tr class="highlight-row"><td>1/20</td><td class="val-primary">5%</td><td class="val-frac">5%</td><td>= half of 10%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top: 28px;">
+      <h2>Must-Know <span>Fraction–Percent</span> Table</h2>
+      <p>SSC CGL frequently uses these. Faster to recall the fraction than calculate.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Fraction</th><th>Percentage</th><th>Fraction</th><th>Percentage</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1/2</td><td class="val-primary">50%</td><td>1/3</td><td class="val-primary">33.33%</td></tr>
+          <tr><td>2/3</td><td class="val-primary">66.67%</td><td>1/4</td><td class="val-primary">25%</td></tr>
+          <tr><td>3/4</td><td class="val-primary">75%</td><td>1/5</td><td class="val-primary">20%</td></tr>
+          <tr><td>2/5</td><td class="val-primary">40%</td><td>3/5</td><td class="val-primary">60%</td></tr>
+          <tr><td>4/5</td><td class="val-primary">80%</td><td>1/6</td><td class="val-primary">16.67%</td></tr>
+          <tr><td>5/6</td><td class="val-primary">83.33%</td><td>1/7</td><td class="val-primary">14.28%</td></tr>
+          <tr><td>1/8</td><td class="val-primary">12.5%</td><td>3/8</td><td class="val-primary">37.5%</td></tr>
+          <tr><td>5/8</td><td class="val-primary">62.5%</td><td>7/8</td><td class="val-primary">87.5%</td></tr>
+          <tr><td>1/9</td><td class="val-primary">11.11%</td><td>1/11</td><td class="val-primary">9.09%</td></tr>
+          <tr><td>1/12</td><td class="val-primary">8.33%</td><td>1/16</td><td class="val-primary">6.25%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>🟡 % increase then decrease</h3>
+        <p>If a value increases by <code>a%</code> then decreases by <code>a%</code>, the net change is always a <strong>loss</strong>:</p>
+        <div class="example">Net % = –(a²/100)<br>e.g. +10% then –10% = –1%</div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔵 Two successive % changes</h3>
+        <p>Net % when changed by <code>a%</code> then <code>b%</code>:</p>
+        <div class="example">Net = a + b + (ab/100)<br>e.g. +20% then +10%<br>= 20+10+(200/100) = +32%</div>
+      </div>
+      <div class="trick-card green">
+        <h3>🟢 X% of Y = Y% of X</h3>
+        <p>This symmetry is extremely handy. Swap when the reverse is easier to compute.</p>
+        <div class="example">8% of 25 = 25% of 8 = 2<br>4% of 75 = 75% of 4 = 3</div>
+      </div>
+      <div class="trick-card red">
+        <h3>🔴 Percentage point vs %</h3>
+        <p>If something goes from <code>40%</code> to <code>50%</code>, it rose by <strong>10 percentage points</strong>, but by <strong>25% relatively</strong> (10/40 × 100).</p>
+        <div class="example">CGL loves this distinction in DI questions!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DIGITAL SUM ===== -->
+  <div id="digital-sum" class="section">
+    <div class="section-header">
+      <h2>Digital Sum — <span>The MCQ Eliminator</span></h2>
+      <p>Not for solving — for <em>verifying answers in seconds</em>. Ideal for MCQ-format SSC CGL.</p>
+    </div>
+
+    <span class="badge"><span class="dot" style="background:var(--accent3)"></span>Definition</span>
+    <div class="ds-rule">
+      <h4>What is Digital Sum?</h4>
+      <p>Repeatedly add all digits of a number until you get a <strong>single digit</strong>. That single digit is the digital sum.</p>
+      <div class="ds-ex">
+        Example: 2,347 → 2+3+4+7 = 16 → 1+6 = 7 → Digital Sum = 7<br>
+        Example: 239 → 2+3+9 = 14 → 1+4 = 5 → Digital Sum = 5
+      </div>
+    </div>
+
+    <span class="badge"><span class="dot" style="background:var(--accent1)"></span>Key Rules</span>
+    <div class="ds-rule">
+      <h4>Rule 1 — Skip 9s (and groups adding to 9)</h4>
+      <p>Any digit 9, or any group of digits that sum to 9, can be ignored. This speeds up the process enormously.</p>
+      <div class="ds-ex">
+        239 → skip 9 → 2+3 = 5 ✓ (same result, much faster)<br>
+        369 → skip 9, skip 3+6 → Digital Sum = 9 (or 0)
+      </div>
+    </div>
+    <div class="ds-rule">
+      <h4>Rule 2 — Digital Sum of the Answer = Digital Sum of the Operation</h4>
+      <p>LHS digital sum must equal RHS digital sum. If an option doesn't match, it's wrong.</p>
+      <div class="ds-ex">
+        Q: 13 + 12 = ?  → DS of 13+12 = 1+3+1+2 = 7<br>
+        Options: 24(DS=6), 25(DS=7)✓, 26(DS=8) → Answer = 25
+      </div>
+    </div>
+    <div class="ds-rule">
+      <h4>Rule 3 — Works for Multiplication &amp; Division too</h4>
+      <p>DS(A × B) = DS(A) × DS(B) → reduce to single digit.</p>
+      <div class="ds-ex">
+        Q: 24 × 13 = ?  → DS(24)=6, DS(13)=4, 6×4=24 → DS=6<br>
+        Correct answer must have digital sum 6. (Actual = 312, DS=6 ✓)
+      </div>
+    </div>
+    <div class="ds-rule">
+      <h4>Rule 4 — Negative Digital Sum: Add 9</h4>
+      <p>If DS comes out negative (in subtraction), add 9 to get the correct digital sum.</p>
+      <div class="ds-ex">
+        DS of (12 - 15) → DS=3, DS=6 → 3–6 = –3 → –3+9 = 6<br>
+        Check: –3 mod 9 = 6
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 32px;">
+      <h2>Digital Sum <span>Applications</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Operation</th><th>DS Rule</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Addition</td><td class="val-frac">DS(A+B) = DS(DS(A)+DS(B))</td><td>47+38 → DS=2+2=4 → 85 (DS=4 ✓)</td></tr>
+          <tr><td>Subtraction</td><td class="val-frac">DS(A–B) = DS(DS(A)–DS(B)), if –ve add 9</td><td>75–48 → 3–3=0 → 27 (DS=0 ✓)</td></tr>
+          <tr><td>Multiplication</td><td class="val-frac">DS(A×B) = DS(DS(A)×DS(B))</td><td>12×11 → 3×2=6 → 132 (DS=6 ✓)</td></tr>
+          <tr><td>Squares</td><td class="val-frac">DS(n²) = DS(n)²</td><td>n=7 → DS=7 → 7²=49 → DS=4 ✓</td></tr>
+          <tr><td>Cubes</td><td class="val-frac">DS pattern: 1,8,9 repeating</td><td>1³=1, 2³=8, 3³=27→9, 4³=64→1…</td></tr>
+          <tr><td>Decimals</td><td class="val-frac">Ignore the decimal point, add digits normally</td><td>DS(3.225) = 3+2+2+5 = 12 → 3</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="trick-card blue" style="margin-top: 8px;">
+      <h3>⚠️ Limitation to know</h3>
+      <p>Digital sum eliminates <em>wrong</em> options but may leave more than one option with the same DS. When two options share the same DS, use standard calculation to pick between them. This still saves significant time by eliminating 2–3 of 4 options instantly.</p>
+    </div>
+  </div>
+
+  <!-- ===== TRICKS ===== -->
+  <div id="tricks" class="section">
+    <div class="section-header">
+      <h2>Calculation <span>Shortcuts</span></h2>
+      <p>High-frequency tricks for SSC CGL — tested and proven.</p>
+    </div>
+
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>Multiply by 11</h3>
+        <p>Write the first and last digits; fill the middle by adding adjacent digits.</p>
+        <div class="example">
+          36 × 11 → 3_(3+6)_6 → 396<br>
+          47 × 11 → 4_(4+7)_7 → 4(11)7 → 517
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>Multiply by 99 / 999</h3>
+        <p>Multiply by 99: <code>N×99 = N×100 – N</code></p>
+        <div class="example">
+          45×99 = 4500–45 = 4455<br>
+          73×999 = 73000–73 = 72927
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>Divide by 5</h3>
+        <p>Instead of dividing by 5, multiply by 2 and shift decimal left once.</p>
+        <div class="example">
+          76 ÷ 5 → 76×2=152 → 15.2<br>
+          340 ÷ 5 → 340×2=680 → 68
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>Numbers near 100 (Base Method)</h3>
+        <p>For numbers close to 100: find deficit, cross-subtract, multiply deficits.</p>
+        <div class="example">
+          96×97 → deficits: 4,3<br>
+          First part: 96–3 = 93<br>
+          Second part: 4×3 = 12<br>
+          Answer: 9312
+        </div>
+      </div>
+      <div class="trick-card yellow">
+        <h3>Criss-Cross Multiplication</h3>
+        <p>For 2-digit × 2-digit:<br>step1: units × units<br>step2: cross-multiply and add<br>step3: tens × tens</p>
+        <div class="example">
+          23 × 12:<br>
+          3×2=6 | (2×2)+(3×1)=7 | 2×1=2<br>
+          → 276
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>Multiply by 5, 25, 125</h3>
+        <p><code>×5 = ÷2 then ×10</code><br><code>×25 = ÷4 then ×100</code><br><code>×125 = ÷8 then ×1000</code></p>
+        <div class="example">
+          48×25 = 48÷4×100 = 1200<br>
+          64×125 = 64÷8×1000 = 8000
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>Square roots: Shortcut</h3>
+        <p>Find the range first (which two round tens the answer lies between), then check the unit's digit of the option against the square's unit digit.</p>
+        <div class="example">
+          √7744: ends 4 → root ends 2 or 8<br>
+          7744 is between 80²=6400 and 90²=8100<br>
+          → answer is 82 or 88 → try 88²=7744 ✓
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>Multiply: number × 9ₙ</h3>
+        <p>N × (10ⁿ – 1): subtract 1 from N, then complement each digit of result from 9 to get second half.</p>
+        <div class="example">
+          654 × 999:<br>
+          654–1=653 → complement: 346<br>
+          Answer: 653346
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 28px;">
+      <h2>Algebra <span>Identities</span> — Quick Reference</h2>
+    </div>
+    <div class="formula-box">
+      (a+b)² = a² + 2ab + b²<br>
+      (a–b)² = a² – 2ab + b²<br>
+      (a+b)(a–b) = a² – b²<br>
+      (a+b)³ = a³ + 3a²b + 3ab² + b³<br>
+      (a–b)³ = a³ – 3a²b + 3ab² – b³<br>
+      a³+b³ = (a+b)(a²–ab+b²)<br>
+      a³–b³ = (a–b)(a²+ab+b²)<br>
+      If a+b+c=0, then a³+b³+c³ = 3abc  ← appears often in SSC CGL
+    </div>
+
+    <div class="section-header" style="margin-top: 28px;">
+      <h2>Profit &amp; Loss <span>Shortcuts</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Scenario</th><th>Formula</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Profit %</td><td class="val-frac">(SP – CP) / CP × 100</td></tr>
+          <tr><td>Loss %</td><td class="val-frac">(CP – SP) / CP × 100</td></tr>
+          <tr><td>SP when profit x%</td><td class="val-frac">CP × (100+x)/100</td></tr>
+          <tr><td>CP when profit x% &amp; SP known</td><td class="val-frac">SP × 100/(100+x)</td></tr>
+          <tr><td>Dishonest dealer (weighs less)</td><td class="val-frac">Gain% = Error/(True – Error) × 100</td></tr>
+          <tr><td>CP of x articles = SP of y articles</td><td class="val-frac">Profit% = (x–y)/y × 100</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== EXAM TIPS ===== -->
+  <div id="exam-tips" class="section">
+    <div class="section-header">
+      <h2>SSC CGL <span>Exam Strategy</span></h2>
+      <p>25 questions in 30 minutes = under 72 seconds per question. Speed is everything.</p>
+    </div>
+
+    <ul class="tips-list">
+      <li>
+        <span class="num">01</span>
+        <div><strong>Fundamentals first, shortcuts second</strong> Shortcuts are add-ons — never substitutes. If you don't know the conventional method, a trick will confuse you under pressure. Clear basics first, then layer in shortcuts.</div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div><strong>Memorize core tables cold</strong> Tables up to 30, squares up to 30, cubes up to 20, fraction–percentage equivalents. These alone save 20–30 seconds per question.</div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <div><strong>Use Digital Sum for MCQ verification</strong> Before computing fully, check which options can be eliminated using digital sum. Reduces 4 choices to 1–2 in under 3 seconds.</div>
+      </li>
+      <li>
+        <span class="num">04</span>
+        <div><strong>Categorize questions on first read</strong> In the first 60 seconds, scan all 25 questions. Mark easy (attempt first), medium (attempt second), and skip the clearly time-consuming ones.</div>
+      </li>
+      <li>
+        <span class="num">05</span>
+        <div><strong>Negative marking is –0.5 per wrong answer</strong> Attempting a 50-50 guess costs you in expectation. Only guess when you've eliminated at least 2 of 4 options confidently.</div>
+      </li>
+      <li>
+        <span class="num">06</span>
+        <div><strong>Daily 10–15 min calculation drills</strong> Practice big-number multiplication, percentage chains, and simplification daily. Speed comes from muscle memory, not just understanding.</div>
+      </li>
+      <li>
+        <span class="num">07</span>
+        <div><strong>Maintain a mistake log</strong> Write down every wrong question with the correct method. Review it weekly. SSC repeats question types — your log is a goldmine.</div>
+      </li>
+      <li>
+        <span class="num">08</span>
+        <div><strong>Use substitution for algebra questions</strong> When the question asks for the value of an expression given a constraint, try substituting small integers that satisfy the constraint first.</div>
+      </li>
+      <li>
+        <span class="num">09</span>
+        <div><strong>Anchor % calculations at 10%</strong> 10% → halve for 5% → double for 20% → add for combinations. Avoid computing from scratch each time.</div>
+      </li>
+      <li>
+        <span class="num">10</span>
+        <div><strong>Solve PYQs (Previous Year Questions)</strong> SSC CGL repeats patterns every 2–3 years. Solving 5+ years of PYQs is more valuable than any shortcut book alone.</div>
+      </li>
+    </ul>
+
+    <div class="section-header" style="margin-top: 32px;">
+      <h2>Topic-wise <span>Time Budget</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Topic</th><th>Avg Questions</th><th>Time Target</th><th>Key Weapon</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Simplification / BODMAS</td><td class="val-primary">2–3</td><td class="val-frac">&lt;45s each</td><td>Digital Sum + VBODMAS</td></tr>
+          <tr><td>Percentage / Profit-Loss</td><td class="val-primary">3–4</td><td class="val-frac">60s each</td><td>Fraction-% table</td></tr>
+          <tr><td>Ratio &amp; Proportion</td><td class="val-primary">2</td><td class="val-frac">45s each</td><td>Component method</td></tr>
+          <tr><td>Algebra</td><td class="val-primary">3–4</td><td class="val-frac">60s each</td><td>Substitution trick</td></tr>
+          <tr><td>Geometry / Mensuration</td><td class="val-primary">4–5</td><td class="val-frac">75s each</td><td>Formula sheet recall</td></tr>
+          <tr><td>Trigonometry</td><td class="val-primary">2–3</td><td class="val-frac">60s each</td><td>Table 0°–90° recall</td></tr>
+          <tr><td>Data Interpretation</td><td class="val-primary">3–5</td><td class="val-frac">2–3 min set</td><td>% approximation</td></tr>
+          <tr><td>Number System</td><td class="val-primary">2–3</td><td class="val-frac">60s each</td><td>Digital Sum + divisibility</td></tr>
+          <tr><td>Time, Speed, Work</td><td class="val-primary">2–3</td><td class="val-frac">75s each</td><td>LCM method for work</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== ENG OVERVIEW ===== -->
+  <div id="eng-overview" class="section">
+    <div class="section-header">
+      <h2>English <span>Overview</span></h2>
+      <p>Tier-1: 25 Qs × 2 marks = 50 marks · −0.5 per wrong · ~72 sec/question. Tier-2: 40 Qs × 3 marks = 120 marks.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:16px;">
+      <h2>Tier-1 <span>Topic Weightage</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Topic</th><th>Avg Qs (Tier-1)</th><th>Avg Qs (Tier-2)</th><th>Difficulty</th></tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row"><td class="v-word">Reading Comprehension</td><td class="val-primary">5</td><td class="val-primary">10–15</td><td class="val-frac">Moderate</td></tr>
+          <tr><td class="v-word">Synonyms &amp; Antonyms</td><td class="val-primary">4–5</td><td class="val-primary">5–6</td><td class="val-frac">Easy–Moderate</td></tr>
+          <tr><td class="v-word">Idioms &amp; Phrases</td><td class="val-primary">4–5</td><td class="val-primary">5–6</td><td class="val-frac">Moderate</td></tr>
+          <tr class="highlight-row"><td class="v-word">One-Word Substitution</td><td class="val-primary">4–5</td><td class="val-primary">5–6</td><td class="val-frac">Moderate</td></tr>
+          <tr><td class="v-word">Spot the Error</td><td class="val-primary">3–4</td><td class="val-primary">5–6</td><td class="val-frac">Moderate–Hard</td></tr>
+          <tr><td class="v-word">Fill in the Blanks</td><td class="val-primary">2–3</td><td class="val-primary">3–4</td><td class="val-frac">Easy</td></tr>
+          <tr class="highlight-row"><td class="v-word">Sentence Improvement</td><td class="val-primary">2–3</td><td class="val-primary">3–4</td><td class="val-frac">Moderate</td></tr>
+          <tr><td class="v-word">Active / Passive Voice</td><td class="val-primary">1–2</td><td class="val-primary">2–3</td><td class="val-frac">Easy</td></tr>
+          <tr><td class="v-word">Direct / Indirect Speech</td><td class="val-primary">1–2</td><td class="val-primary">2–3</td><td class="val-frac">Easy–Moderate</td></tr>
+          <tr class="highlight-row"><td class="v-word">Spelling Correction</td><td class="val-primary">1–2</td><td class="val-primary">2–3</td><td class="val-frac">Easy</td></tr>
+          <tr><td class="v-word">Para Jumbles (PQRS)</td><td class="val-primary">1–2</td><td class="val-primary">3–4</td><td class="val-frac">Moderate</td></tr>
+          <tr><td class="v-word">Cloze Test</td><td class="val-primary">0–5</td><td class="val-primary">5–10</td><td class="val-frac">Moderate</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;">
+      <h2>High-Frequency <span>Spelling</span> List</h2>
+      <p>SSC regularly tests these misspelling traps. One correct spelling from 4 options.</p>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card blue">
+        <h3>Commonly Misspelled — Set A</h3>
+        <div class="example">
+          Accommodation ✓ (not Accomodation)<br>
+          Acquaintance ✓ (not Aquaintance)<br>
+          Conscientious ✓ (not Consciencious)<br>
+          Embarrassment ✓ (not Embarassment)<br>
+          Harass ✓ (not Harrass)<br>
+          Necessary ✓ (not Neccessary)<br>
+          Occurrence ✓ (not Occurence)
+        </div>
+      </div>
+      <div class="trick-card yellow">
+        <h3>Commonly Misspelled — Set B</h3>
+        <div class="example">
+          Privilege ✓ (not Privelege)<br>
+          Questionnaire ✓ (not Questionaire)<br>
+          Rhythm ✓ (not Rythm)<br>
+          Bureaucracy ✓ (not Buerocracy)<br>
+          Supersede ✓ (not Supercede)<br>
+          Liaison ✓ (not Liason)<br>
+          Millennium ✓ (not Millenium)
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>Spelling Pattern Tricks</h3>
+        <p>Use these rules to eliminate wrong options fast:</p>
+        <div class="example">
+          "i before e except after c"<br>
+          → believe, receive, achieve<br><br>
+          Double consonant before -ing/-ed<br>
+          → running, occurred, committed<br><br>
+          -ance vs -ence: after soft sound use -ence<br>
+          → patience, silence, violence
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ENG VOCAB ===== -->
+  <div id="eng-vocab" class="section">
+    <div class="section-header">
+      <h2>Vocabulary — <span>Synonyms &amp; Antonyms</span></h2>
+      <p>4–5 Qs per paper. Learn the pair — SSC asks both synonym and antonym of the same word across years.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Word</th><th>Meaning</th><th>Synonym</th><th>Antonym</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="v-word">Abhor</td><td class="v-mean">Hate intensely</td><td class="v-syn">Detest, Loathe</td><td class="v-ant">Adore, Love</td></tr>
+          <tr><td class="v-word">Acumen</td><td class="v-mean">Sharp insight</td><td class="v-syn">Shrewdness, Sagacity</td><td class="v-ant">Stupidity, Ignorance</td></tr>
+          <tr class="highlight-row"><td class="v-word">Admonish</td><td class="v-mean">Warn, rebuke</td><td class="v-syn">Reprimand, Censure</td><td class="v-ant">Praise, Commend</td></tr>
+          <tr><td class="v-word">Ambiguous</td><td class="v-mean">Having double meaning</td><td class="v-syn">Vague, Equivocal</td><td class="v-ant">Clear, Explicit</td></tr>
+          <tr><td class="v-word">Appease</td><td class="v-mean">Pacify, calm</td><td class="v-syn">Placate, Mollify</td><td class="v-ant">Aggravate, Provoke</td></tr>
+          <tr class="highlight-row"><td class="v-word">Audacious</td><td class="v-mean">Daring, bold</td><td class="v-syn">Brazen, Intrepid</td><td class="v-ant">Timid, Cowardly</td></tr>
+          <tr><td class="v-word">Benevolent</td><td class="v-mean">Kind-hearted</td><td class="v-syn">Charitable, Philanthropic</td><td class="v-ant">Malevolent, Cruel</td></tr>
+          <tr><td class="v-word">Callous</td><td class="v-mean">Emotionally hardened</td><td class="v-syn">Insensitive, Indifferent</td><td class="v-ant">Sympathetic, Caring</td></tr>
+          <tr class="highlight-row"><td class="v-word">Candid</td><td class="v-mean">Honest, frank</td><td class="v-syn">Forthright, Outspoken</td><td class="v-ant">Dishonest, Evasive</td></tr>
+          <tr><td class="v-word">Capitulate</td><td class="v-mean">Give in, surrender</td><td class="v-syn">Yield, Submit</td><td class="v-ant">Resist, Withstand</td></tr>
+          <tr><td class="v-word">Clandestine</td><td class="v-mean">Secret</td><td class="v-syn">Covert, Surreptitious</td><td class="v-ant">Open, Overt</td></tr>
+          <tr class="highlight-row"><td class="v-word">Coerce</td><td class="v-mean">Force by threat</td><td class="v-syn">Compel, Intimidate</td><td class="v-ant">Persuade, Convince</td></tr>
+          <tr><td class="v-word">Cogent</td><td class="v-mean">Convincing, logical</td><td class="v-syn">Compelling, Forceful</td><td class="v-ant">Weak, Unconvincing</td></tr>
+          <tr><td class="v-word">Condone</td><td class="v-mean">Overlook wrongdoing</td><td class="v-syn">Excuse, Pardon</td><td class="v-ant">Condemn, Punish</td></tr>
+          <tr class="highlight-row"><td class="v-word">Dearth</td><td class="v-mean">Scarcity</td><td class="v-syn">Shortage, Paucity</td><td class="v-ant">Abundance, Surplus</td></tr>
+          <tr><td class="v-word">Debilitate</td><td class="v-mean">Weaken</td><td class="v-syn">Enfeeble, Enervate</td><td class="v-ant">Strengthen, Invigorate</td></tr>
+          <tr><td class="v-word">Defunct</td><td class="v-mean">No longer existing</td><td class="v-syn">Extinct, Obsolete</td><td class="v-ant">Active, Functioning</td></tr>
+          <tr class="highlight-row"><td class="v-word">Derogatory</td><td class="v-mean">Disrespectful</td><td class="v-syn">Insulting, Disparaging</td><td class="v-ant">Complimentary, Flattering</td></tr>
+          <tr><td class="v-word">Diligent</td><td class="v-mean">Hard-working</td><td class="v-syn">Industrious, Assiduous</td><td class="v-ant">Lazy, Negligent</td></tr>
+          <tr><td class="v-word">Docile</td><td class="v-mean">Easily taught/led</td><td class="v-syn">Compliant, Obedient</td><td class="v-ant">Stubborn, Unruly</td></tr>
+          <tr class="highlight-row"><td class="v-word">Eloquent</td><td class="v-mean">Fluent, persuasive</td><td class="v-syn">Articulate, Expressive</td><td class="v-ant">Inarticulate, Tongue-tied</td></tr>
+          <tr><td class="v-word">Eminent</td><td class="v-mean">Famous, distinguished</td><td class="v-syn">Renowned, Illustrious</td><td class="v-ant">Unknown, Obscure</td></tr>
+          <tr><td class="v-word">Ephemeral</td><td class="v-mean">Short-lived</td><td class="v-syn">Transient, Fleeting</td><td class="v-ant">Permanent, Eternal</td></tr>
+          <tr class="highlight-row"><td class="v-word">Equivocal</td><td class="v-mean">Ambiguous, uncertain</td><td class="v-syn">Vague, Unclear</td><td class="v-ant">Definite, Unambiguous</td></tr>
+          <tr><td class="v-word">Exacerbate</td><td class="v-mean">Make worse</td><td class="v-syn">Aggravate, Intensify</td><td class="v-ant">Alleviate, Soothe</td></tr>
+          <tr><td class="v-word">Fallacious</td><td class="v-mean">Based on false reasoning</td><td class="v-syn">Erroneous, Misleading</td><td class="v-ant">Correct, Valid</td></tr>
+          <tr class="highlight-row"><td class="v-word">Frugal</td><td class="v-mean">Economical</td><td class="v-syn">Thrifty, Sparing</td><td class="v-ant">Extravagant, Lavish</td></tr>
+          <tr><td class="v-word">Garrulous</td><td class="v-mean">Excessively talkative</td><td class="v-syn">Loquacious, Verbose</td><td class="v-ant">Taciturn, Quiet</td></tr>
+          <tr><td class="v-word">Gregarious</td><td class="v-mean">Sociable</td><td class="v-syn">Affable, Outgoing</td><td class="v-ant">Solitary, Reserved</td></tr>
+          <tr class="highlight-row"><td class="v-word">Hamper</td><td class="v-mean">Hinder, obstruct</td><td class="v-syn">Impede, Obstruct</td><td class="v-ant">Aid, Facilitate</td></tr>
+          <tr><td class="v-word">Haughty</td><td class="v-mean">Arrogant</td><td class="v-syn">Proud, Conceited</td><td class="v-ant">Humble, Modest</td></tr>
+          <tr><td class="v-word">Imminent</td><td class="v-mean">About to happen</td><td class="v-syn">Impending, Forthcoming</td><td class="v-ant">Distant, Remote</td></tr>
+          <tr class="highlight-row"><td class="v-word">Impeccable</td><td class="v-mean">Perfect, flawless</td><td class="v-syn">Faultless, Unblemished</td><td class="v-ant">Flawed, Defective</td></tr>
+          <tr><td class="v-word">Impertinent</td><td class="v-mean">Rude, disrespectful</td><td class="v-syn">Insolent, Cheeky</td><td class="v-ant">Respectful, Polite</td></tr>
+          <tr><td class="v-word">Incessant</td><td class="v-mean">Never-ending</td><td class="v-syn">Ceaseless, Perpetual</td><td class="v-ant">Intermittent, Sporadic</td></tr>
+          <tr class="highlight-row"><td class="v-word">Infamous</td><td class="v-mean">Well-known for bad reason</td><td class="v-syn">Notorious, Disreputable</td><td class="v-ant">Reputable, Honorable</td></tr>
+          <tr><td class="v-word">Insidious</td><td class="v-mean">Harmful in a subtle way</td><td class="v-syn">Treacherous, Deceitful</td><td class="v-ant">Harmless, Benign</td></tr>
+          <tr><td class="v-word">Insolvent</td><td class="v-mean">Unable to pay debts</td><td class="v-syn">Bankrupt, Penniless</td><td class="v-ant">Solvent, Wealthy</td></tr>
+          <tr class="highlight-row"><td class="v-word">Languid</td><td class="v-mean">Lacking energy</td><td class="v-syn">Listless, Lethargic</td><td class="v-ant">Energetic, Vigorous</td></tr>
+          <tr><td class="v-word">Loquacious</td><td class="v-mean">Very talkative</td><td class="v-syn">Garrulous, Verbose</td><td class="v-ant">Taciturn, Silent</td></tr>
+          <tr><td class="v-word">Lucid</td><td class="v-mean">Clear, easy to understand</td><td class="v-syn">Transparent, Coherent</td><td class="v-ant">Obscure, Confusing</td></tr>
+          <tr class="highlight-row"><td class="v-word">Malicious</td><td class="v-mean">Intending harm</td><td class="v-syn">Spiteful, Vindictive</td><td class="v-ant">Benign, Charitable</td></tr>
+          <tr><td class="v-word">Meticulous</td><td class="v-mean">Very careful, precise</td><td class="v-syn">Painstaking, Thorough</td><td class="v-ant">Careless, Sloppy</td></tr>
+          <tr><td class="v-word">Nefarious</td><td class="v-mean">Wicked, criminal</td><td class="v-syn">Villainous, Sinister</td><td class="v-ant">Virtuous, Righteous</td></tr>
+          <tr class="highlight-row"><td class="v-word">Obstinate</td><td class="v-mean">Stubborn</td><td class="v-syn">Tenacious, Recalcitrant</td><td class="v-ant">Flexible, Compliant</td></tr>
+          <tr><td class="v-word">Paucity</td><td class="v-mean">Scarcity</td><td class="v-syn">Shortage, Dearth</td><td class="v-ant">Abundance, Plenty</td></tr>
+          <tr><td class="v-word">Perfidious</td><td class="v-mean">Treacherous</td><td class="v-syn">Disloyal, Deceitful</td><td class="v-ant">Loyal, Faithful</td></tr>
+          <tr class="highlight-row"><td class="v-word">Profligate</td><td class="v-mean">Recklessly wasteful</td><td class="v-syn">Extravagant, Dissolute</td><td class="v-ant">Frugal, Thrifty</td></tr>
+          <tr><td class="v-word">Spurious</td><td class="v-mean">False, not genuine</td><td class="v-syn">Counterfeit, Bogus</td><td class="v-ant">Genuine, Authentic</td></tr>
+          <tr><td class="v-word">Taciturn</td><td class="v-mean">Reserved, quiet</td><td class="v-syn">Reticent, Silent</td><td class="v-ant">Garrulous, Talkative</td></tr>
+          <tr class="highlight-row"><td class="v-word">Tenacious</td><td class="v-mean">Persistent</td><td class="v-syn">Stubborn, Determined</td><td class="v-ant">Yielding, Weak</td></tr>
+          <tr><td class="v-word">Turbulent</td><td class="v-mean">Chaotic</td><td class="v-syn">Tumultuous, Stormy</td><td class="v-ant">Calm, Peaceful</td></tr>
+          <tr><td class="v-word">Ubiquitous</td><td class="v-mean">Present everywhere</td><td class="v-syn">Omnipresent, Pervasive</td><td class="v-ant">Rare, Scarce</td></tr>
+          <tr class="highlight-row"><td class="v-word">Verbose</td><td class="v-mean">Using too many words</td><td class="v-syn">Wordy, Prolix</td><td class="v-ant">Concise, Terse</td></tr>
+          <tr><td class="v-word">Wary</td><td class="v-mean">Cautious</td><td class="v-syn">Vigilant, Circumspect</td><td class="v-ant">Reckless, Careless</td></tr>
+          <tr><td class="v-word">Zealous</td><td class="v-mean">Enthusiastically devoted</td><td class="v-syn">Passionate, Fervent</td><td class="v-ant">Apathetic, Indifferent</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;">
+      <h2>One-Word <span>Substitutions</span></h2>
+      <p>5–6 Qs per paper. Learn the one word for the phrase — and the phrase for the word.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Phrase / Meaning</th><th>One Word</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="v-mean">A place for keeping dead bodies</td><td class="v-word">Mortuary</td></tr>
+          <tr><td class="v-mean">A person who abandons religion</td><td class="v-word">Apostate</td></tr>
+          <tr class="highlight-row"><td class="v-mean">A person who hates mankind</td><td class="v-word">Misanthrope</td></tr>
+          <tr><td class="v-mean">A person who loves mankind</td><td class="v-word">Philanthropist</td></tr>
+          <tr><td class="v-mean">One who eats too much</td><td class="v-word">Glutton</td></tr>
+          <tr class="highlight-row"><td class="v-mean">Killing of a king</td><td class="v-word">Regicide</td></tr>
+          <tr><td class="v-mean">Killing of one's father</td><td class="v-word">Patricide</td></tr>
+          <tr><td class="v-mean">Killing of one's brother</td><td class="v-word">Fratricide</td></tr>
+          <tr class="highlight-row"><td class="v-mean">One who cannot be corrected</td><td class="v-word">Incorrigible</td></tr>
+          <tr><td class="v-mean">One who is easily deceived</td><td class="v-word">Gullible</td></tr>
+          <tr><td class="v-mean">One who walks in sleep</td><td class="v-word">Somnambulism</td></tr>
+          <tr class="highlight-row"><td class="v-mean">Fear of open spaces</td><td class="v-word">Agoraphobia</td></tr>
+          <tr><td class="v-mean">Fear of water</td><td class="v-word">Hydrophobia</td></tr>
+          <tr><td class="v-mean">Fear of fire</td><td class="v-word">Pyrophobia</td></tr>
+          <tr class="highlight-row"><td class="v-mean">Study of insects</td><td class="v-word">Entomology</td></tr>
+          <tr><td class="v-mean">Study of coins</td><td class="v-word">Numismatics</td></tr>
+          <tr><td class="v-mean">A government by the people</td><td class="v-word">Democracy</td></tr>
+          <tr class="highlight-row"><td class="v-mean">A government by a few</td><td class="v-word">Oligarchy</td></tr>
+          <tr><td class="v-mean">An assembly of listeners</td><td class="v-word">Audience</td></tr>
+          <tr><td class="v-mean">One who takes extreme political views</td><td class="v-word">Fanatic / Extremist</td></tr>
+          <tr class="highlight-row"><td class="v-mean">One who is present everywhere</td><td class="v-word">Omnipresent</td></tr>
+          <tr><td class="v-mean">One who knows everything</td><td class="v-word">Omniscient</td></tr>
+          <tr><td class="v-mean">A book written by an unknown author</td><td class="v-word">Anonymous</td></tr>
+          <tr class="highlight-row"><td class="v-mean">A place where animals are kept</td><td class="v-word">Zoo / Menagerie</td></tr>
+          <tr><td class="v-mean">One who believes in no god</td><td class="v-word">Atheist</td></tr>
+          <tr><td class="v-mean">Medicine that counteracts poison</td><td class="v-word">Antidote</td></tr>
+          <tr class="highlight-row"><td class="v-mean">A person with excessive admiration of themselves</td><td class="v-word">Narcissist</td></tr>
+          <tr><td class="v-mean">A huge, overwhelming institution or force</td><td class="v-word">Juggernaut</td></tr>
+          <tr><td class="v-mean">Extreme patriotism, warlike foreign policy</td><td class="v-word">Chauvinism / Jingoism</td></tr>
+          <tr class="highlight-row"><td class="v-mean">One who takes a position illegally or by force</td><td class="v-word">Usurper</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== ENG PATTERNS ===== -->
+  <div id="eng-patterns" class="section">
+    <div class="section-header">
+      <h2>Word <span>Patterns</span></h2>
+      <p>Literary &amp; phonetic devices — tested in comprehension, cloze tests, and vocabulary questions.</p>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🔁 Homophones</h3>
+      <div class="def">Words that sound the same but have different spellings and meanings. SSC tests these in spelling/fill-in-the-blank questions.</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        affect (verb) / effect (noun) — "The noise affected her. The effect was terrible."<br>
+        accept / except — "I accept all students except latecomers."<br>
+        complement / compliment — "Red complements blue. He paid her a compliment."<br>
+        principal / principle — "The principal has principles."<br>
+        stationary / stationery — "The bus was stationary. He bought stationery."<br>
+        elicit / illicit — "Police tried to elicit info about illicit drugs."<br>
+        capital / capitol — "The capital city has a grand capitol building."<br>
+        sight / site / cite — "Visit the site; cite the source; what a sight!"<br>
+        bare / bear — "Bear the bare truth."<br>
+        flair / flare — "She had a flair for fashion; the flare lit the sky."
+      </div>
+      <div class="tip">⚡ SSC tip: In fill-in-the-blank Qs, homophones appear as trap options. Read the sentence meaning carefully before choosing.</div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🔤 Alliteration</h3>
+      <div class="def">Repetition of the same initial consonant sound in closely connected words. Appears in comprehension passages and literary extracts.</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        "Peter Piper picked a peck of pickled peppers." (P)<br>
+        "She sells seashells by the seashore." (S)<br>
+        "Big black bugs bled blue blood." (B)<br>
+        "The fair breeze blew, the white foam flew." (F &amp; B)<br>
+        "Bright blossoms bloom beautifully." (B)<br>
+        "Doubting, dreaming dreams no mortal ever dared to dream before." (D)  ← extra example<br><br>
+        🔑 HOW TO IDENTIFY: Read the sentence aloud — if you hear the same starting SOUND repeating in 3+ words close together, it's alliteration.<br>
+        ⚠️ Note: It's the SOUND, not the letter. "Knocking on the Night's door" — K and N both qualify as the K-sound starts "knocking".
+      </div>
+      <div class="tip">⚡ In comprehension Qs: Alliteration creates rhythm/emphasis. Identify the repeated sound, not just the letter.</div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🎵 Rhyme (Rhyming Words)</h3>
+      <div class="def">Words ending in the same sound. Important for identifying patterns in poetry-based comprehension passages.</div>
+      <div class="ex-label">Common Rhyme Families for SSC</div>
+      <div class="examples">
+        -ight: bright, fight, might, right, night, light, sight<br>
+        -ound: found, round, sound, bound, ground, wound<br>
+        -tion: nation, station, relation, ambition, position<br>
+        -ance/-ence: balance, stance, fence, hence, dense<br>
+        -ate: fate, mate, late, great, state, inflate, create<br>
+        -ove: love, dove, above, shove, glove (same sound — ʌv)<br>
+        Note: "love" rhymes with "above", NOT "stove" — vowel sound matters!
+      </div>
+      <div class="tip">⚡ In PQRS jumbles, rhyme scheme (ABAB, AABB) helps identify correct sentence order in stanzas.</div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🔀 Homonyms &amp; Homographs</h3>
+      <div class="def">Homonyms: same spelling AND sound, different meaning. Homographs: same spelling, possibly different pronunciation, different meaning.</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        bat — cricket bat / flying bat<br>
+        bank — river bank / financial bank<br>
+        bear — to bear pain / the animal bear<br>
+        fair — fair skin / trade fair / fair judgment<br>
+        bark — tree bark / dog's bark<br>
+        lead (leed) — to lead a team / lead (led) — a metal<br>
+        wound (woond) — to wound / wound (wownd) — past tense of wind<br>
+        tear (teer) — a teardrop / tear (tare) — to rip
+      </div>
+      <div class="tip">⚡ For homographs: stress pattern changes with meaning. "REcord" (noun) vs "reCORD" (verb).</div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🔊 Onomatopoeia</h3>
+      <div class="def">Words that phonetically imitate the sound they describe. Tested in literary comprehension passages.</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        buzz, hiss, crash, bang, splash, murmur, clang<br>
+        sizzle, clatter, crackle, rustle, gurgle, thud<br>
+        "The bees buzzed busily." — alliteration + onomatopoeia<br>
+        "The stream murmured softly." — onomatopoeia
+      </div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🔃 Anagram</h3>
+      <div class="def">Rearranging all letters of a word to form another word. Appears in certain reasoning-English crossover questions.</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        SILENT → LISTEN<br>
+        ENLIST → TINSEL / INLETS<br>
+        EARTH → HEART / HATER / RATHE<br>
+        RACE → CARE / ACRE / ACRE<br>
+        TEACH → CHEAT / THECA
+      </div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🏛️ Prefix &amp; Suffix Patterns</h3>
+      <div class="def">Knowing prefixes and suffixes helps crack synonyms, antonyms, and one-word substitution questions instantly.</div>
+      <div class="ex-label">Key Prefixes</div>
+      <div class="examples">
+        un-   → opposite: unhappy, unfair, undo<br>
+        mis-  → wrong: misguide, misspell, mislead<br>
+        pre-  → before: prejudge, precaution, preview<br>
+        re-   → again: redo, rewrite, revise<br>
+        anti- → against: antidote, antisocial, antimatter<br>
+        mal-  → bad: malfunction, malnutrition, malice<br>
+        mono- → one: monologue, monotone, monopoly<br>
+        poly- → many: polygon, polylingual, polymath<br>
+        omni- → all: omniscient, omnipotent, omnivore<br>
+        sub-  → under: submarine, substandard, subvert
+      </div>
+      <div class="ex-label" style="margin-top:8px;">Key Suffixes</div>
+      <div class="examples">
+        -ology → study of: biology, geology, zoology<br>
+        -phobia → fear of: claustrophobia, xenophobia<br>
+        -cide → killing of: homicide, suicide, pesticide<br>
+        -archy → rule by: monarchy, oligarchy, anarchy<br>
+        -ism → belief/practice: patriotism, optimism<br>
+        -ist → one who: pianist, novelist, atheist<br>
+        -fy / -ify → to make: purify, magnify, simplify
+      </div>
+      <div class="tip">⚡ One-word sub shortcut: if you know the Latin root, you can deduce the meaning of words you've never seen.</div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🔁 Assonance &amp; Consonance</h3>
+      <div class="def">Assonance: repetition of <strong>vowel sounds</strong> in nearby words. Consonance: repetition of <strong>consonant sounds</strong> (not necessarily at the start).</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        Assonance: "The rain in Spain stays mainly in the plain." (long-a sound)<br>
+        Assonance: "Go slow over the road." (long-o sound)<br>
+        Consonance: "The lumpy, bumpy camel." (p sound in middle)<br>
+        Consonance: "He struck a streak of luck." (k sound)
+      </div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>⚖️ Oxymoron, Paradox &amp; Antithesis</h3>
+      <div class="def">Devices that combine contradictory ideas — tested in literary comprehension.</div>
+      <div class="ex-label">Examples</div>
+      <div class="examples">
+        Oxymoron (2 contradictory words together):<br>
+        → deafening silence, living dead, bitter sweet, open secret<br><br>
+        Paradox (statement that seems contradictory but holds truth):<br>
+        → "I must be cruel to be kind." (Shakespeare)<br>
+        → "The more I study, the less I know."<br><br>
+        Antithesis (contrasting ideas in parallel structure):<br>
+        → "It was the best of times, it was the worst of times."<br>
+        → "Give every man thy ear, but few thy voice."
+      </div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>🌟 Simile, Metaphor &amp; Personification</h3>
+      <div class="def">Core literary devices — appear in comprehension passages, cloze tests, and sentence-based Qs.</div>
+      <div class="ex-label">Examples &amp; How to Identify</div>
+      <div class="examples">
+        <strong style="color:#a78bfa">SIMILE</strong> — comparison using <em>like</em> or <em>as</em>:<br>
+        → "He is as brave as a lion."<br>
+        → "Life is like a roller coaster."<br>
+        → "Her voice was like honey — smooth and sweet."  ← extra example<br>
+        🔑 SPOT IT: Look for the words <em>like / as / as…as / resembles / similar to</em><br><br>
+
+        <strong style="color:#a78bfa">METAPHOR</strong> — direct comparison, no like/as:<br>
+        → "Time is money."<br>
+        → "He is a shining star in our team."<br>
+        → "The classroom was a zoo after the bell rang."  ← extra example<br>
+        🔑 SPOT IT: No linking word — subject IS the thing. "X is Y" or "X was Y".<br>
+        ⚠️ TRAP: "He ran like a cheetah" = SIMILE (has like). "He was a cheetah on the track" = METAPHOR.<br><br>
+
+        <strong style="color:#a78bfa">PERSONIFICATION</strong> — giving human traits to non-human:<br>
+        → "The wind whispered through the trees."<br>
+        → "Opportunity knocked at his door."<br>
+        → "The sun smiled down on the harvest fields."  ← extra example<br>
+        🔑 SPOT IT: Non-human subject + human verb (whispered, smiled, laughed, wept, danced).
+      </div>
+      <div class="tip">⚡ SSC trick: If "like/as" is present → Simile. If it's a direct IS/WAS comparison → Metaphor. If a thing performs a human action → Personification.</div>
+    </div>
+
+    <!-- HOW TO IDENTIFY MASTER CARD -->
+    <div class="pattern-card" style="border-left: 4px solid var(--accent1); border-radius: 0 10px 10px 0;">
+      <h3 style="color:var(--accent1)">🎯 How to Identify — Quick Reference Master Table</h3>
+      <div class="def">The most-tested literary devices in SSC CGL — what to look for, the key signal words, and common traps.</div>
+      <div style="overflow-x:auto;margin-top:10px;">
+        <table class="identify-table">
+          <thead>
+            <tr><th>Device</th><th>Key Signal / What to look for</th><th>Example</th><th>Common Trap</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="id-device">Simile</td><td class="id-signal">like / as / as…as / resembles</td><td class="id-ex">"Fast as lightning"</td><td class="id-trap">Don't confuse "like" as preposition: "I like pizza" ≠ simile</td></tr>
+            <tr class="highlight-row"><td class="id-device">Metaphor</td><td class="id-signal">X IS/WAS Y (no like/as) — direct equation</td><td class="id-ex">"Time is a thief"</td><td class="id-trap">"Extended metaphor" runs across multiple lines — still no like/as</td></tr>
+            <tr><td class="id-device">Personification</td><td class="id-signal">Non-human subject + human verb/feeling</td><td class="id-ex">"The sea roared angrily"</td><td class="id-trap">Must be a non-human thing acting human; a person acting animal-like is NOT personification</td></tr>
+            <tr class="highlight-row"><td class="id-device">Alliteration</td><td class="id-signal">Same starting SOUND in 3+ nearby words</td><td class="id-ex">"Silent, slippery snakes"</td><td class="id-trap">It's the sound, not the letter. "Knack" and "Night" = same K-sound</td></tr>
+            <tr><td class="id-device">Assonance</td><td class="id-signal">Same vowel SOUND repeated inside words</td><td class="id-ex">"The rain in Spain…" (long-a)</td><td class="id-trap">Different from rhyme — the words don't need to end the same</td></tr>
+            <tr class="highlight-row"><td class="id-device">Consonance</td><td class="id-signal">Same consonant sound repeated, NOT just at start</td><td class="id-ex">"He struck a streak of luck" (-ck)</td><td class="id-trap">All alliteration is consonance, but not all consonance is alliteration</td></tr>
+            <tr><td class="id-device">Onomatopoeia</td><td class="id-signal">Word SOUNDS like what it means</td><td class="id-ex">buzz, crash, hiss, sizzle</td><td class="id-trap">The word must phonetically mimic the sound — not just describe it</td></tr>
+            <tr class="highlight-row"><td class="id-device">Oxymoron</td><td class="id-signal">Two contradictory words placed TOGETHER</td><td class="id-ex">"deafening silence"</td><td class="id-trap">Only 2 words in direct contradiction; not the same as paradox (a full statement)</td></tr>
+            <tr><td class="id-device">Paradox</td><td class="id-signal">A full statement that seems self-contradictory but is true</td><td class="id-ex">"Less is more"</td><td class="id-trap">Paradox = full sentence/idea. Oxymoron = two-word contradiction</td></tr>
+            <tr class="highlight-row"><td class="id-device">Hyperbole</td><td class="id-signal">Wild exaggeration — impossible to be literal</td><td class="id-ex">"I've told you a million times"</td><td class="id-trap">If even slightly possible, it may not be hyperbole</td></tr>
+            <tr><td class="id-device">Irony</td><td class="id-signal">Saying the opposite of what is meant (verbal); outcome opposite of expected (situational)</td><td class="id-ex">"Oh great, another Monday."</td><td class="id-trap">Irony ≠ coincidence. "It rained on her wedding day" is irony only if she was a weather forecaster</td></tr>
+            <tr class="highlight-row"><td class="id-device">Euphemism</td><td class="id-signal">Mild/indirect word substituted for a harsh one</td><td class="id-ex">"passed away" for died</td><td class="id-trap">Distinguish from metaphor — euphemism is always about social sensitivity</td></tr>
+            <tr><td class="id-device">Antithesis</td><td class="id-signal">Two contrasting ideas in balanced/parallel structure</td><td class="id-ex">"Best of times, worst of times"</td><td class="id-trap">Must be parallel; not just any contrast</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- NEW: Hyperbole, Irony, Euphemism -->
+    <div class="pattern-card">
+      <h3>🚀 Hyperbole, Irony &amp; Euphemism</h3>
+      <div class="def">Three high-frequency devices in SSC comprehension — often tested by asking you to identify the device OR its purpose.</div>
+      <div class="ex-label">Hyperbole — deliberate extreme exaggeration</div>
+      <div class="examples">
+        → "I'm so hungry I could eat a horse."<br>
+        → "I've told you a million times to clean your room."<br>
+        → "Her smile was so bright, it could light up a stadium."  ← extra example<br>
+        🔑 IDENTIFY: If the statement is physically impossible or wildly unrealistic, it's hyperbole.<br>
+        PURPOSE: Creates emphasis, humour, dramatic effect.
+      </div>
+      <div class="ex-label" style="margin-top:10px;">Irony — saying the opposite of what is meant</div>
+      <div class="examples">
+        Verbal Irony: "Oh wonderful, the flight's been delayed again." (not wonderful at all)<br>
+        Situational Irony: A fire station burns down.<br>
+        Dramatic Irony: The audience knows the villain is hiding, the hero does not.<br>
+        → "What a beautiful day," she said, watching the storm.  ← extra example<br>
+        🔑 IDENTIFY: Contrast between what is said and what is meant/expected.
+      </div>
+      <div class="ex-label" style="margin-top:10px;">Euphemism — a polite/mild word for something harsh</div>
+      <div class="examples">
+        "passed away" → died | "between jobs" → unemployed<br>
+        "collateral damage" → civilian casualties | "let go" → fired<br>
+        "economically challenged" → poor | "senior citizen" → old person  ← extra example<br>
+        🔑 IDENTIFY: A soft or indirect phrase that replaces something blunt or uncomfortable.
+      </div>
+      <div class="tip">⚡ SSC tip: Comprehension questions often ask "What device does the author use in line X?" — these three devices appear most often in such questions.</div>
+    </div>
+
+    <div class="pattern-card">
+      <h3>📊 Confusing Word Pairs</h3>
+      <div class="def">SSC loves asking the correct word from a confusing pair. Memorise these distinctions.</div>
+      <div class="ex-label">High-Frequency Pairs</div>
+      <div class="examples">
+        imply / infer — Speaker implies; listener infers<br>
+        uninterested / disinterested — uninterested = bored; disinterested = impartial<br>
+        further / farther — further = more (abstract); farther = more (distance)<br>
+        fewer / less — fewer = countable; less = uncountable<br>
+        who / whom — who = subject; whom = object<br>
+        lay / lie — lay = to put (transitive); lie = to recline (intransitive)<br>
+        assure / ensure / insure — assure a person; ensure a result; insure against loss<br>
+        historic / historical — historic = famous event; historical = of history<br>
+        emigrate / immigrate — emigrate = leave; immigrate = enter
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ENG GRAMMAR ===== -->
+  <div id="eng-grammar" class="section">
+    <div class="section-header">
+      <h2>Grammar — <span>Rules &amp; Patterns</span></h2>
+      <p>Error Spotting · Fill in the Blanks · Sentence Improvement · Active/Passive · Direct/Indirect</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">Spot the <span>Error</span> — Top Rules</h2>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Subject-Verb Agreement</h4>
+      <p>Singular subject takes singular verb. Collective nouns (team, committee) are usually singular.</p>
+      <div class="gex">
+        <span class="wrong">✗ The team are playing well.</span><br>
+        <span class="right">✓ The team is playing well.</span><br>
+        <span class="wrong">✗ Each of the students have submitted.</span><br>
+        <span class="right">✓ Each of the students has submitted.</span>
+      </div>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Articles — A / An / The</h4>
+      <p>"A" before consonant sounds; "An" before vowel sounds (not vowel letters). Use "the" for specific/unique nouns.</p>
+      <div class="gex">
+        <span class="wrong">✗ She is a honest woman.</span><br>
+        <span class="right">✓ She is an honest woman. (h is silent)</span><br>
+        <span class="wrong">✗ He is an university student.</span><br>
+        <span class="right">✓ He is a university student. (u sounds like 'yu')</span><br>
+        an MBA, a B.Tech, an MLA, an hour, a one-way street
+      </div>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Tense Consistency</h4>
+      <p>Do not shift tenses within the same clause unless required by context.</p>
+      <div class="gex">
+        <span class="wrong">✗ He came home and eats food.</span><br>
+        <span class="right">✓ He came home and ate food.</span><br>
+        Universal truth: always use present simple even in past context.<br>
+        <span class="right">✓ The teacher said the earth revolves around the sun.</span>
+      </div>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Prepositions — Common Errors</h4>
+      <div class="gex">
+        <span class="wrong">✗ He is married with her.</span>
+        <span class="right">✓ He is married to her.</span><br>
+        <span class="wrong">✗ She is angry on him.</span>
+        <span class="right">✓ She is angry with him.</span><br>
+        <span class="wrong">✗ I am confident on success.</span>
+        <span class="right">✓ I am confident of success.</span><br>
+        <span class="wrong">✗ He jumped in the conclusion.</span>
+        <span class="right">✓ He jumped to the conclusion.</span><br>
+        die of (illness) / die from (injury) / die by (suicide) / die in (accident)
+      </div>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Pronouns — Common Errors</h4>
+      <div class="gex">
+        <span class="wrong">✗ Between you and I, this is wrong.</span><br>
+        <span class="right">✓ Between you and me, this is wrong.</span><br>
+        <span class="wrong">✗ Each of them have their book.</span><br>
+        <span class="right">✓ Each of them has their book.</span><br>
+        Reflexive: myself/yourself used only when subject = object.<br>
+        <span class="wrong">✗ Please contact myself.</span>
+        <span class="right">✓ Please contact me.</span>
+      </div>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Comparison Degrees</h4>
+      <div class="gex">
+        <span class="wrong">✗ He is more cleverer than her.</span><br>
+        <span class="right">✓ He is cleverer than her. / He is more clever than her.</span><br>
+        <span class="wrong">✗ Of the two sisters, she is the most beautiful.</span><br>
+        <span class="right">✓ Of the two sisters, she is the more beautiful.</span><br>
+        "The + comparative, the + comparative" structure:<br>
+        <span class="right">✓ The harder you work, the better the result.</span>
+      </div>
+    </div>
+
+    <div class="gram-rule">
+      <h4>Modals — Usage</h4>
+      <div class="gex">
+        can → ability / permission (informal)<br>
+        could → polite request / past ability<br>
+        may → possibility / formal permission<br>
+        might → less certain possibility<br>
+        must → strong obligation / deduction<br>
+        should → advice / mild obligation<br>
+        ought to → moral obligation<br>
+        need not → no obligation<br>
+        dare not → lack of courage<br>
+        <span class="right">✓ You need not come. / You dare not say that.</span>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">Active / <span>Passive</span> Voice — Quick Patterns</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tense</th><th>Active</th><th>Passive</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="v-word">Simple Present</td><td>He writes a letter.</td><td class="val-frac">A letter is written by him.</td></tr>
+          <tr><td class="v-word">Simple Past</td><td>She baked a cake.</td><td class="val-frac">A cake was baked by her.</td></tr>
+          <tr><td class="v-word">Simple Future</td><td>They will finish the work.</td><td class="val-frac">The work will be finished by them.</td></tr>
+          <tr class="highlight-row"><td class="v-word">Present Continuous</td><td>He is writing a letter.</td><td class="val-frac">A letter is being written by him.</td></tr>
+          <tr><td class="v-word">Past Continuous</td><td>She was singing a song.</td><td class="val-frac">A song was being sung by her.</td></tr>
+          <tr class="highlight-row"><td class="v-word">Present Perfect</td><td>He has completed the task.</td><td class="val-frac">The task has been completed by him.</td></tr>
+          <tr><td class="v-word">Past Perfect</td><td>She had written the report.</td><td class="val-frac">The report had been written by her.</td></tr>
+          <tr class="highlight-row"><td class="v-word">Modal (must/can/may)</td><td>You must do this.</td><td class="val-frac">This must be done by you.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="trick-card blue" style="margin-top:8px;">
+      <h3>Passive Voice Rules</h3>
+      <p>Object of active → Subject of passive. Subject of active → "by + object" in passive. Verb: <code>be + past participle</code>. If subject is unknown/obvious, "by + agent" is often omitted.</p>
+      <div class="example">
+        Active: Someone stole my wallet.<br>
+        Passive: My wallet was stolen. (agent omitted — unknown)
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">Direct / <span>Indirect</span> Speech — Key Changes</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Direct</th><th>Indirect</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="v-word">says / say</td><td class="val-frac">says / say (no change if present tense reporting verb)</td></tr>
+          <tr><td class="v-word">said</td><td class="val-frac">said (reporting verb stays, reported verb shifts back)</td></tr>
+          <tr class="highlight-row"><td class="v-word">is / am / are</td><td class="val-frac">was / were</td></tr>
+          <tr><td class="v-word">was / were</td><td class="val-frac">had been</td></tr>
+          <tr class="highlight-row"><td class="v-word">has / have</td><td class="val-frac">had</td></tr>
+          <tr><td class="v-word">will</td><td class="val-frac">would</td></tr>
+          <tr><td class="v-word">can</td><td class="val-frac">could</td></tr>
+          <tr class="highlight-row"><td class="v-word">may</td><td class="val-frac">might</td></tr>
+          <tr><td class="v-word">shall</td><td class="val-frac">should</td></tr>
+          <tr class="highlight-row"><td class="v-word">this / these</td><td class="val-frac">that / those</td></tr>
+          <tr><td class="v-word">here</td><td class="val-frac">there</td></tr>
+          <tr><td class="v-word">now</td><td class="val-frac">then</td></tr>
+          <tr class="highlight-row"><td class="v-word">today / tonight</td><td class="val-frac">that day / that night</td></tr>
+          <tr><td class="v-word">yesterday</td><td class="val-frac">the previous day / the day before</td></tr>
+          <tr><td class="v-word">tomorrow</td><td class="val-frac">the next day / the following day</td></tr>
+          <tr class="highlight-row"><td class="v-word">ago</td><td class="val-frac">before</td></tr>
+          <tr><td class="v-word">"Come here!" (command)</td><td class="val-frac">asked/told + to come there</td></tr>
+          <tr><td class="v-word">"Are you ready?" (question)</td><td class="val-frac">asked if/whether he was ready</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== ENG IDIOMS ===== -->
+  <div id="eng-idioms" class="section">
+    <div class="section-header">
+      <h2>Idioms <span>&amp; Phrases</span></h2>
+      <p>4–5 Qs per paper. SSC repeats idioms. These are the highest-frequency ones from PYQs.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Idiom / Phrase</th><th>Meaning</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="i-idiom">A fish out of water</td><td class="i-mean">Uncomfortable in a situation</td><td class="i-ex">He felt like a fish out of water at the party.</td></tr>
+          <tr><td class="i-idiom">A storm in a teacup</td><td class="i-mean">Overreaction to a small issue</td><td class="i-ex">The argument was just a storm in a teacup.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">A hard nut to crack</td><td class="i-mean">A difficult problem/person</td><td class="i-ex">The case is a hard nut to crack.</td></tr>
+          <tr><td class="i-idiom">A thorn in the flesh</td><td class="i-mean">Constant source of annoyance</td><td class="i-ex">His rival was a thorn in his flesh.</td></tr>
+          <tr><td class="i-idiom">At cross purposes</td><td class="i-mean">Misunderstanding each other</td><td class="i-ex">We were working at cross purposes.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">At one's wit's end</td><td class="i-mean">Completely confused/out of ideas</td><td class="i-ex">She was at her wit's end.</td></tr>
+          <tr><td class="i-idiom">Beat around the bush</td><td class="i-mean">Avoid the main topic</td><td class="i-ex">Stop beating around the bush and explain.</td></tr>
+          <tr><td class="i-idiom">Bite the bullet</td><td class="i-mean">Endure pain stoically</td><td class="i-ex">He had to bite the bullet during surgery.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Bite the dust</td><td class="i-mean">Fail / die</td><td class="i-ex">Another scheme bit the dust.</td></tr>
+          <tr><td class="i-idiom">Blow one's own trumpet</td><td class="i-mean">Boast about oneself</td><td class="i-ex">He never stops blowing his own trumpet.</td></tr>
+          <tr><td class="i-idiom">Burn the midnight oil</td><td class="i-mean">Work late into the night</td><td class="i-ex">She burned the midnight oil for exams.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Bury the hatchet</td><td class="i-mean">Make peace, end conflict</td><td class="i-ex">The rivals decided to bury the hatchet.</td></tr>
+          <tr><td class="i-idiom">By fits and starts</td><td class="i-mean">Irregularly, with interruptions</td><td class="i-ex">He works by fits and starts.</td></tr>
+          <tr><td class="i-idiom">By hook or by crook</td><td class="i-mean">By any means necessary</td><td class="i-ex">He decided to win by hook or by crook.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Call a spade a spade</td><td class="i-mean">Speak bluntly</td><td class="i-ex">She calls a spade a spade always.</td></tr>
+          <tr><td class="i-idiom">Costs an arm and a leg</td><td class="i-mean">Very expensive</td><td class="i-ex">That phone costs an arm and a leg.</td></tr>
+          <tr><td class="i-idiom">Cut corners</td><td class="i-mean">Do things the easy/cheap way</td><td class="i-ex">Don't cut corners on safety.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Draw a blank</td><td class="i-mean">Fail to remember / find</td><td class="i-ex">I drew a blank on her name.</td></tr>
+          <tr><td class="i-idiom">Drop in the ocean</td><td class="i-mean">Insignificantly small</td><td class="i-ex">The donation was a drop in the ocean.</td></tr>
+          <tr><td class="i-idiom">Face the music</td><td class="i-mean">Accept the consequences</td><td class="i-ex">He had to face the music for his actions.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Fall on deaf ears</td><td class="i-mean">Be ignored</td><td class="i-ex">His advice fell on deaf ears.</td></tr>
+          <tr><td class="i-idiom">Get the ball rolling</td><td class="i-mean">Start an activity</td><td class="i-ex">Let's get the ball rolling on this project.</td></tr>
+          <tr><td class="i-idiom">Hit the nail on the head</td><td class="i-mean">Describe exactly right</td><td class="i-ex">You hit the nail on the head.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Jump the gun</td><td class="i-mean">Act prematurely</td><td class="i-ex">He jumped the gun by announcing early.</td></tr>
+          <tr><td class="i-idiom">Keep one's fingers crossed</td><td class="i-mean">Hope for the best</td><td class="i-ex">I'm keeping my fingers crossed for you.</td></tr>
+          <tr><td class="i-idiom">Kick the bucket</td><td class="i-mean">Die (informal)</td><td class="i-ex">The old miser finally kicked the bucket.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Leave no stone unturned</td><td class="i-mean">Try every possible means</td><td class="i-ex">She left no stone unturned to find him.</td></tr>
+          <tr><td class="i-idiom">Let the cat out of the bag</td><td class="i-mean">Reveal a secret accidentally</td><td class="i-ex">He let the cat out of the bag early.</td></tr>
+          <tr><td class="i-idiom">Look a gift horse in the mouth</td><td class="i-mean">Be ungrateful for something given</td><td class="i-ex">Don't look a gift horse in the mouth.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Lose heart</td><td class="i-mean">Become discouraged</td><td class="i-ex">Don't lose heart after one failure.</td></tr>
+          <tr><td class="i-idiom">Make both ends meet</td><td class="i-mean">Manage on limited income</td><td class="i-ex">He struggles to make both ends meet.</td></tr>
+          <tr><td class="i-idiom">Miss the boat</td><td class="i-mean">Miss an opportunity</td><td class="i-ex">He missed the boat on that deal.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Once in a blue moon</td><td class="i-mean">Very rarely</td><td class="i-ex">He visits once in a blue moon.</td></tr>
+          <tr><td class="i-idiom">On the fence</td><td class="i-mean">Undecided, neutral</td><td class="i-ex">He is still on the fence about the job.</td></tr>
+          <tr><td class="i-idiom">Open a can of worms</td><td class="i-mean">Create more problems</td><td class="i-ex">Investigating that would open a can of worms.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Pass the buck</td><td class="i-mean">Shift responsibility to others</td><td class="i-ex">Stop passing the buck to your team.</td></tr>
+          <tr><td class="i-idiom">Penny wise, pound foolish</td><td class="i-mean">Careful on small, wasteful on big</td><td class="i-ex">He's penny wise and pound foolish.</td></tr>
+          <tr><td class="i-idiom">Pull someone's leg</td><td class="i-mean">Tease or joke</td><td class="i-ex">I was only pulling your leg!</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Put one's foot in one's mouth</td><td class="i-mean">Say something embarrassing</td><td class="i-ex">He put his foot in his mouth again.</td></tr>
+          <tr><td class="i-idiom">Red tape</td><td class="i-mean">Excessive bureaucracy</td><td class="i-ex">Red tape delayed the project.</td></tr>
+          <tr><td class="i-idiom">Rule the roost</td><td class="i-mean">Be in command</td><td class="i-ex">She rules the roost at home.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Shoulder the responsibility</td><td class="i-mean">Accept responsibility</td><td class="i-ex">He shouldered the responsibility alone.</td></tr>
+          <tr><td class="i-idiom">Sit on the fence</td><td class="i-mean">Remain neutral</td><td class="i-ex">You can't sit on the fence forever.</td></tr>
+          <tr><td class="i-idiom">Snake in the grass</td><td class="i-mean">A hidden or treacherous enemy</td><td class="i-ex">That colleague is a snake in the grass.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Spill the beans</td><td class="i-mean">Reveal secret information</td><td class="i-ex">Someone spilled the beans about the plan.</td></tr>
+          <tr><td class="i-idiom">Stand one's ground</td><td class="i-mean">Maintain position under pressure</td><td class="i-ex">He stood his ground under interrogation.</td></tr>
+          <tr><td class="i-idiom">Steal someone's thunder</td><td class="i-mean">Take attention from someone</td><td class="i-ex">She stole his thunder at the ceremony.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Take someone to task</td><td class="i-mean">Reprimand</td><td class="i-ex">The manager took him to task for the error.</td></tr>
+          <tr><td class="i-idiom">The ball is in your court</td><td class="i-mean">It's your decision/move now</td><td class="i-ex">I've made my offer; the ball is in your court.</td></tr>
+          <tr><td class="i-idiom">Throw in the towel</td><td class="i-mean">Admit defeat, give up</td><td class="i-ex">He threw in the towel after round three.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">To bell the cat</td><td class="i-mean">Take on a risky task</td><td class="i-ex">Who will bell the cat — file the complaint?</td></tr>
+          <tr><td class="i-idiom">To face risk</td><td class="i-mean">same as "bell the cat"</td><td class="i-ex">—</td></tr>
+          <tr><td class="i-idiom">Turn a blind eye</td><td class="i-mean">Ignore deliberately</td><td class="i-ex">She turned a blind eye to the misconduct.</td></tr>
+          <tr class="highlight-row"><td class="i-idiom">Upset the apple cart</td><td class="i-mean">Spoil a plan</td><td class="i-ex">His announcement upset the apple cart.</td></tr>
+          <tr><td class="i-idiom">Wet blanket</td><td class="i-mean">Someone who spoils fun</td><td class="i-ex">Don't be a wet blanket at the party.</td></tr>
+          <tr><td class="i-idiom">Wolf in sheep's clothing</td><td class="i-mean">Dangerous person pretending goodness</td><td class="i-ex">He turned out to be a wolf in sheep's clothing.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== ENG TIPS ===== -->
+  <div id="eng-tips" class="section">
+    <div class="section-header">
+      <h2>English <span>Exam Strategy</span></h2>
+      <p>English is the most scoring section in SSC CGL — with strategy, you can attempt all 25 Qs in &lt;20 minutes.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">Topic-wise <span>Time Budget</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Topic</th><th>Avg Qs</th><th>Time Target</th><th>Quick Trick</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="v-word">Synonyms / Antonyms</td><td class="val-primary">4–5</td><td class="val-frac">&lt;30s each</td><td>Eliminate opposites; pick strongest match</td></tr>
+          <tr><td class="v-word">Idioms &amp; Phrases</td><td class="val-primary">4–5</td><td class="val-frac">&lt;40s each</td><td>If known → instant. If not → guess from context</td></tr>
+          <tr class="highlight-row"><td class="v-word">One-Word Substitution</td><td class="val-primary">4–5</td><td class="val-frac">&lt;30s each</td><td>Prefix/suffix + root knowledge</td></tr>
+          <tr><td class="v-word">Spot the Error</td><td class="val-primary">3–4</td><td class="val-frac">45–60s each</td><td>Check S-V agreement, prepositions, articles first</td></tr>
+          <tr><td class="v-word">Fill in the Blanks</td><td class="val-primary">2–3</td><td class="val-frac">&lt;30s each</td><td>Read tone of sentence; eliminate homophones</td></tr>
+          <tr class="highlight-row"><td class="v-word">Sentence Improvement</td><td class="val-primary">2–3</td><td class="val-frac">45s each</td><td>Identify the part that sounds unnatural</td></tr>
+          <tr><td class="v-word">Active / Passive</td><td class="val-primary">1–2</td><td class="val-frac">&lt;30s each</td><td>Memorize tense patterns — purely mechanical</td></tr>
+          <tr><td class="v-word">Reading Comprehension</td><td class="val-primary">5</td><td class="val-frac">4–5 min set</td><td>Read questions first, then skim passage</td></tr>
+          <tr class="highlight-row"><td class="v-word">Spelling Correction</td><td class="val-primary">1–2</td><td class="val-frac">&lt;20s each</td><td>Spot the doubled/missing letter pattern</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">25 Power <span>Tips</span></h2>
+    </div>
+    <ul class="tips-list">
+      <li><span class="num-eng">01</span><div><strong>Attempt English first in Tier-1</strong> It takes least time per correct answer. Solve all 25 English Qs in 18–20 min, leaving more time for Quant and Reasoning.</div></li>
+      <li><span class="num-eng">02</span><div><strong>Synonym trap: "most similar in meaning"</strong> Don't pick the first word that looks related. Eliminate options that are only weakly related. The strongest semantic match wins.</div></li>
+      <li><span class="num-eng">03</span><div><strong>Antonym trap: double negatives</strong> "Select the antonym of IMPECCABLE" — candidates rush to pick "flawed" but miss "blemished" as the closer option. Always go for the exact opposite in intensity, not just meaning.</div></li>
+      <li><span class="num-eng">04</span><div><strong>Spot the error: always check these first</strong> Subject-verb agreement → preposition use → article (a/an/the) → pronoun case → tense shift. These cover 80% of SSC error patterns.</div></li>
+      <li><span class="num-eng">05</span><div><strong>Fill-in-the-blank: use elimination</strong> Rule out options that change the tone of the sentence. Then check if the remaining option fits grammatically AND semantically.</div></li>
+      <li><span class="num-eng">06</span><div><strong>Reading Comprehension: skim, don't read</strong> Read the 5 questions first. Underline keywords. Then scan the passage for those keywords. Answer directly from text — don't use outside knowledge.</div></li>
+      <li><span class="num-eng">07</span><div><strong>Idiom questions: eliminate by context</strong> If you don't know the idiom, look at the sentence context. A positive/negative tone often rules out 2 options. Then guess between 2.</div></li>
+      <li><span class="num-eng">08</span><div><strong>One-word sub: learn root words</strong> If you know that -cide = killing, -phobia = fear, -archy = rule, -ology = study, you can solve even unfamiliar options by elimination.</div></li>
+      <li><span class="num-eng">09</span><div><strong>Active/Passive: fully mechanical</strong> Memorize the 8 tense patterns cold. These questions are free marks if you know the structure. Never guess — the pattern is fixed.</div></li>
+      <li><span class="num-eng">10</span><div><strong>Narration: watch the tense shift + time words</strong> The two most common errors in indirect speech answers: forgetting to shift tense, and forgetting to change "today/here/now" → "that day/there/then".</div></li>
+      <li><span class="num-eng">11</span><div><strong>Cloze Test: read the entire passage first</strong> The theme of the passage tells you the register (formal/informal) and helps eliminate options that break the mood. Never solve cloze word by word in isolation.</div></li>
+      <li><span class="num-eng">12</span><div><strong>Para Jumbles: find the opening sentence first</strong> The sentence with a proper noun, article "a/an" (not "the"), or general statement is usually sentence 1. The sentence with a pronoun referring to something ("he", "this", "it") is never sentence 1.</div></li>
+      <li><span class="num-eng">13</span><div><strong>Spelling: focus on the double-letter trap</strong> SSC consistently tests: accommodation (cc + mm), occurrence (cc + rr), embarrassment (rr + ss), harassment (one r). Learn them as patterns, not spellings.</div></li>
+      <li><span class="num-eng">14</span><div><strong>Daily vocabulary: 10 words minimum</strong> Learn in groups of synonyms: ABHOR, DETEST, LOATHE — all mean "to hate". This triples your recall because you learn 3 for the effort of 1.</div></li>
+      <li><span class="num-eng">15</span><div><strong>Don't skip Comprehension — it's 20% of marks</strong> In Tier-1, the RC passage yields 5 marks (10 marks in Tier-2). Read carefully; these are the most reliably solved questions if you follow the passage — no memorization required.</div></li>
+      <li><span class="num-eng">16</span><div><strong>Negative marking strategy for English</strong> Unlike Quant, English Qs have fewer calculation traps. If you can eliminate 2 of 4 options, attempt it. Your English accuracy should be 85%+ with preparation — much higher than Quant.</div></li>
+      <li><span class="num-eng">17</span><div><strong>Sentence Improvement: the "no improvement" trap</strong> Option D is often "No improvement needed." Don't auto-select it from laziness. Read all options first. If none is clearly better, then pick D. Many candidates lose marks here.</div></li>
+      <li><span class="num-eng">18</span><div><strong>Prepositions: there is no shortcut — only exposure</strong> Prepositions are idiomatic. "Agree to a proposal / agree with a person / agree on a plan." Build a list of 30–40 common prepositional phrases used in SSC.</div></li>
+      <li><span class="num-eng">19</span><div><strong>Know 100–150 high-frequency idioms cold</strong> SSC repeats idioms across years. "A hard nut to crack", "burn the midnight oil", "bite the bullet", "bite the dust", "face the music", "to bell the cat" — these appear repeatedly.</div></li>
+      <li><span class="num-eng">20</span><div><strong>For homophones: always check the meaning, not the sound</strong> "The bus was stationary / stationery." Both sound the same when read aloud. Fix your eye on context: "bus" → stationary (not moving). Paper → stationery.</div></li>
+      <li><span class="num-eng">21</span><div><strong>Root-based elimination for new vocabulary</strong> Never seen "perspicacious"? Look at the options: A) unclear B) shrewd C) cloudy D) tired. Root "perspic-" (see clearly) → B. Don't panic over unknown words — analyze them.</div></li>
+      <li><span class="num-eng">22</span><div><strong>Revise PYQs topic-wise, not year-wise</strong> Take all previous year's synonym questions together, all idiom questions together. This shows you the pattern within each topic far better than solving full papers alone.</div></li>
+      <li><span class="num-eng">23</span><div><strong>Article rule for abbreviations</strong> Use "a" or "an" based on the pronunciation of the first letter when spoken aloud. "An MLA" (em-el-a → vowel sound), "a B.Tech student" (bee → consonant sound).</div></li>
+      <li><span class="num-eng">24</span><div><strong>Practice 20 sentences daily for error spotting</strong> Consistency beats cramming. Your "grammar instinct" — the ability to feel that something is wrong — develops only through repeated exposure, not theory.</div></li>
+      <li><span class="num-eng">25</span><div><strong>Maintain a Vocabulary Diary</strong> When you encounter a new word in a PYQ or mock, write: word → meaning → synonym → antonym → example sentence. Reviewing this weekly will give you 200+ strong words in 2 months.</div></li>
+    </ul>
+  </div>
+
+  <!-- ===== LOGICAL REASONING ===== -->
+  <div id="lr" class="section">
+    <div class="section-header">
+      <h2>Logical Reasoning — <span>Complete CGL Guide</span></h2>
+      <p>General Intelligence &amp; Reasoning — 25 Qs in Tier-1. Pure logic, zero calculation. Highest ROI section if mastered.</p>
+    </div>
+
+    <!-- TOPIC TIME BUDGET -->
+    <div class="section-header" style="margin-top:0;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">Topic-wise <span>Time Budget</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Topic</th><th>Avg Qs</th><th>Time Target</th><th>Difficulty</th><th>Quick Trick</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="v-word">Number Series</td><td class="val-primary">2–3</td><td class="val-frac">&lt;30s each</td><td style="color:#34d399">Easy</td><td>Find difference pattern: +2, ×3, square, etc.</td></tr>
+          <tr><td class="v-word">Letter Series</td><td class="val-primary">1–2</td><td class="val-frac">&lt;30s each</td><td style="color:#34d399">Easy</td><td>Write A=1, B=2… alongside; find gap pattern</td></tr>
+          <tr class="highlight-row"><td class="v-word">Analogy</td><td class="val-primary">3–4</td><td class="val-frac">&lt;25s each</td><td style="color:#34d399">Easy</td><td>Identify relationship type first (part:whole, cause:effect, etc.)</td></tr>
+          <tr><td class="v-word">Classification / Odd One Out</td><td class="val-primary">2–3</td><td class="val-frac">&lt;25s each</td><td style="color:#34d399">Easy</td><td>Look for the category — don't go by superficial similarity</td></tr>
+          <tr><td class="v-word">Coding–Decoding</td><td class="val-primary">2–3</td><td class="val-frac">45s each</td><td style="color:var(--accent1)">Medium</td><td>Find shift value (Caesar cipher) or position swap pattern</td></tr>
+          <tr class="highlight-row"><td class="v-word">Blood Relations</td><td class="val-primary">1–2</td><td class="val-frac">45–60s</td><td style="color:var(--accent1)">Medium</td><td>Draw a tree diagram; never rely on memory alone</td></tr>
+          <tr><td class="v-word">Direction Sense</td><td class="val-primary">1–2</td><td class="val-frac">45s each</td><td style="color:var(--accent1)">Medium</td><td>Always draw arrows; right turn = clockwise</td></tr>
+          <tr><td class="v-word">Ranking &amp; Order</td><td class="val-primary">1–2</td><td class="val-frac">&lt;30s each</td><td style="color:#34d399">Easy</td><td>Formula: Rank from top + Rank from bottom – 1 = Total</td></tr>
+          <tr class="highlight-row"><td class="v-word">Syllogism</td><td class="val-primary">2–3</td><td class="val-frac">45–60s</td><td style="color:var(--accent1)">Medium</td><td>Draw Venn diagrams; never assume what isn't stated</td></tr>
+          <tr><td class="v-word">Seating / Puzzle</td><td class="val-primary">1–2</td><td class="val-frac">90s max</td><td style="color:var(--accent2)">Hard</td><td>Linear: fix one person. Circular: fix one person as reference</td></tr>
+          <tr><td class="v-word">Venn Diagrams</td><td class="val-primary">1–2</td><td class="val-frac">&lt;30s each</td><td style="color:#34d399">Easy</td><td>Shade overlapping/non-overlapping regions for each conclusion</td></tr>
+          <tr class="highlight-row"><td class="v-word">Mirror / Water Image</td><td class="val-primary">1–2</td><td class="val-frac">&lt;20s each</td><td style="color:#34d399">Easy</td><td>Mirror: flip left-right. Water: flip up-down.</td></tr>
+          <tr><td class="v-word">Non-Verbal (Matrix, Paper Cut)</td><td class="val-primary">2–3</td><td class="val-frac">30–45s</td><td style="color:var(--accent1)">Medium</td><td>Find the pattern in rows AND columns before answering</td></tr>
+          <tr><td class="v-word">Calendar &amp; Clock</td><td class="val-primary">1–2</td><td class="val-frac">45s each</td><td style="color:var(--accent1)">Medium</td><td>Learn odd-days formula and clock angle formula</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SERIES -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Number &amp; Letter <span>Series</span></h2>
+    </div>
+
+    <div class="lr-card">
+      <h3>🔢 Number Series — Pattern Types</h3>
+      <div class="def">A sequence of numbers following a rule. You must find the missing/wrong term. The key is identifying the pattern type.</div>
+      <div class="ex-label">The 7 Main Patterns</div>
+      <div class="examples">
+        1. ARITHMETIC (constant difference): 3, 7, 11, 15, 19 → +4 each time<br>
+        2. GEOMETRIC (constant ratio): 2, 6, 18, 54 → ×3 each time<br>
+        3. SQUARE SERIES: 1, 4, 9, 16, 25 → 1², 2², 3², 4², 5²<br>
+        4. CUBE SERIES: 1, 8, 27, 64, 125 → 1³, 2³, 3³…<br>
+        5. DIFFERENCE OF DIFFERENCES: 2, 3, 5, 9, 17 → differences: 1,2,4,8 (×2 each)<br>
+        6. ALTERNATING: 1, 5, 2, 6, 3, 7 → two interlaced series (+1 and +1)<br>
+        7. FIBONACCI-TYPE: 1, 1, 2, 3, 5, 8, 13 → each term = sum of previous two
+      </div>
+      <div class="tip">⚡ Step 1: Subtract consecutive terms to find the difference series. Step 2: If difference isn't constant, apply Step 1 again to the differences. Step 3: If still no pattern, check ×/÷ ratios or square/cube relationships.</div>
+    </div>
+
+    <div class="lr-card blue-card">
+      <h3>🔡 Letter Series — Patterns</h3>
+      <div class="def">Letters follow positional or alphabetical patterns. Write A=1, B=2 … Z=26 immediately alongside the given series.</div>
+      <div class="ex-label">Pattern Types with Examples</div>
+      <div class="examples">
+        POSITION SHIFT: D, G, J, M → +3 positions each (D=4, G=7, J=10, M=13)<br>
+        REVERSE ALPHABET: Z, Y, X, W → –1 each (Z=26, Y=25…)<br>
+        SKIP PATTERN: A, C, E, G → every other letter (vowel series)<br>
+        GROUP PATTERN: ABC, DEF, GHI → groups of 3 consecutive letters<br>
+        MIXED: A2Z, C4X, E6V → +2 letters, +2 numbers, –2 letters<br><br>
+        TRICK — The EJOTY rule memorise: E=5, J=10, O=15, T=20, Y=25<br>
+        This lets you instantly get positions without counting from A.
+      </div>
+      <div class="tip">⚡ Always write numerical positions below letters. Never try to solve letter series by "feeling" — convert to numbers and treat as a number series.</div>
+    </div>
+
+    <!-- ANALOGY -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Analogy &amp; <span>Classification</span></h2>
+    </div>
+
+    <div class="lr-card yellow-card">
+      <h3>🔗 Analogy — Relationship Types</h3>
+      <div class="def">A : B :: C : ? — Find the SAME relationship between C and the answer that A has with B.</div>
+      <div class="ex-label">The 10 Core Relationship Types</div>
+      <div class="examples">
+        1. TOOL → WORKER: Scalpel : Surgeon :: Chisel : Carpenter<br>
+        2. PART → WHOLE: Chapter : Book :: Scene : Film<br>
+        3. CAUSE → EFFECT: Virus : Disease :: Fire : Ash<br>
+        4. WORKER → WORKPLACE: Doctor : Hospital :: Judge : Court<br>
+        5. PRODUCT → RAW MATERIAL: Bread : Wheat :: Steel : Iron<br>
+        6. DEGREE: Warm : Hot :: Cool : Cold (intensity increase)<br>
+        7. ANTONYM PAIR: Brave : Coward :: Honest : Dishonest<br>
+        8. SYMBOL → QUANTITY: Dozen : 12 :: Score : 20<br>
+        9. ANIMAL → SOUND: Lion : Roar :: Frog : Croak<br>
+       10. WORD → STUDY: Entomology : Insects :: Seismology : Earthquakes
+      </div>
+      <div class="tip">⚡ Step 1: Identify relationship type. Step 2: Apply SAME relationship to C. Step 3: Eliminate. Never match surface similarity ("both are animals").</div>
+    </div>
+
+    <div class="lr-card">
+      <h3>🔎 Classification / Odd One Out</h3>
+      <div class="def">Four items given — three belong to the same group; find the one that doesn't fit. The category can be semantic, positional, mathematical, or linguistic.</div>
+      <div class="ex-label">Examples by Type</div>
+      <div class="examples">
+        SEMANTIC: Apple, Mango, Potato, Banana → Potato (vegetable, not fruit)<br>
+        NUMBER-BASED: 16, 25, 36, 50 → 50 (not a perfect square; others are 4², 5², 6²)<br>
+        LETTER-BASED: BD, FH, JL, MO → MO (gap of 2 skipped letters; M to O skips N — correct, but M=13 is odd; others start on even positions B=2, F=6, J=10)<br>
+        POSITION-BASED: ABCD, EFGH, IJKL, MNOP → All fit; check if one group has an odd number of letters<br>
+        CODING-BASED: Odd one out in coded values
+      </div>
+      <div class="tip">⚡ Try multiple categories — alphabetical, numerical, semantic — before picking your answer. SSC often plants a "surface similar" trap: e.g., all four look like countries but one is a capital city.</div>
+    </div>
+
+    <!-- CODING-DECODING -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Coding — <span>Decoding</span></h2>
+    </div>
+
+    <div class="lr-card purple-card">
+      <h3>🔐 Coding–Decoding — All Pattern Types</h3>
+      <div class="def">A word is coded in a certain way — find how another word would be coded. One of the most mechanical topics: once you find the pattern, it's free marks.</div>
+      <div class="ex-label">Pattern Types</div>
+      <div class="examples">
+        TYPE 1 — LETTER SHIFT (Caesar Cipher): If BOOK = DQQM, each letter shifted +2.<br>
+        A→C, B→D, C→E … so shift = +2. Apply same shift to decode.<br><br>
+
+        TYPE 2 — REVERSE CODING: If CAT = ZAG (A stays, C→Z, T→G)<br>
+        Reverse: A=1↔Z=26, B=2↔Y=25… (mirror alphabet)<br><br>
+
+        TYPE 3 — POSITION REPLACEMENT: PENCIL → 123456; CLIP = 4352<br>
+        Each letter replaced by its position in the original word.<br><br>
+
+        TYPE 4 — WORD CODE (number/symbol): If MANGO = 13141507, each letter = its A-Z position number<br>
+        M=13, A=1, N=14, G=7, O=15<br><br>
+
+        TYPE 5 — CONDITIONAL CODING: Based on first/last letter type (vowel/consonant), different rules apply. Read the condition table carefully — don't memorise, read per question.
+      </div>
+      <div class="tip">⚡ First move: write the alphabet with positions 1–26 immediately. Then check what happened to 2–3 letters to identify the shift/rule before applying it.</div>
+    </div>
+
+    <!-- BLOOD RELATIONS -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Blood Relations &amp; <span>Direction Sense</span></h2>
+    </div>
+
+    <div class="lr-card red-card">
+      <h3>👨‍👩‍👧 Blood Relations — Quick Rules</h3>
+      <div class="def">Decode family relationships given in a chain of statements. Always draw a tree — never try to visualise in your head.</div>
+      <div class="ex-label">Core Relationships to Memorise</div>
+      <div class="examples">
+        Father's / Mother's Father → Grandfather<br>
+        Father's / Mother's Mother → Grandmother<br>
+        Father's / Mother's Brother → Uncle<br>
+        Father's / Mother's Sister → Aunt<br>
+        Brother's / Sister's Son → Nephew<br>
+        Brother's / Sister's Daughter → Niece<br>
+        Son's Wife → Daughter-in-law<br>
+        Daughter's Husband → Son-in-law<br>
+        Wife's / Husband's Brother → Brother-in-law<br><br>
+        ⚡ CODED BLOOD RELATION TRICK:<br>
+        "A + B" = A is father of B | "A – B" = A is mother of B<br>
+        "A × B" = A is brother of B | "A ÷ B" = A is sister of B<br>
+        (Symbols vary per question — read the key given!)
+      </div>
+      <div class="tip">⚡ Draw nodes (circles) for persons. Connect with arrows and label M/F for gender. Read the chain left to right and build the tree step by step. Never skip the diagram step.</div>
+    </div>
+
+    <div class="lr-card blue-card">
+      <h3>🧭 Direction Sense — 5 Rules</h3>
+      <div class="def">A person walks in various directions — find final direction from start, distance, or displacement. Always draw it on paper.</div>
+      <div class="ex-label">Rules &amp; Examples</div>
+      <div class="examples">
+        RULE 1: Right turn = 90° clockwise. Left turn = 90° anti-clockwise.<br>
+        RULE 2: U-turn = 180° turn (you now face the opposite direction).<br>
+        RULE 3: Displacement = straight-line distance from start to end point.<br>
+                Use Pythagoras: if 3 km East then 4 km North → displacement = √(9+16) = 5 km NE.<br>
+        RULE 4: Shadow in morning (sunrise) falls to the WEST. Shadow in evening falls to the EAST.<br>
+        RULE 5: If facing North → Right = East, Left = West, Behind = South.<br><br>
+        EXAMPLE: Start facing North. Walk 5 km North, turn right, walk 3 km, turn right, walk 5 km.<br>
+        → End up 3 km East of start, facing South.
+      </div>
+      <div class="tip">⚡ Draw a compass (N/S/E/W cross) at the top of your paper. Mark every step as an arrow. Never track direction mentally alone.</div>
+    </div>
+
+    <!-- SYLLOGISM -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Syllogism &amp; <span>Venn Diagrams</span></h2>
+    </div>
+
+    <div class="lr-card yellow-card">
+      <h3>📐 Syllogism — The Venn Diagram Method</h3>
+      <div class="def">Two or more statements → test conclusions. The definitive method: draw all possible Venn diagrams for the statements, then check each conclusion.</div>
+      <div class="ex-label">Statement Types &amp; What They Mean</div>
+      <div class="examples">
+        "All A are B" → A circle fully inside B circle.<br>
+        "No A is B" → A and B circles completely separate (no overlap).<br>
+        "Some A are B" → A and B circles partially overlapping.<br>
+        "Some A are not B" → part of A circle is outside B circle.<br><br>
+        CONCLUSION TEST:<br>
+        → If conclusion is true in ALL possible diagrams → "Definitely follows"<br>
+        → If true in SOME diagrams only → "Does not definitely follow" (unless "possibly")<br>
+        → If false in all diagrams → "Does not follow"<br><br>
+        EXAMPLE: All cats are animals. Some animals are dogs.<br>
+        Conclusion 1: "Some cats are dogs" → Does NOT follow (cats and dogs may not overlap).<br>
+        Conclusion 2: "Some animals are cats" → FOLLOWS (since all cats are animals).
+      </div>
+      <div class="tip">⚡ The #1 mistake: concluding what is "likely" vs what is "definite". SSC demands logical certainty. "Some" does NOT mean "all", and "No A is B" never means "No B is A" is a conclusion — it already implies that, but students miss it.</div>
+    </div>
+
+    <!-- SEATING ARRANGEMENT -->
+    <div class="lr-card">
+      <h3>🪑 Seating Arrangement — Linear &amp; Circular</h3>
+      <div class="def">Persons seated in a row or circle — decode positions from clues. Most time-consuming topic. Attempt only after all easy Qs are done.</div>
+      <div class="ex-label">Step-by-Step Method</div>
+      <div class="examples">
+        LINEAR SEATING:<br>
+        Step 1: Draw boxes for each position (e.g., 6 boxes for 6 persons).<br>
+        Step 2: Use absolute clues first ("A is at one end").<br>
+        Step 3: Use relative clues next ("B is 2 positions right of A").<br>
+        Step 4: Use elimination clues last ("C is not adjacent to D").<br><br>
+        CIRCULAR SEATING:<br>
+        Step 1: Fix ONE person at the top (12 o'clock). This is your reference point.<br>
+        Step 2: "Facing centre" = left is anti-clockwise, right is clockwise.<br>
+        Step 3: "Immediate left" of person X = the person sitting anti-clockwise from X.<br><br>
+        EXAMPLE CLUE SET (Linear, 5 people A–E):<br>
+        A is at one end. B is between C and D. E is at the other end. C is between A and B.<br>
+        → A – C – B – D – E ✓
+      </div>
+      <div class="tip">⚡ In Tier-1, seating puzzles usually have 4–6 people and 2–4 Qs. Spend max 90 seconds. If you can't crack it in 90s, skip and return at the end.</div>
+    </div>
+
+    <!-- RANKING & CLOCK -->
+    <div class="tricks-grid" style="margin-top:14px;">
+      <div class="trick-card green">
+        <h3>📊 Ranking Formula</h3>
+        <p>If rank from top = R, rank from bottom = R', total = N:</p>
+        <div class="example">
+          N = R + R' – 1<br><br>
+          Q: Ravi is 8th from top, 5th from bottom. Total?<br>
+          N = 8 + 5 – 1 = 12 students ✓<br><br>
+          Q: 40 students, Priya is 14th from left. Rank from right?<br>
+          40 – 14 + 1 = 27th ✓
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🕐 Clock Angle Formula</h3>
+        <p>Angle between hour and minute hands at H hours M minutes:</p>
+        <div class="example">
+          θ = |30H – 5.5M|<br>
+          If &gt;180°, subtract from 360°.<br><br>
+          Q: Angle at 3:20?<br>
+          = |30×3 – 5.5×20| = |90 – 110| = 20° ✓<br><br>
+          Coincide: hands meet every 65 5/11 minutes.
+        </div>
+      </div>
+      <div class="trick-card yellow">
+        <h3>📅 Calendar — Odd Days</h3>
+        <p>Odd days = remainder when days divided by 7.</p>
+        <div class="example">
+          Ordinary year = 1 odd day (365 = 52×7 + 1)<br>
+          Leap year = 2 odd days (366 = 52×7 + 2)<br>
+          100 years = 5 odd days<br>
+          200 years = 3 odd days<br>
+          300 years = 1 odd day<br>
+          400 years = 0 odd days ✓<br>
+          Day code: Sun=0, Mon=1…Sat=6
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>🪞 Mirror vs Water Image</h3>
+        <p>Two non-verbal types — easy marks if you know the rule.</p>
+        <div class="example">
+          MIRROR IMAGE (vertical axis flip):<br>
+          Left ↔ Right swapped. Top/Bottom unchanged.<br>
+          b → d | p → q | E → Ǝ<br><br>
+          WATER IMAGE (horizontal axis flip):<br>
+          Top ↔ Bottom swapped. Left/Right unchanged.<br>
+          b → p | d → q | E → ⊐ (rotated 180°)
+        </div>
+      </div>
+    </div>
+
+    <!-- LR TIPS -->
+    <div class="section-header" style="margin-top:32px;margin-bottom:16px;border:none;">
+      <h2 style="font-size:18px;">20 Power <span>Reasoning Tips</span></h2>
+    </div>
+    <ul class="tips-list">
+      <li><span class="num-lr">01</span><div><strong>Attempt Reasoning second (after English)</strong> Easy and medium Qs finish fast. Do series, analogy, odd-one-out first. Do seating/blood relations last.</div></li>
+      <li><span class="num-lr">02</span><div><strong>Number Series: always find the difference series first</strong> Subtract consecutive terms. If you get a constant → arithmetic. If differences are multiplying → geometric of differences. 80% of series Qs solved by this alone.</div></li>
+      <li><span class="num-lr">03</span><div><strong>EJOTY is a must-memorize: E=5, J=10, O=15, T=20, Y=25</strong> These anchor points let you get any letter's position in ≤2 steps. No counting from A needed.</div></li>
+      <li><span class="num-lr">04</span><div><strong>Analogy: define the relationship in a SENTENCE before looking at options</strong> "Scalpel is the tool of a Surgeon" → now look for "Chisel is the tool of a ___." This prevents falling for visually similar traps.</div></li>
+      <li><span class="num-lr">05</span><div><strong>Odd-one-out: try at least 2 different categories</strong> SSC plants traps. If three items seem to share one feature, check if there's also a different grouping of 3 that excludes a different item. Pick the most obvious/specific category.</div></li>
+      <li><span class="num-lr">06</span><div><strong>Coding: write A–Z with 1–26 positions EVERY TIME</strong> Takes 20 seconds. Saves you from careless mistakes in the shift. Don't rely on mental alphabets under time pressure.</div></li>
+      <li><span class="num-lr">07</span><div><strong>Blood relations: ALWAYS draw the tree</strong> Even for a 1-sentence question. 2-second diagram saves you from misreading "A is the son of B's father" type traps. Most errors here are from skipping the diagram.</div></li>
+      <li><span class="num-lr">08</span><div><strong>Direction sense: draw before reading even the first clue</strong> Draw N/S/E/W cross first. Then plot each movement as you read. Never try to "remember" directions mentally.</div></li>
+      <li><span class="num-lr">09</span><div><strong>Syllogism golden rule: test EVERY possible diagram, not just the most obvious one</strong> If "Some A are B", three diagrams are possible (partial overlap, A inside B, B inside A). The conclusion must hold in ALL valid diagrams to definitely follow.</div></li>
+      <li><span class="num-lr">10</span><div><strong>Ranking formula: N = R₁ + R₂ – 1 is the only formula you need</strong> Memorise it. Covers rank from top + rank from bottom → total, and all variations.</div></li>
+      <li><span class="num-lr">11</span><div><strong>Circular seating: fix one person ALWAYS</strong> In a circle of N people, there are (N–1)! arrangements. Fix one as reference. "Right" in circular = clockwise. "Left" = anti-clockwise. This removes ambiguity.</div></li>
+      <li><span class="num-lr">12</span><div><strong>Clock angle formula: |30H – 5.5M| — no exceptions</strong> Works for any time. If result exceeds 180°, the reflex angle = 360° – result. Practice 10 different times before the exam.</div></li>
+      <li><span class="num-lr">13</span><div><strong>For Calendar Qs: memorize 100 yrs = 5 odd days, 400 yrs = 0 odd days</strong> Most calendar questions are solved by computing odd days for the given year range and mapping to a day code.</div></li>
+      <li><span class="num-lr">14</span><div><strong>Mirror image: the vertical axis never changes up-down</strong> The most common student error is flipping both axes. In a mirror image, ONLY left-right flips. Top of letter stays at top.</div></li>
+      <li><span class="num-lr">15</span><div><strong>Non-verbal reasoning: look at ROWS then COLUMNS, never just rows</strong> In a 3×3 matrix question, the pattern might run across rows OR down columns OR diagonally. Check all three before selecting.</div></li>
+      <li><span class="num-lr">16</span><div><strong>Venn diagram questions: shade and count circles, don't guess</strong> For "only A", "A and B but not C", "all three" — draw three overlapping circles and shade the correct region. Then count from the numbers given.</div></li>
+      <li><span class="num-lr">17</span><div><strong>Input-Output machines: track ONE element through the full operation</strong> Don't try to understand the whole step at once. Track what happens to position 1 across all steps, then position 2, etc. The pattern will emerge.</div></li>
+      <li><span class="num-lr">18</span><div><strong>Word formation / dictionary order: write the position numbers, not the word</strong> If asked whether DRUM can be formed from THUNDERSTORM — write out T-H-U-N-D-E-R-S-T-O-R-M and mark D, R, U, M. Faster and error-free.</div></li>
+      <li><span class="num-lr">19</span><div><strong>Negative marking strategy for Reasoning</strong> Series, analogy, and classification: attempt always (high accuracy). Seating/blood relations: attempt only if you've cracked the setup. Skip incomplete setups — guessing here is –0.5 per wrong attempt.</div></li>
+      <li><span class="num-lr">20</span><div><strong>Revise PYQs topic-wise: SSC recycles Reasoning question patterns heavily</strong> The exact numbers change, but the logic pattern repeats. If you solve 50 PYQ blood-relation chains, you'll recognise the next one within seconds.</div></li>
+    </ul>
+  </div>
+
+</div><!-- end container -->SSC CGL COMPLETE STUDY SHEET · Maths + English · Squares, Cubes, %, Digital Sum, Tricks · Vocab, Grammar, Idioms, Word Patterns · Generated for Exam Prep</div>
+
+<script>
+  const allTabs = ['squares-cubes','percentages','digital-sum','tricks','exam-tips',
+                   'eng-overview','eng-vocab','eng-patterns','eng-grammar','eng-idioms','eng-tips','lr'];
+
+  function showTab(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    const idx = allTabs.indexOf(id);
+    document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+
+</body></html>
