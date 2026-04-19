@@ -299,9 +299,143 @@
   .tab-btn.eng.active { color: #a78bfa; border-bottom-color: #a78bfa; }
   .tab-btn.eng:hover { color: #c4b5fd; }
 
+  .tab-btn.ms { color: #22d3ee; }
+  .tab-btn.ms.active { color: #22d3ee; border-bottom-color: #22d3ee; }
+  .tab-btn.ms:hover { color: #67e8f9; }
+
+  .tab-btn.pc { color: #f472b6; }
+  .tab-btn.pc.active { color: #f472b6; border-bottom-color: #f472b6; }
+  .tab-btn.pc:hover { color: #f9a8d4; }
+
+  .tab-btn.ss { color: var(--accent1); }
+  .tab-btn.ss.active { color: var(--accent1); border-bottom-color: var(--accent1); }
+  .tab-btn.ss:hover { color: #fde68a; }
+
+  /* SURE-SHOT cards */
+  .ss-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent1);
+    border-radius: 0 0 10px 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .ss-card h3 { font-family: var(--heading-font); font-size: 15px; font-weight: 800; color: var(--accent1); margin-bottom: 8px; }
+  .ss-card .ss-body { font-family: var(--mono-font); font-size: 12.5px; color: var(--accent4); line-height: 1.9; background: var(--surface2); border-radius: 6px; padding: 10px 14px; }
+  .ss-card.blue-top { border-top-color: var(--accent3); }
+  .ss-card.blue-top h3 { color: var(--accent3); }
+  .ss-card.green-top { border-top-color: var(--accent4); }
+  .ss-card.green-top h3 { color: var(--accent4); }
+  .ss-card.red-top { border-top-color: var(--accent2); }
+  .ss-card.red-top h3 { color: var(--accent2); }
+  .ss-card.purple-top { border-top-color: #a78bfa; }
+  .ss-card.purple-top h3 { color: #a78bfa; }
+  .ss-card.orange-top { border-top-color: #fb923c; }
+  .ss-card.orange-top h3 { color: #fb923c; }
+
+  /* QUICK REVISION */
+  .qr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px,100%),1fr)); gap: 16px; margin-bottom: 24px; }
+  .qr-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    position: relative;
+  }
+  .qr-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 10px 10px 0 0; background: var(--accent1); }
+  .qr-card.qr-blue::before { background: var(--accent3); }
+  .qr-card.qr-green::before { background: var(--accent4); }
+  .qr-card.qr-red::before { background: var(--accent2); }
+  .qr-card.qr-purple::before { background: #a78bfa; }
+  .qr-card.qr-orange::before { background: #fb923c; }
+  .qr-card h4 { font-family: var(--heading-font); font-size: 13px; font-weight: 800; color: var(--accent1); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; margin-top: 4px; }
+  .qr-card.qr-blue h4 { color: var(--accent3); }
+  .qr-card.qr-green h4 { color: var(--accent4); }
+  .qr-card.qr-red h4 { color: var(--accent2); }
+  .qr-card.qr-purple h4 { color: #a78bfa; }
+  .qr-card.qr-orange h4 { color: #fb923c; }
+  .qr-card p { font-family: var(--mono-font); font-size: 11.5px; color: var(--muted); line-height: 1.85; }
+  .qr-card p strong { color: var(--text); }
+
+  /* COMPUTER tab */
+  .comp-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid #f472b6; border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 12px; }
+  .comp-card h4 { font-family: var(--heading-font); font-size: 13px; font-weight: 700; color: #f472b6; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .comp-card .cex { font-family: var(--mono-font); font-size: 12.5px; color: var(--accent4); line-height: 1.9; background: var(--surface2); border-radius: 6px; padding: 10px 12px; }
+
   .tab-btn.lr { color: #34d399; }
   .tab-btn.lr.active { color: #34d399; border-bottom-color: #34d399; }
   .tab-btn.lr:hover { color: #6ee7b7; }
+
+  .tab-btn.gk { color: #fb923c; }
+  .tab-btn.gk.active { color: #fb923c; border-bottom-color: #fb923c; }
+  .tab-btn.gk:hover { color: #fdba74; }
+
+  /* GK CARDS */
+  .gk-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid #fb923c;
+    border-radius: 0 10px 10px 0;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .gk-card h3 { font-family: var(--heading-font); font-size: 15px; font-weight: 800; color: #fb923c; margin-bottom: 6px; }
+  .gk-card .def { font-size: 13.5px; color: var(--muted); margin-bottom: 10px; font-family: var(--body-font); }
+  .gk-card.blue-card { border-left-color: var(--accent3); }
+  .gk-card.blue-card h3 { color: var(--accent3); }
+  .gk-card.green-card { border-left-color: var(--accent4); }
+  .gk-card.green-card h3 { color: var(--accent4); }
+  .gk-card.red-card { border-left-color: var(--accent2); }
+  .gk-card.red-card h3 { color: var(--accent2); }
+  .gk-card.yellow-card { border-left-color: var(--accent1); }
+  .gk-card.yellow-card h3 { color: var(--accent1); }
+  .gk-card.purple-card { border-left-color: #a78bfa; }
+  .gk-card.purple-card h3 { color: #a78bfa; }
+
+  .gk-fact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px,100%),1fr)); gap: 14px; margin-bottom: 28px; }
+  .gk-fact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .gk-fact-card h4 { font-family: var(--mono-font); font-size: 10px; color: #fb923c; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+  .gk-fact-card p { font-family: var(--mono-font); font-size: 12.5px; color: var(--accent4); line-height: 1.9; }
+
+  .gk-pill {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 10px;
+    font-family: var(--mono-font);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .gk-pill-o  { background: rgba(251,146,60,0.15); color: #fb923c; }
+  .gk-pill-g  { background: rgba(111,221,139,0.15); color: var(--accent4); }
+  .gk-pill-b  { background: rgba(58,184,245,0.15); color: var(--accent3); }
+  .gk-pill-r  { background: rgba(224,92,58,0.15); color: var(--accent2); }
+
+  .tips-list li .num-gk {
+    flex-shrink: 0; width: 28px; height: 28px; background: #431407; color: #fb923c;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono-font); font-size: 11px; font-weight: 700; margin-top: 1px; border: 1px solid #fb923c;
+  }
+
+  /* state table accent */
+  .st-state { color: #fb923c !important; font-weight: 600; }
+  .st-cap   { color: var(--accent3) !important; }
+  .st-lang  { color: var(--accent4) !important; }
+  .st-yr    { color: var(--muted) !important; font-style: italic; }
+
+  @media (max-width: 768px) {
+    .gk-fact-grid { grid-template-columns: 1fr; gap: 10px; }
+    .gk-card { padding: 14px 14px; }
+    .gk-card h3 { font-size: 14px; }
+  }
 
   /* ENGLISH PILL BADGES */
   .eng-badge {
@@ -563,16 +697,20 @@
 <body>
 
 <div class="hero">
-  <div class="hero-tag">SSC CGL · Quantitative Aptitude + English Language</div>
+  <div class="hero-tag">SSC CGL · Complete Preparation Guide — All 4 Subjects + Exam Strategy</div>
   <h1>Complete<br>Study Sheet</h1>
-  <p>Maths: Squares · Cubes · Percentages · Digital Sum · Tips &amp; Tricks &nbsp;|&nbsp; English: Vocabulary · Grammar · Idioms · Word Patterns &nbsp;|&nbsp; Reasoning: Series · Analogy · Syllogism · Coding · Puzzles</p>
+  <p>📋 Exam Pattern &amp; Strategy &nbsp;|&nbsp; 🔢 Maths: Arithmetic · Algebra · Geometry · Trig · Shortcuts &nbsp;|&nbsp; 📘 English: Vocab · Grammar · Idioms · RC &nbsp;|&nbsp; 🧠 Reasoning: Series · Coding · Syllogism · Puzzles &nbsp;|&nbsp; 🌍 GK: History · Geography · Science · Polity · Static GK</p>
 </div>
 
 <nav class="nav-tabs">
-  <button class="tab-btn active" onclick="showTab('squares-cubes')">Squares &amp; Cubes</button>
+  <button class="tab-btn active" onclick="showTab('exam-overview')">📋 Exam Pattern</button>
+  <button class="tab-btn" onclick="showTab('squares-cubes')">Squares &amp; Cubes</button>
   <button class="tab-btn" onclick="showTab('percentages')">Percentages</button>
   <button class="tab-btn" onclick="showTab('digital-sum')">Digital Sum</button>
-  <button class="tab-btn" onclick="showTab('tricks')">Tricks &amp; Shortcuts</button>
+  <button class="tab-btn" onclick="showTab('tricks')">Calc Shortcuts</button>
+  <button class="tab-btn" onclick="showTab('geo-mensuration')">📐 Geometry &amp; Mensuration</button>
+  <button class="tab-btn" onclick="showTab('trigonometry')">📐 Trigonometry</button>
+  <button class="tab-btn" onclick="showTab('arithmetic')">🔢 Arithmetic</button>
   <button class="tab-btn" onclick="showTab('exam-tips')">Maths Tips</button>
   <button class="tab-btn eng" onclick="showTab('eng-overview')">📘 English Overview</button>
   <button class="tab-btn eng" onclick="showTab('eng-vocab')">📗 Vocabulary</button>
@@ -581,12 +719,133 @@
   <button class="tab-btn eng" onclick="showTab('eng-idioms')">📒 Idioms &amp; Phrases</button>
   <button class="tab-btn eng" onclick="showTab('eng-tips')">🎯 English Tips</button>
   <button class="tab-btn lr" onclick="showTab('lr')">🧠 Reasoning (LR)</button>
+  <button class="tab-btn gk" onclick="showTab('gk-static')">🗺️ Static GK</button>
+  <button class="tab-btn gk" onclick="showTab('gk-history')">📜 History</button>
+  <button class="tab-btn gk" onclick="showTab('gk-geography')">🌍 Geography</button>
+  <button class="tab-btn gk" onclick="showTab('gk-science')">⚗️ Science</button>
+  <button class="tab-btn gk" onclick="showTab('gk-polity')">🏛️ Polity &amp; Economy</button>
+  <button class="tab-btn ms" onclick="showTab('number-system')">🔣 Number System</button>
+  <button class="tab-btn ms" onclick="showTab('algebra')">🧮 Algebra</button>
+  <button class="tab-btn ms" onclick="showTab('ratio-pl')">⚖️ Ratio &amp; P&amp;L</button>
+  <button class="tab-btn ms" onclick="showTab('di')">📊 Data Interp.</button>
+  <button class="tab-btn pc" onclick="showTab('computer')">💻 Computer</button>
+  <button class="tab-btn ss" onclick="showTab('sure-shot')">🎯 Sure-Shot PYQs</button>
+  <button class="tab-btn ss" onclick="showTab('quick-rev')">⚡ Quick Revision</button>
 </nav>
 
 <div class="container">
 
+  <!-- ===== EXAM OVERVIEW ===== -->
+  <div id="exam-overview" class="section active">
+    <div class="section-header">
+      <h2>SSC CGL <span>Exam Pattern</span> — Complete Blueprint</h2>
+      <p>Know the structure before you study. Tier 1 is qualifying only. Tier 2 decides your rank and post.</p>
+    </div>
+
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>📋 Tier 1 — Qualifying Stage</h3>
+        <div class="example">
+          Mode: Computer-Based Test (CBT)<br>
+          Duration: 60 minutes (no sectional time limit)<br>
+          Questions: 100 MCQs (25 per section)<br>
+          Marks: 200 total (2 marks per correct answer)<br>
+          Negative: –0.5 per wrong answer<br>
+          ⚠️ CRITICAL: Tier 1 marks DO NOT count in merit list.<br>
+          Only purpose: Clear Tier 1 cutoff to reach Tier 2.
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🏆 Tier 2 — Merit Deciding Stage</h3>
+        <div class="example">
+          Paper I: Compulsory for ALL posts (2 Sessions)<br>
+          Paper II: Only for JSO (Statistics) posts<br>
+          Paper III: Only for AAO posts (Finance &amp; Economics)<br>
+          Mode: Computer-Based Test (CBT)<br>
+          Negative: –1 per wrong (Sections I, II, Module I of III)<br>
+          No negative: Computer Knowledge (Module II of Sec III)<br>
+          ⚠️ CRITICAL: Final merit = Tier 2 Paper I score only.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Tier 1 — <span>Section-wise Breakdown</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Section</th><th>Questions</th><th>Marks</th><th>Key Topics</th><th>Time Target</th></tr></thead>
+        <tbody>
+          <tr class="highlight-row"><td class="val-primary">Quantitative Aptitude</td><td>25</td><td>50</td><td>Arithmetic, Algebra, Geometry, Trig, DI</td><td>25–30 min</td></tr>
+          <tr><td class="val-primary">General Intelligence &amp; Reasoning</td><td>25</td><td>50</td><td>Series, Analogy, Coding, Syllogism, Puzzles</td><td>15–18 min</td></tr>
+          <tr><td class="val-primary">English Language &amp; Comprehension</td><td>25</td><td>50</td><td>Vocab, Grammar, RC, Cloze, Error</td><td>12–15 min</td></tr>
+          <tr><td class="val-primary">General Awareness</td><td>25</td><td>50</td><td>History, Geography, Science, Polity, Current</td><td>8–10 min</td></tr>
+          <tr class="highlight-row"><td class="val-frac">Total</td><td class="val-frac">100</td><td class="val-frac">200</td><td>—</td><td>60 min</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Tier 2 Paper I — <span>Session-wise Structure</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Session</th><th>Section</th><th>Questions</th><th>Marks</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr class="highlight-row"><td rowspan="3" class="val-primary">Session I</td><td>Section I: Mathematical Abilities</td><td>30</td><td>90</td><td rowspan="3">2 hrs 15 min</td></tr>
+          <tr><td>Section II: Reasoning &amp; General Intelligence (Part A: 30 Qs + Part B: GK: 15 Qs)</td><td>45</td><td>135</td></tr>
+          <tr><td>Section III Module I: English Language &amp; Comprehension</td><td>45</td><td>135</td></tr>
+          <tr><td class="val-primary">Session II</td><td>Section III Module II: Computer Knowledge</td><td>20</td><td>60</td><td>15 min</td></tr>
+          <tr class="highlight-row"><td class="val-frac">Total Paper I</td><td class="val-frac">—</td><td class="val-frac">140</td><td class="val-frac">420</td><td class="val-frac">~2.5 hrs</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Topic-wise <span>Weightage</span> — Tier 1 (PYQ Analysis)</h2>
+    </div>
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>🔢 Quant — 25 Qs weightage</h4>
+        <p>Geometry + Mensuration: 4–5 Qs ⭐<br>Algebra: 3–4 Qs ⭐<br>Arithmetic (P&L, SI/CI, T&W): 6–8 Qs ⭐<br>Trigonometry: 2–3 Qs<br>Number System: 2–3 Qs<br>Data Interpretation: 3–5 Qs<br>Percentage/Ratio: 2–3 Qs</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🧠 Reasoning — 25 Qs weightage</h4>
+        <p>Series (Number/Alpha): 3–4 Qs ⭐<br>Analogy: 3–4 Qs ⭐<br>Odd One Out: 2–3 Qs<br>Coding-Decoding: 3–4 Qs ⭐<br>Matrix / Non-verbal: 2–3 Qs<br>Syllogism: 1–2 Qs<br>Seating / Blood Relations: 1–2 Qs<br>Direction / Ranking: 1–2 Qs</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📘 English — 25 Qs weightage</h4>
+        <p>Cloze Test: 5 Qs ⭐<br>Reading Comprehension: 4–5 Qs ⭐<br>Error Detection: 2–3 Qs<br>Fill in Blanks: 2–3 Qs<br>Vocabulary (Syn/Ant): 2–3 Qs<br>Para Jumble / Sentence: 1–2 Qs<br>Idioms &amp; Phrases: 1–2 Qs<br>Active/Passive / Direct/Indirect: 1–2 Qs</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌍 GK — 25 Qs weightage</h4>
+        <p>History (Ancient+Modern): 4–5 Qs ⭐<br>Science (Bio+Physics+Chem): 5–6 Qs ⭐<br>Polity: 3–4 Qs<br>Geography: 3–4 Qs<br>Economy: 2–3 Qs<br>Current Affairs: 3–4 Qs<br>Static GK (Capitals, Symbols): 2–3 Qs</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Attempt Order Strategy — <span>Tier 1</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Order</th><th>Section</th><th>Why</th><th>Target Score</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">1st</td><td>General Awareness (GK)</td><td>Fastest — knowledge based, no calculation. 25 Qs in 8–10 min</td><td class="val-frac">18–22/25</td></tr>
+          <tr><td class="val-primary">2nd</td><td>English</td><td>Moderate speed. Vocab + grammar = fast marks. RC last</td><td class="val-frac">19–23/25</td></tr>
+          <tr><td class="val-primary">3rd</td><td>Reasoning</td><td>High accuracy possible. Series + analogy first, puzzles last</td><td class="val-frac">20–24/25</td></tr>
+          <tr class="highlight-row"><td class="val-primary">4th</td><td>Quantitative Aptitude</td><td>Time-intensive. Do easy arithmetic first, save geometry for last</td><td class="val-frac">15–20/25</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="gk-card yellow-card" style="margin-top:16px;">
+      <h3>⚡ Cutoff Reality Check</h3>
+      <p class="def">Tier 1 cutoff (General category) typically 130–150 out of 200. You need ~65–75% accuracy. Tier 2 merit: aim for 300+ out of 420 in Paper I to get a good post. Negative marking logic: attempt only if ≥60% confident. At 50-50, expected gain = 0. At 70%+ confidence, always attempt.</p>
+    </div>
+  </div>
+
   <!-- ===== SQUARES & CUBES ===== -->
-  <div id="squares-cubes" class="section active">
+  <div id="squares-cubes" class="section">
     <div class="section-header">
       <h2>Squares <span>&amp;</span> Cubes — 1 to 20</h2>
       <p>Memorize these. They appear in almost every SSC CGL paper.</p>
@@ -947,71 +1206,686 @@
   <!-- ===== EXAM TIPS ===== -->
   <div id="exam-tips" class="section">
     <div class="section-header">
-      <h2>SSC CGL <span>Exam Strategy</span></h2>
-      <p>25 questions in 30 minutes = under 72 seconds per question. Speed is everything.</p>
+      <h2>SSC CGL <span>Maths Strategy</span> — Tier 1 + Tier 2</h2>
+      <p>Tier 1: 25 Qs · 30 min target · –0.5 per wrong | Tier 2: 30 Qs · 2h 15min · –1 per wrong</p>
     </div>
 
-    <ul class="tips-list">
-      <li>
-        <span class="num">01</span>
-        <div><strong>Fundamentals first, shortcuts second</strong> Shortcuts are add-ons — never substitutes. If you don't know the conventional method, a trick will confuse you under pressure. Clear basics first, then layer in shortcuts.</div>
-      </li>
-      <li>
-        <span class="num">02</span>
-        <div><strong>Memorize core tables cold</strong> Tables up to 30, squares up to 30, cubes up to 20, fraction–percentage equivalents. These alone save 20–30 seconds per question.</div>
-      </li>
-      <li>
-        <span class="num">03</span>
-        <div><strong>Use Digital Sum for MCQ verification</strong> Before computing fully, check which options can be eliminated using digital sum. Reduces 4 choices to 1–2 in under 3 seconds.</div>
-      </li>
-      <li>
-        <span class="num">04</span>
-        <div><strong>Categorize questions on first read</strong> In the first 60 seconds, scan all 25 questions. Mark easy (attempt first), medium (attempt second), and skip the clearly time-consuming ones.</div>
-      </li>
-      <li>
-        <span class="num">05</span>
-        <div><strong>Negative marking is –0.5 per wrong answer</strong> Attempting a 50-50 guess costs you in expectation. Only guess when you've eliminated at least 2 of 4 options confidently.</div>
-      </li>
-      <li>
-        <span class="num">06</span>
-        <div><strong>Daily 10–15 min calculation drills</strong> Practice big-number multiplication, percentage chains, and simplification daily. Speed comes from muscle memory, not just understanding.</div>
-      </li>
-      <li>
-        <span class="num">07</span>
-        <div><strong>Maintain a mistake log</strong> Write down every wrong question with the correct method. Review it weekly. SSC repeats question types — your log is a goldmine.</div>
-      </li>
-      <li>
-        <span class="num">08</span>
-        <div><strong>Use substitution for algebra questions</strong> When the question asks for the value of an expression given a constraint, try substituting small integers that satisfy the constraint first.</div>
-      </li>
-      <li>
-        <span class="num">09</span>
-        <div><strong>Anchor % calculations at 10%</strong> 10% → halve for 5% → double for 20% → add for combinations. Avoid computing from scratch each time.</div>
-      </li>
-      <li>
-        <span class="num">10</span>
-        <div><strong>Solve PYQs (Previous Year Questions)</strong> SSC CGL repeats patterns every 2–3 years. Solving 5+ years of PYQs is more valuable than any shortcut book alone.</div>
-      </li>
-    </ul>
-
-    <div class="section-header" style="margin-top: 32px;">
-      <h2>Topic-wise <span>Time Budget</span></h2>
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Topic-wise <span>Time Budget — Tier 1</span></h2>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Topic</th><th>Avg Questions</th><th>Time Target</th><th>Key Weapon</th></tr>
+          <tr><th>Topic</th><th>Expected Qs</th><th>Time Target</th><th>Key Method</th><th>Skip if...</th></tr>
         </thead>
         <tbody>
-          <tr><td>Simplification / BODMAS</td><td class="val-primary">2–3</td><td class="val-frac">&lt;45s each</td><td>Digital Sum + VBODMAS</td></tr>
-          <tr><td>Percentage / Profit-Loss</td><td class="val-primary">3–4</td><td class="val-frac">60s each</td><td>Fraction-% table</td></tr>
-          <tr><td>Ratio &amp; Proportion</td><td class="val-primary">2</td><td class="val-frac">45s each</td><td>Component method</td></tr>
-          <tr><td>Algebra</td><td class="val-primary">3–4</td><td class="val-frac">60s each</td><td>Substitution trick</td></tr>
-          <tr><td>Geometry / Mensuration</td><td class="val-primary">4–5</td><td class="val-frac">75s each</td><td>Formula sheet recall</td></tr>
-          <tr><td>Trigonometry</td><td class="val-primary">2–3</td><td class="val-frac">60s each</td><td>Table 0°–90° recall</td></tr>
-          <tr><td>Data Interpretation</td><td class="val-primary">3–5</td><td class="val-frac">2–3 min set</td><td>% approximation</td></tr>
-          <tr><td>Number System</td><td class="val-primary">2–3</td><td class="val-frac">60s each</td><td>Digital Sum + divisibility</td></tr>
-          <tr><td>Time, Speed, Work</td><td class="val-primary">2–3</td><td class="val-frac">75s each</td><td>LCM method for work</td></tr>
+          <tr class="highlight-row"><td>Arithmetic (P&L, SI/CI, T&W, TSD)</td><td class="val-primary">6–8</td><td class="val-frac">45–60s each</td><td>Formula recall + LCM method</td><td>Multi-step CI or Mixture</td></tr>
+          <tr><td>Algebra</td><td class="val-primary">3–4</td><td class="val-frac">45–60s each</td><td>Value substitution (θ=45° or x=1)</td><td>Complex linear system</td></tr>
+          <tr><td>Geometry / Mensuration</td><td class="val-primary">4–5</td><td class="val-frac">60–90s each</td><td>Theorem recall + diagram</td><td>Multi-step circle proofs</td></tr>
+          <tr><td>Trigonometry</td><td class="val-primary">2–3</td><td class="val-frac">45–60s each</td><td>Value sub (30°/45°/60°) + identities</td><td>Complex H&D with 2 observers</td></tr>
+          <tr><td>Data Interpretation</td><td class="val-primary">3–5 (1–2 sets)</td><td class="val-frac">2–3 min per set</td><td>% approximation, read carefully</td><td>Never skip — usually easy</td></tr>
+          <tr><td>Number System / Simplification</td><td class="val-primary">2–3</td><td class="val-frac">30–45s each</td><td>Digital Sum eliminates options</td><td>Huge factor calculations</td></tr>
+          <tr class="highlight-row"><td>Percentage / Ratio</td><td class="val-primary">2–3</td><td class="val-frac">45s each</td><td>Fraction table + multiplier method</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">25 Power <span>Maths Tips</span></h2>
+    </div>
+    <ul class="tips-list">
+      <li><span class="num">01</span><div><strong>Fundamentals first, shortcuts second</strong> Shortcuts only work under pressure if you know the base concept. Never memorise a shortcut without understanding why it works.</div></li>
+      <li><span class="num">02</span><div><strong>Memorize tables up to 30, squares up to 30, cubes up to 20</strong> This saves 15–20 seconds per question — which is the difference between 18/25 and 22/25 in Tier 1.</div></li>
+      <li><span class="num">03</span><div><strong>Digital Sum: eliminate before calculating</strong> Before touching your pen, check which options can be killed by digital sum. Takes 3 seconds, kills 2–3 options instantly.</div></li>
+      <li><span class="num">04</span><div><strong>Value substitution for Algebra and Trig is the #1 speed hack</strong> For "if x+1/x = 5, find x³+1/x³" — substitute x = a value satisfying the condition. Gets you the answer 3× faster than algebraic manipulation.</div></li>
+      <li><span class="num">05</span><div><strong>Negative marking: attempt only if ≥60% confident</strong> At exactly 50-50, expected gain = 0. Two correct + one wrong = net +1. Don't gamble unless you can rule out 2 options.</div></li>
+      <li><span class="num">06</span><div><strong>LCM method for Time &amp; Work is non-negotiable</strong> Always use LCM as total work units. This eliminates fraction errors and makes pipe/cistern questions trivial. Practice 20 PYQs using only this method.</div></li>
+      <li><span class="num">07</span><div><strong>"Same SP, same % loss and profit" ALWAYS gives a net loss</strong> Net loss % = x²/100. This appears in EVERY SSC CGL paper. Mark it as a guaranteed mark.</div></li>
+      <li><span class="num">08</span><div><strong>For Boats &amp; Streams: B = (D+U)/2, W = (D–U)/2</strong> Downstream = With stream (faster), Upstream = Against stream (slower). 80% of questions solved with just these two formulas.</div></li>
+      <li><span class="num">09</span><div><strong>Geometry: draw the figure ALWAYS, even if it takes 15 seconds</strong> Most geometry errors come from misreading the problem without a diagram. The 15 seconds spent drawing saves 90 seconds of confusion.</div></li>
+      <li><span class="num">10</span><div><strong>Circle theorem most used: angle in semicircle = 90°</strong> Central angle = 2× inscribed angle. Equal tangents from external point. These three cover 90% of circle questions.</div></li>
+      <li><span class="num">11</span><div><strong>Mensuration: radius doubles → area ×4, volume ×8</strong> Scale factor k: Linear k, Area k², Volume k³. This pattern appears in "sphere melted and recast" type questions every year.</div></li>
+      <li><span class="num">12</span><div><strong>Trig: complementary pairs solve 30% of identity questions</strong> sin θ = cos(90°–θ). Whenever you see sinθ·cosθ products or sin²+cos²=1, use complementary angle to simplify before computing.</div></li>
+      <li><span class="num">13</span><div><strong>Compound Interest 2-year shortcut: CI = SI₁+SI₁² / (100P)</strong> For 2 years, CI–SI = P(R/100)². This shortcut appears directly in at least 1 question every exam.</div></li>
+      <li><span class="num">14</span><div><strong>Average speed ≠ (S₁+S₂)/2 for equal distances</strong> Use 2S₁S₂/(S₁+S₂) (harmonic mean). Equal-time case: arithmetic mean applies. Confusing these is the #1 TSD mistake.</div></li>
+      <li><span class="num">15</span><div><strong>Divisibility by 11: alternate digit sum rule</strong> (Sum of digits at odd positions) – (sum at even positions) = 0 or multiple of 11. Fastest check for large numbers.</div></li>
+      <li><span class="num">16</span><div><strong>Alligation rule: draw the cross, never use equations</strong> Cross method takes 10 seconds. Equation method takes 60 seconds. Both give identical answers. Practice alligation cross until it's automatic.</div></li>
+      <li><span class="num">17</span><div><strong>Last digit / unit digit: use cyclicity</strong> Powers of 2,3,7,8 cycle with period 4. Powers of 4,9 cycle with period 2. Powers of 5,6 always end in 5 or 6. Unit digit of any power = unit digit of base's cycle at power mod (period).</div></li>
+      <li><span class="num">18</span><div><strong>Percentage chain: anchor at 10%</strong> 10% → halve for 5% → double for 20% → add for any combination. Never compute from scratch.</div></li>
+      <li><span class="num">19</span><div><strong>Mensuration 3D: cone volume = ⅓ × cylinder volume</strong> Same base and height. Sphere = ⅔ × cylinder volume. Frustum slant height = √[h² + (R–r)²]. These appear together in SSC questions.</div></li>
+      <li><span class="num">20</span><div><strong>Pythagorean triplets are money: memorise all 7 common ones</strong> (3,4,5), (5,12,13), (8,15,17), (7,24,25), (9,40,41), (20,21,29), (11,60,61). SSC geometry questions are almost always built on these.</div></li>
+      <li><span class="num">21</span><div><strong>Tier 2 strategy: attempt Math 2nd (not first)</strong> In Tier 2, start with English (faster, accurate), then Math. Math under fresh mind = better accuracy than Math first under time pressure. Target 20–22/30 correct in Math.</div></li>
+      <li><span class="num">22</span><div><strong>Data Interpretation: always read the graph title and units first</strong> Most DI errors: wrong unit (thousands vs lakhs), wrong year, percentage vs absolute values. Spend 30 seconds reading before attempting any question.</div></li>
+      <li><span class="num">23</span><div><strong>Solve 7+ years of SSC CGL Math PYQs topic-wise</strong> SSC CGL mathematics repeats nearly identical question structures with different numbers. After 100 PYQs per topic, you'll recognise question types within 5 seconds.</div></li>
+      <li><span class="num">24</span><div><strong>In Tier 2, –1 negative = skip all 50-50 guesses</strong> Tier 1 penalty is 0.5; Tier 2 penalty is 1. The math changes significantly. At Tier 2, skip anything below 70% confident. A wrong in Tier 2 costs double what it costs in Tier 1.</div></li>
+      <li><span class="num">25</span><div><strong>Maintain a formula notebook — 1 page per topic</strong> Handwrite all formulas once a week until 2 weeks before exam. Retrieval practice (writing from memory) is proven to be 40% more effective than re-reading.</div></li>
+    </ul>
+  </div>
+
+  <!-- ===== GEOMETRY & MENSURATION ===== -->
+  <div id="geo-mensuration" class="section">
+    <div class="section-header">
+      <h2>Geometry <span>&amp; Mensuration</span></h2>
+      <p>4–5 Qs Tier 1 · 8–10 Qs Tier 2. Highest difficulty, highest reward. Never skip this.</p>
+    </div>
+
+    <!-- LINES & ANGLES -->
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Lines, <span>Angles &amp; Triangles</span></h2>
+    </div>
+
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>📐 Parallel Lines + Transversal</h3>
+        <div class="example">
+          Corresponding angles = equal (F-shape)<br>
+          Alternate interior angles = equal (Z-shape)<br>
+          Co-interior (same-side) angles = 180°<br>
+          Vertically opposite angles = equal<br>
+          Linear pair: two angles on a line = 180°
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔺 Triangle — Key Properties</h3>
+        <div class="example">
+          Sum of angles = 180°<br>
+          Exterior angle = sum of two non-adjacent interior angles<br>
+          Sum of any two sides &gt; third side<br>
+          Largest angle opposite longest side<br>
+          Altitude from right-angle vertex in right △: altitude² = product of two segments of hypotenuse
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🔺 Special Triangles</h3>
+        <div class="example">
+          Equilateral: all sides = a<br>
+          Height = (√3/2)a<br>
+          Area = (√3/4)a²<br>
+          Inradius r = a/(2√3)<br>
+          Circumradius R = a/√3<br><br>
+          Isosceles: base angles equal<br>
+          Right △: a²+b²=c² (Pythagorean triplets below)
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>📐 Pythagorean Triplets — Memorise</h3>
+        <div class="example">
+          (3,4,5) → (6,8,10), (9,12,15)...<br>
+          (5,12,13)<br>
+          (8,15,17)<br>
+          (7,24,25)<br>
+          (9,40,41)<br>
+          (11,60,61)<br>
+          (20,21,29)
+        </div>
+      </div>
+    </div>
+
+    <!-- TRIANGLE CENTRES -->
+    <div class="section-header" style="margin-top:20px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Triangle <span>Centres</span> — Most Repeated</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Centre</th><th>Intersection of</th><th>Key Property</th><th>Trick</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Centroid (G)</td><td>Medians</td><td>Divides each median in 2:1 from vertex; centre of gravity</td><td class="val-frac">AG:GD = 2:1</td></tr>
+          <tr><td class="val-primary">Incentre (I)</td><td>Angle bisectors</td><td>Centre of inscribed circle (incircle); equidistant from all sides</td><td class="val-frac">∠BIC = 90° + A/2</td></tr>
+          <tr><td class="val-primary">Circumcentre (O)</td><td>Perpendicular bisectors of sides</td><td>Centre of circumscribed circle; equidistant from all vertices</td><td class="val-frac">∠BOC = 2∠BAC</td></tr>
+          <tr><td class="val-primary">Orthocentre (H)</td><td>Altitudes</td><td>In right △: at the right-angle vertex; In obtuse △: outside</td><td class="val-frac">∠BHC = 180° – ∠A</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="formula-box" style="margin-top:8px;">
+      Euler's Line: Circumcentre (O), Centroid (G), Orthocentre (H) are always collinear.
+      OG : GH = 1 : 2 (Centroid divides the Euler line in 1:2 from circumcentre side)
+    </div>
+
+    <!-- SIMILARITY & CONGRUENCE -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Similarity, <span>Congruence &amp; Key Theorems</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card blue">
+        <h3>🔺 Similar Triangles (AA/SAS/SSS)</h3>
+        <div class="example">
+          If △ABC ~ △DEF (ratio k):
+          Corresponding sides proportional: AB/DE = BC/EF = CA/FD = k
+          Ratio of areas = k² (square of side ratio)
+          Ratio of perimeters = k
+          Basic Proportionality Theorem (BPT / Thales):
+          If DE || BC in △ABC, then AD/DB = AE/EC
+        </div>
+      </div>
+      <div class="trick-card yellow">
+        <h3>📏 Mid-Point &amp; Apollonius Theorem</h3>
+        <div class="example">
+          Mid-Point Theorem: Line joining midpoints of two sides of △ is parallel to 3rd side and = half of it.
+          Apollonius Theorem (Median):
+          In △ABC, if D is midpoint of BC:
+          AB² + AC² = 2(AD² + BD²)
+          This is the most important theorem for median questions in SSC!
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>📐 Angle Bisector Theorem</h3>
+        <div class="example">
+          If AD bisects ∠A in △ABC:
+          BD/DC = AB/AC
+          (Bisector divides opposite side in ratio of adjacent sides)
+          If internal bisector of ∠A meets BC at D:
+          BD/DC = c/b  (where b = AC, c = AB)
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ Right Triangle in Semicircle</h3>
+        <div class="example">
+          Angle in a semicircle = 90° (Thales' theorem)
+          If AB is diameter, ∠ACB = 90° always.
+          This is the most commonly used circle property in SSC CGL.
+          If altitude is drawn from right angle to hypotenuse:
+          altitude² = product of the two segments
+        </div>
+      </div>
+    </div>
+
+    <!-- CIRCLE THEOREMS -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Circle <span>Theorems</span> — Every One Matters</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Theorem</th><th>Rule</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Central angle = 2 × Inscribed angle</td><td>∠AOB = 2∠ACB (same arc AB; O = centre, C on circumference)</td></tr>
+          <tr><td class="val-primary">Angles in same segment</td><td>All inscribed angles subtending same arc are equal: ∠ACB = ∠ADB</td></tr>
+          <tr><td class="val-primary">Angle in semicircle</td><td>= 90° (Thales — most used)</td></tr>
+          <tr><td class="val-primary">Cyclic quadrilateral</td><td>Opposite angles are supplementary: ∠A + ∠C = 180°; ∠B + ∠D = 180°</td></tr>
+          <tr><td class="val-primary">Tangent ⊥ Radius</td><td>Tangent at any point is perpendicular to radius at that point</td></tr>
+          <tr><td class="val-primary">Equal tangents from external point</td><td>PA = PB (both tangents from external point P to circle)</td></tr>
+          <tr><td class="val-primary">Tangent-chord angle</td><td>= inscribed angle in alternate segment (Alternate Segment Theorem)</td></tr>
+          <tr><td class="val-primary">Two chords intersecting inside</td><td>PA × PB = PC × PD (chord AB and CD intersect at P inside circle)</td></tr>
+          <tr><td class="val-primary">Secant-tangent from external point</td><td>PT² = PA × PB (PT = tangent length, PA, PB = secant segments)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- QUADRILATERALS -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Quadrilaterals — <span>Properties &amp; Formulas</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Shape</th><th>Area</th><th>Key Properties</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Square (side a)</td><td>a²</td><td class="val-frac">Diagonal = a√2; All angles = 90°; diagonals bisect at 90°</td></tr>
+          <tr><td class="val-primary">Rectangle (l×b)</td><td>l×b</td><td class="val-frac">Diagonal = √(l²+b²); diagonals equal; all angles = 90°</td></tr>
+          <tr><td class="val-primary">Parallelogram (b×h)</td><td>b×h</td><td class="val-frac">Opposite sides parallel &amp; equal; diagonals bisect each other; area also = ab·sinθ</td></tr>
+          <tr><td class="val-primary">Rhombus (d₁, d₂)</td><td>½×d₁×d₂</td><td class="val-frac">All sides equal; diagonals bisect at 90°; side = √(d₁²+d₂²)/2</td></tr>
+          <tr><td class="val-primary">Trapezium (a,b parallel, h)</td><td>½(a+b)×h</td><td class="val-frac">One pair of parallel sides; midsegment = (a+b)/2</td></tr>
+          <tr><td class="val-primary">Regular hexagon (side a)</td><td>3√3/2 × a²</td><td class="val-frac">6 equilateral triangles; long diagonal = 2a; short diagonal = a√3</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 2D MENSURATION -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">2D Mensuration — <span>All Formulas</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Shape</th><th>Area</th><th>Perimeter</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Circle (radius r)</td><td>πr²</td><td class="val-frac">2πr</td><td>Diameter = 2r; π ≈ 22/7 or 3.14159</td></tr>
+          <tr><td class="val-primary">Semicircle</td><td>πr²/2</td><td class="val-frac">πr + 2r</td><td>Don't forget the diameter in perimeter!</td></tr>
+          <tr><td class="val-primary">Sector (angle θ°)</td><td>θ/360 × πr²</td><td class="val-frac">θ/360 × 2πr + 2r</td><td>Arc length = θ/360 × 2πr</td></tr>
+          <tr><td class="val-primary">Triangle (base b, height h)</td><td>½bh</td><td class="val-frac">a+b+c</td><td>Heron's: √[s(s-a)(s-b)(s-c)]; s=(a+b+c)/2</td></tr>
+          <tr><td class="val-primary">Equilateral △ (side a)</td><td>√3/4 × a²</td><td class="val-frac">3a</td><td>Height = (√3/2)a</td></tr>
+          <tr><td class="val-primary">Square (side a)</td><td>a²</td><td class="val-frac">4a</td><td>Diagonal = a√2</td></tr>
+          <tr><td class="val-primary">Rectangle (l, b)</td><td>l×b</td><td class="val-frac">2(l+b)</td><td>Diagonal = √(l²+b²)</td></tr>
+          <tr><td class="val-primary">Parallelogram (b, h)</td><td>b×h</td><td class="val-frac">2(a+b)</td><td>Also = ½ × d₁ × d₂ × sinθ</td></tr>
+          <tr><td class="val-primary">Rhombus (d₁, d₂)</td><td>½d₁d₂</td><td class="val-frac">4×side</td><td>Side = √[(d₁/2)²+(d₂/2)²]</td></tr>
+          <tr><td class="val-primary">Trapezium (a, b, h)</td><td>½(a+b)h</td><td class="val-frac">a+b+non-parallel sides</td><td>a, b = parallel sides</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 3D MENSURATION -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">3D Mensuration — <span>Volume &amp; Surface Area</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Shape</th><th>Volume</th><th>Lateral/Curved SA</th><th>Total SA</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Cube (side a)</td><td>a³</td><td class="val-frac">4a²</td><td>6a²; Diagonal = a√3</td></tr>
+          <tr><td class="val-primary">Cuboid (l,b,h)</td><td>l×b×h</td><td class="val-frac">2h(l+b)</td><td>2(lb+bh+hl); Diagonal = √(l²+b²+h²)</td></tr>
+          <tr><td class="val-primary">Cylinder (r, h)</td><td>πr²h</td><td class="val-frac">2πrh</td><td>2πr(r+h)</td></tr>
+          <tr><td class="val-primary">Cone (r, h, l=slant)</td><td>⅓πr²h</td><td class="val-frac">πrl</td><td>πr(r+l); l = √(r²+h²)</td></tr>
+          <tr><td class="val-primary">Sphere (r)</td><td>4/3 πr³</td><td class="val-frac">4πr²</td><td>4πr² (same, no base)</td></tr>
+          <tr><td class="val-primary">Hemisphere (r)</td><td>2/3 πr³</td><td class="val-frac">2πr²</td><td>3πr² (curved + circular base)</td></tr>
+          <tr><td class="val-primary">Frustum (R, r, h, l)</td><td>πh/3 (R²+r²+Rr)</td><td class="val-frac">π(R+r)l</td><td>π(R+r)l + πR² + πr²; l = √[h²+(R-r)²]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tricks-grid" style="margin-top:16px;">
+      <div class="trick-card yellow">
+        <h3>💡 Sphere Trick — Melting/Recasting</h3>
+        <div class="example">
+          Volume before melting = Volume after recasting.
+          e.g. Sphere melted into small spheres:
+          (4/3)πR³ = n × (4/3)πr³
+          ∴ n = (R/r)³
+          Similarly for cylinders, cones, etc.
+          Area changes proportionally to scale².
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>💡 Cylinder/Cone Relation</h3>
+        <div class="example">
+          Volume of cone = 1/3 × Volume of cylinder (same r, h)
+          Volume of sphere = 2/3 × Volume of cylinder (r = h = r)
+          If cone + sphere have same base and same height:
+          They fit perfectly inside a cylinder!
+          (Classic SSC trick question)
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>💡 Diagonal of Regular Polygon</h3>
+        <div class="example">
+          Number of diagonals = n(n-3)/2
+          (n = number of sides)
+          Square: 4(4-3)/2 = 2 diagonals ✓
+          Hexagon: 6(6-3)/2 = 9 diagonals ✓
+          Interior angle of regular n-gon = (n-2)×180°/n
+          Exterior angle = 360°/n
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ Common SSC CGL Traps</h3>
+        <div class="example">
+          When radius doubles: Area = 4×, Volume = 8×
+          When side doubles: Area = 4×, Vol = 8×
+          Perimeter doubles = Area quadruples? NO.
+          If perimeter doubles, area quadruples (for similar figures).
+          Diagonal of square ≠ side; it's side × √2.
+          Total SA of hemisphere = 3πr² (NOT 2πr²)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TRIGONOMETRY ===== -->
+  <div id="trigonometry" class="section">
+    <div class="section-header">
+      <h2>Trigonometry — <span>Ratios, Identities &amp; Heights</span></h2>
+      <p>2–3 Qs Tier 1 · 4–6 Qs Tier 2. Value substitution is the fastest method for most SSC trig Qs.</p>
+    </div>
+
+    <!-- TRIG TABLE -->
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Trigonometric Values <span>Table — Memorise</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ratio</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">sin θ</td><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr>
+          <tr><td class="val-primary">cos θ</td><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr>
+          <tr><td class="val-primary">tan θ</td><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>∞ (undefined)</td></tr>
+          <tr><td class="val-primary">cosec θ</td><td>∞</td><td>2</td><td>√2</td><td>2/√3</td><td>1</td></tr>
+          <tr><td class="val-primary">sec θ</td><td>1</td><td>2/√3</td><td>√2</td><td>2</td><td>∞</td></tr>
+          <tr><td class="val-primary">cot θ</td><td>∞</td><td>√3</td><td>1</td><td>1/√3</td><td>0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="gk-card yellow-card" style="margin-top:8px;">
+      <h3>⚡ Memory Trick for sin 0°–90°: √0/2, √1/2, √2/2, √3/2, √4/2</h3>
+      <p class="def">sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1. cos is sin reversed. tan = sin/cos. cosec = 1/sin. sec = 1/cos. cot = 1/tan.</p>
+    </div>
+
+    <!-- IDENTITIES -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Trig Identities — <span>All You Need</span></h2>
+    </div>
+    <div class="formula-box">
+      <strong style="color:var(--accent1)">Pythagorean Identities (MOST IMPORTANT):</strong><br>
+      sin²θ + cos²θ = 1  →  sin²θ = 1 – cos²θ  →  cos²θ = 1 – sin²θ<br>
+      1 + tan²θ = sec²θ  →  sec²θ – tan²θ = 1  →  (sec θ + tan θ)(sec θ – tan θ) = 1<br>
+      1 + cot²θ = cosec²θ  →  cosec²θ – cot²θ = 1<br><br>
+      <strong style="color:var(--accent3)">Quotient &amp; Reciprocal:</strong><br>
+      tan θ = sin θ / cos θ  |  cot θ = cos θ / sin θ<br>
+      sin θ × cosec θ = 1  |  cos θ × sec θ = 1  |  tan θ × cot θ = 1<br><br>
+      <strong style="color:var(--accent4)">Complementary Angle Identities (θ + (90°–θ) = 90°):</strong><br>
+      sin θ = cos(90°–θ)  |  cos θ = sin(90°–θ)<br>
+      tan θ = cot(90°–θ)  |  cot θ = tan(90°–θ)<br>
+      sec θ = cosec(90°–θ)  |  cosec θ = sec(90°–θ)<br><br>
+      <strong style="color:var(--accent2)">Key SSC-specific forms:</strong><br>
+      If sin θ + cosec θ = 2, then sin^n θ + cosec^n θ = 2 for all n<br>
+      If tan θ + cot θ = k, then tan²θ + cot²θ = k² – 2<br>
+      sin(A+B) = sinA cosB + cosA sinB<br>
+      cos(A+B) = cosA cosB – sinA sinB<br>
+      tan(A+B) = (tanA + tanB) / (1 – tanA tanB)
+    </div>
+
+    <!-- SSC TRIG TRICKS -->
+    <div class="tricks-grid" style="margin-top:16px;">
+      <div class="trick-card yellow">
+        <h3>🔑 Value Substitution Method</h3>
+        <div class="example">
+          For identity-type questions like:
+          "Find sin⁴θ + cos⁴θ if sinθ + cosθ = k"
+          → Substitute θ = 45°: sin45 = cos45 = 1/√2
+          → Get the value → match with options.
+          Works 70% of the time. Fastest method.
+          (Never substitute 0° or 90° first — undefined issues)
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>📐 Max &amp; Min Values</h3>
+        <div class="example">
+          sin θ: max = 1 (at 90°), min = –1 (at 270°)<br>
+          cos θ: max = 1 (at 0°), min = –1 (at 180°)<br>
+          tan θ: range = (–∞, +∞)<br>
+          a·sinθ + b·cosθ: max = +√(a²+b²), min = –√(a²+b²)<br>
+          sin²θ + cos²θ: always = 1 (no max/min)<br>
+          sin θ cos θ: max = 1/2 (at θ = 45°)
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🏔️ Heights &amp; Distances</h3>
+        <div class="example">
+          Angle of Elevation: observer looks UP
+          Angle of Depression: observer looks DOWN
+          tan(angle) = height / horizontal distance
+          height h = d × tan(θ) where d = base distance
+          Two observers formula: if d = distance between,
+          angle α and β from both ends:
+          h = d × tan α × tan β / (tan α + tan β)
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ SSC Trig Traps</h3>
+        <div class="example">
+          sin(A+B) ≠ sinA + sinB (classic mistake!)
+          sin 2θ = 2 sinθ cosθ (NOT 2 sinθ²)
+          cos 2θ = cos²θ – sin²θ = 1–2sin²θ = 2cos²θ–1
+          For 2sinθ = √3, θ = 60° (not 30°!)
+          Negative angle: sin(–θ) = –sinθ; cos(–θ) = cosθ
+          If sinθ = 4/5, cosθ = 3/5 (pythagorean triplet 3-4-5)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ARITHMETIC ===== -->
+  <div id="arithmetic" class="section">
+    <div class="section-header">
+      <h2>Arithmetic <span>Formulas</span> — Complete Reference</h2>
+      <p>6–8 Qs Tier 1 from arithmetic. Every sub-topic below has had direct questions in CGL PYQ.</p>
+    </div>
+
+    <!-- SI & CI -->
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Simple &amp; <span>Compound Interest</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>📈 Simple Interest (SI)</h3>
+        <div class="example">
+          SI = P × R × T / 100
+          Amount = P + SI = P(1 + RT/100)
+          P = 100 × SI / (R × T)
+          R = 100 × SI / (P × T)
+          T = 100 × SI / (P × R)
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>📊 Compound Interest (CI)</h3>
+        <div class="example">
+          Amount A = P(1 + R/100)ⁿ
+          CI = A – P
+          For 2 years: CI = P[(1+R/100)² – 1]
+          CI 2yr shortcut = 2×SI_1yr + SI_1yr × R/100
+          Half-yearly: A = P(1 + R/200)^(2n)
+          Quarterly: A = P(1 + R/400)^(4n)
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>💡 CI vs SI Difference</h3>
+        <div class="example">
+          For 2 years:
+          CI – SI = P(R/100)²
+          For 3 years:
+          CI – SI = P(R/100)²(3 + R/100)
+          If SI for 2 yrs = X, then CI for 2 yrs = X + X²/(4P)
+          Most SSC CGL CI questions use 2-year formula!
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>🔑 Rule of 72</h3>
+        <div class="example">
+          Time to double money at R% CI ≈ 72/R years
+          e.g. At 8% CI: doubles in ≈ 72/8 = 9 years
+          At 12% CI: doubles in ≈ 6 years
+          Population growth: same formula as CI.
+          If population increases R% annually:
+          Population after n years = P₀(1 + R/100)ⁿ
+        </div>
+      </div>
+    </div>
+
+    <!-- TIME & WORK -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Time &amp; <span>Work</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>⚙️ LCM Method (Fastest)</h3>
+        <div class="example">
+          A does work in 'a' days, B in 'b' days.
+          Take LCM of a, b as total work (units).
+          A's rate = LCM/a units/day
+          B's rate = LCM/b units/day
+          Together rate = A's + B's
+          Time = Total work / Combined rate
+          e.g. A=12 days, B=15 days
+          LCM=60; A=5/day, B=4/day; Together=9/day
+          Time = 60/9 = 6⅔ days ✓
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>⚙️ Standard Formulas</h3>
+        <div class="example">
+          A + B together: T = ab/(a+b)
+          A alone, after A+B together for t days:
+          Remaining = 1 – t(1/a + 1/b); then A alone finishes it.
+          If A is twice as efficient as B:
+          A takes half the time of B.
+          Work × Rate = 1 (for 1 unit of work)
+          Men × Days = constant (same work)
+          Men × Days × Hours = constant
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🚿 Pipes &amp; Cisterns</h3>
+        <div class="example">
+          Filling pipe (A): + (positive work)
+          Emptying pipe (B): – (negative work)
+          Net rate = filling rate – emptying rate
+          If A fills in 'a' hrs, B empties in 'b' hrs:
+          Net fill time = ab/(b–a) [if b &gt; a, tank fills]
+          SSC common: "Both opened simultaneously..."
+          → Use LCM of a and b as total capacity.
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ Efficiency Variations</h3>
+        <div class="example">
+          Men–Days–Hours formula:
+          M₁D₁H₁/W₁ = M₂D₂H₂/W₂
+          e.g. 6 men, 5 days, 8 hrs = same work as
+          4 men, ? days, 6 hrs:
+          6×5×8/1 = 4×D×6/1
+          D = 240/24 = 10 days ✓
+        </div>
+      </div>
+    </div>
+
+    <!-- SPEED DISTANCE TIME -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Speed, Distance, <span>Time + Trains + Boats</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Concept</th><th>Formula</th><th>Key Note</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Basic</td><td>Speed = Distance/Time; D = S×T; T = D/S</td><td class="val-frac">Units: km/h or m/s. Convert: km/h × 5/18 = m/s; m/s × 18/5 = km/h</td></tr>
+          <tr><td class="val-primary">Average Speed</td><td>2S₁S₂/(S₁+S₂) for equal distances</td><td class="val-frac">NOT simple average! Use harmonic mean for equal distances</td></tr>
+          <tr><td class="val-primary">Relative Speed — Same direction</td><td>|S₁ – S₂|</td><td class="val-frac">Time to meet/overtake = Distance gap / Relative speed</td></tr>
+          <tr><td class="val-primary">Relative Speed — Opposite direction</td><td>S₁ + S₂</td><td class="val-frac">Time to cross = Combined length / Relative speed</td></tr>
+          <tr><td class="val-primary">Train crosses a pole/person</td><td>Time = Train length / Train speed</td><td class="val-frac">Person's width assumed 0</td></tr>
+          <tr><td class="val-primary">Train crosses a platform/bridge</td><td>Time = (Train length + Platform length) / Speed</td><td class="val-frac">Add both lengths!</td></tr>
+          <tr><td class="val-primary">Boats — Downstream</td><td>Speed = B + W (B = boat, W = water current)</td><td class="val-frac">Going WITH current</td></tr>
+          <tr><td class="val-primary">Boats — Upstream</td><td>Speed = B – W</td><td class="val-frac">Going AGAINST current</td></tr>
+          <tr><td class="val-primary">Boat speed in still water</td><td>B = (Downstream + Upstream) / 2</td><td class="val-frac">Average of both speeds</td></tr>
+          <tr><td class="val-primary">Stream speed</td><td>W = (Downstream – Upstream) / 2</td><td class="val-frac">Half the difference</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- RATIO, PROPORTION, ALLIGATION -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Ratio, Proportion <span>&amp; Alligation</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>⚖️ Ratio Basics</h3>
+        <div class="example">
+          a:b = a/b. Duplicate ratio of a:b = a²:b²
+          Sub-duplicate ratio = √a:√b
+          Compound ratio = product of ratios
+          If a:b = c:d, then (a+b):(a–b) = (c+d):(c–d) [Componendo-Dividendo]
+          Componendo: (a+b)/b = (c+d)/d
+          Dividendo: (a–b)/b = (c–d)/d
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🥣 Mixtures &amp; Alligation</h3>
+        <div class="example">
+          ALLIGATION RULE:
+          (Qty of cheaper)/(Qty of dearer) = (Dearer price – Mean price)/(Mean price – Cheaper price)
+          Draw the cross:
+          Cheaper price ——— Dearer price
+               ×               ×
+          (d – m) ————— (m – c)
+          e.g. Mix 30₹ and 50₹ items to get 42₹:
+          Ratio = (50–42):(42–30) = 8:12 = 2:3
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🧪 Repeated Dilution</h3>
+        <div class="example">
+          Vessel has x litres pure milk.
+          y litres removed and replaced with water, n times:
+          Pure milk remaining = x × (1 – y/x)ⁿ
+          e.g. 40L milk, remove 10L replace water, 3 times:
+          = 40 × (1 – 10/40)³ = 40 × (3/4)³ = 40 × 27/64 = 16.875L
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>👥 Partnerships</h3>
+        <div class="example">
+          Equal time: Profit share = Capital ratio
+          Unequal time: Share = Capital × Time
+          A: 5000 for 8 months = 40000
+          B: 8000 for 6 months = 48000
+          Ratio = 40000:48000 = 5:6
+          Profit divided in 5:6 ratio
+        </div>
+      </div>
+    </div>
+
+    <!-- NUMBER SYSTEM -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Number System — <span>HCF, LCM &amp; Divisibility</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>🔢 Divisibility Rules</h3>
+        <div class="example">
+          ÷2: Last digit even
+          ÷3: Sum of digits divisible by 3
+          ÷4: Last two digits divisible by 4
+          ÷5: Ends in 0 or 5
+          ÷6: Divisible by both 2 and 3
+          ÷7: (No quick rule; do long division)
+          ÷8: Last 3 digits divisible by 8
+          ÷9: Sum of digits divisible by 9
+          ÷11: Alternate digit sum difference = 0 or 11
+          ÷12: Divisible by both 3 and 4
+          ÷25: Last 2 digits = 00, 25, 50, 75
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>📐 HCF &amp; LCM</h3>
+        <div class="example">
+          HCF × LCM = Product of two numbers (a × b)
+          HCF of fractions = HCF of numerators / LCM of denominators
+          LCM of fractions = LCM of numerators / HCF of denominators
+          If N = HCF(a, b): N divides both a and b
+          Use: LCM method for "work + time" problems
+          Finding HCF: Euclidean algorithm (divide larger by smaller repeatedly)
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🔢 Remainders &amp; Last Digit</h3>
+        <div class="example">
+          Unit digit of aⁿ follows a cycle:
+          2: 2,4,8,6 (period 4); 3: 3,9,7,1 (period 4)
+          4: 4,6 (period 2); 5: always 5; 6: always 6
+          7: 7,9,3,1 (period 4); 8: 8,4,2,6 (period 4)
+          9: 9,1 (period 2)
+          Remainder pattern: Use cyclicity.
+          7^100 mod 10: 100÷4=25 (exact) → cycle: 7,9,3,1 → 4th position → last digit = 1
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>📊 Average &amp; Ages</h3>
+        <div class="example">
+          Average = Sum / Count
+          If one value added/removed, new average:
+          New sum = Old avg × n ± new value
+          New avg = New sum / (n ± 1)
+          AGE PROBLEMS:
+          "k years ago, ratio was p:q. Now ratio is m:n"
+          → Let present ages be mx, nx
+          → k years ago: (mx–k)/(nx–k) = p/q → solve for x
+          "Average age of group increases by y":
+          → New member is y × (new total members) older/younger than average
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFIT LOSS EXTENDED -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Profit &amp; Loss — <span>Complete Formulas</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Scenario</th><th>Formula</th><th>Trick</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Profit %</td><td>(SP – CP)/CP × 100</td><td class="val-frac">Always on CP, never on SP</td></tr>
+          <tr><td class="val-primary">Loss %</td><td>(CP – SP)/CP × 100</td><td class="val-frac">Always on CP, never on SP</td></tr>
+          <tr><td class="val-primary">SP from profit x%</td><td>CP × (100+x)/100</td><td class="val-frac">Multiplier method: 1.2 = 20% profit</td></tr>
+          <tr><td class="val-primary">SP from loss x%</td><td>CP × (100–x)/100</td><td class="val-frac">Multiplier: 0.8 = 20% loss</td></tr>
+          <tr><td class="val-primary">CP from SP at profit x%</td><td>SP × 100/(100+x)</td><td class="val-frac">Divide SP by multiplier</td></tr>
+          <tr><td class="val-primary">Two items: same SP, one profit x%, one loss x%</td><td>Net Loss % = x²/100</td><td class="val-frac">ALWAYS a net loss! Common SSC trap.</td></tr>
+          <tr><td class="val-primary">Marked Price (MP), Discount d%</td><td>SP = MP × (100–d)/100</td><td class="val-frac">Discount is always on MP</td></tr>
+          <tr><td class="val-primary">Successive discounts d₁%, d₂%</td><td>Net = 100 – [d₁ + d₂ – d₁d₂/100]</td><td class="val-frac">Same as % change formula</td></tr>
+          <tr><td class="val-primary">Dishonest trader (uses less weight)</td><td>Profit% = (True wt – False wt)/False wt × 100</td><td class="val-frac">Denominator = false weight</td></tr>
+          <tr><td class="val-primary">CP of x articles = SP of y articles</td><td>Profit% = (x–y)/y × 100</td><td class="val-frac">If x &gt; y: profit; if x &lt; y: loss</td></tr>
         </tbody>
       </table>
     </div>
@@ -2075,11 +2949,1801 @@
     </ul>
   </div>
 
-</div><!-- end container -->SSC CGL COMPLETE STUDY SHEET · Maths + English · Squares, Cubes, %, Digital Sum, Tricks · Vocab, Grammar, Idioms, Word Patterns · Generated for Exam Prep</div>
+  <!-- ===== GK: STATIC GK ===== -->
+  <div id="gk-static" class="section">
+    <div class="section-header">
+      <h2>Static <span>GK</span> — States, UTs, Capitals &amp; Symbols</h2>
+      <p>High-frequency zone. At least 3–5 Qs every year from States/UTs and National Symbols alone.</p>
+    </div>
+
+    <!-- NATIONAL SYMBOLS -->
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">National <span>Symbols of India</span></h2>
+    </div>
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>🐅 National Animal</h4>
+        <p>Bengal Tiger (Panthera tigris tigris)<br>Adopted: 1973 (Project Tiger)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🦚 National Bird</h4>
+        <p>Indian Peacock (Pavo cristatus)<br>Adopted: 1963</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🐬 National Aquatic Animal</h4>
+        <p>River Dolphin (Platanista gangetica)<br>Also: National Heritage Animal = Elephant</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🪷 National Flower</h4>
+        <p>Lotus (Nelumbo nucifera)<br>Symbol of purity &amp; divinity</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌳 National Tree</h4>
+        <p>Indian Banyan (Ficus benghalensis)<br>Widest canopy ever recorded: 19,107 sqm</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🥭 National Fruit</h4>
+        <p>Mango (Mangifera indica)<br>National Vegetable: Pumpkin</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🐦 National Heritage Bird</h4>
+        <p>Indian Peacock; Sarus Crane = tallest flying bird in India</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏑 National Sport</h4>
+        <p>Field Hockey (unofficial)<br>No officially declared national sport in India</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🎵 National Song &amp; Anthem</h4>
+        <p>Anthem: Jana Gana Mana (Tagore, 52s)<br>Song: Vande Mataram (Bankimchandra)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🦁 National Emblem</h4>
+        <p>Lion Capital of Ashoka (Sarnath)<br>Motto: Satyameva Jayate (Mundaka Upanishad)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏞️ National River &amp; Heritage Animal</h4>
+        <p>River: Ganga<br>Heritage Animal: Indian Elephant</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📅 Important National Days</h4>
+        <p>Republic Day: Jan 26<br>Independence Day: Aug 15<br>Gandhi Jayanti: Oct 2</p>
+      </div>
+    </div>
+
+    <!-- STATES TABLE -->
+    <div class="section-header" style="margin-top:8px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">28 States — <span>Capital &amp; Language</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>State</th><th>Capital</th><th>Official Language(s)</th><th>Region</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Andhra Pradesh</td><td class="st-cap">Amaravati</td><td class="st-lang">Telugu</td><td class="st-yr">South</td></tr>
+          <tr><td class="st-state">Arunachal Pradesh</td><td class="st-cap">Itanagar</td><td class="st-lang">English</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Assam</td><td class="st-cap">Dispur</td><td class="st-lang">Assamese</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Bihar</td><td class="st-cap">Patna</td><td class="st-lang">Hindi, Maithili</td><td class="st-yr">East</td></tr>
+          <tr><td class="st-state">Chhattisgarh</td><td class="st-cap">Raipur</td><td class="st-lang">Hindi</td><td class="st-yr">Central</td></tr>
+          <tr><td class="st-state">Goa</td><td class="st-cap">Panaji</td><td class="st-lang">Konkani</td><td class="st-yr">West</td></tr>
+          <tr><td class="st-state">Gujarat</td><td class="st-cap">Gandhinagar</td><td class="st-lang">Gujarati</td><td class="st-yr">West</td></tr>
+          <tr><td class="st-state">Haryana</td><td class="st-cap">Chandigarh*</td><td class="st-lang">Hindi</td><td class="st-yr">North</td></tr>
+          <tr><td class="st-state">Himachal Pradesh</td><td class="st-cap">Shimla (Summer) / Dharamsala (Winter)</td><td class="st-lang">Hindi</td><td class="st-yr">North</td></tr>
+          <tr><td class="st-state">Jharkhand</td><td class="st-cap">Ranchi</td><td class="st-lang">Hindi</td><td class="st-yr">East</td></tr>
+          <tr><td class="st-state">Karnataka</td><td class="st-cap">Bengaluru</td><td class="st-lang">Kannada</td><td class="st-yr">South</td></tr>
+          <tr><td class="st-state">Kerala</td><td class="st-cap">Thiruvananthapuram</td><td class="st-lang">Malayalam</td><td class="st-yr">South</td></tr>
+          <tr><td class="st-state">Madhya Pradesh</td><td class="st-cap">Bhopal</td><td class="st-lang">Hindi</td><td class="st-yr">Central</td></tr>
+          <tr><td class="st-state">Maharashtra</td><td class="st-cap">Mumbai</td><td class="st-lang">Marathi</td><td class="st-yr">West</td></tr>
+          <tr><td class="st-state">Manipur</td><td class="st-cap">Imphal</td><td class="st-lang">Meitei (Manipuri)</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Meghalaya</td><td class="st-cap">Shillong</td><td class="st-lang">English, Khasi, Garo</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Mizoram</td><td class="st-cap">Aizawl</td><td class="st-lang">Mizo, English</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Nagaland</td><td class="st-cap">Kohima</td><td class="st-lang">English</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Odisha</td><td class="st-cap">Bhubaneswar</td><td class="st-lang">Odia</td><td class="st-yr">East</td></tr>
+          <tr><td class="st-state">Punjab</td><td class="st-cap">Chandigarh*</td><td class="st-lang">Punjabi</td><td class="st-yr">North</td></tr>
+          <tr><td class="st-state">Rajasthan</td><td class="st-cap">Jaipur</td><td class="st-lang">Hindi</td><td class="st-yr">North-West</td></tr>
+          <tr><td class="st-state">Sikkim</td><td class="st-cap">Gangtok</td><td class="st-lang">Nepali, Sikkimese, Lepcha</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Tamil Nadu</td><td class="st-cap">Chennai</td><td class="st-lang">Tamil</td><td class="st-yr">South</td></tr>
+          <tr><td class="st-state">Telangana</td><td class="st-cap">Hyderabad</td><td class="st-lang">Telugu, Urdu</td><td class="st-yr">South</td></tr>
+          <tr><td class="st-state">Tripura</td><td class="st-cap">Agartala</td><td class="st-lang">Bengali, Kokborok</td><td class="st-yr">NE</td></tr>
+          <tr><td class="st-state">Uttar Pradesh</td><td class="st-cap">Lucknow</td><td class="st-lang">Hindi, Urdu</td><td class="st-yr">North</td></tr>
+          <tr><td class="st-state">Uttarakhand</td><td class="st-cap">Dehradun (temp.) / Gairsain (proposed)</td><td class="st-lang">Hindi, Sanskrit</td><td class="st-yr">North</td></tr>
+          <tr class="highlight-row"><td class="st-state">West Bengal</td><td class="st-cap">Kolkata</td><td class="st-lang">Bengali</td><td class="st-yr">East</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="gk-card yellow-card" style="margin-top:0;"><h3>⚠️ Capital Notes</h3><p class="def">Chandigarh: joint capital of both Punjab and Haryana; itself a Union Territory. Telangana capital: Hyderabad (shared with AP per 2014 bifurcation Act for 10 years, ended June 2024). Andhra Pradesh: Amaravati is the official designated capital. Uttarakhand: Dehradun is temporary capital; Gairsain proposed as permanent. Himachal Pradesh: Shimla is summer, Dharamsala is winter capital (declared 2017).</p></div>
+
+    <!-- UTs TABLE -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">8 Union Territories — <span>Capitals &amp; Key Facts</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Union Territory</th><th>Capital / HQ</th><th>Legislature?</th><th>Key Fact</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Delhi (NCT)</td><td class="st-cap">New Delhi</td><td class="st-lang">Yes (Legislative Assembly)</td><td class="st-yr">National Capital; Art. 239AA</td></tr>
+          <tr><td class="st-state">Puducherry</td><td class="st-cap">Puducherry</td><td class="st-lang">Yes (Legislative Assembly)</td><td class="st-yr">Former French territory</td></tr>
+          <tr><td class="st-state">Jammu &amp; Kashmir</td><td class="st-cap">Srinagar (S) / Jammu (W)</td><td class="st-lang">Yes (Legislative Assembly)</td><td class="st-yr">Art. 370 abrogated 2019; bifurcated from Ladakh</td></tr>
+          <tr><td class="st-state">Ladakh</td><td class="st-cap">Leh</td><td class="st-lang">No</td><td class="st-yr">Largest UT by area; 2 districts only</td></tr>
+          <tr><td class="st-state">Andaman &amp; Nicobar Islands</td><td class="st-cap">Port Blair</td><td class="st-lang">No</td><td class="st-yr">Southernmost point: Indira Point</td></tr>
+          <tr><td class="st-state">Chandigarh</td><td class="st-cap">Chandigarh</td><td class="st-lang">No</td><td class="st-yr">Joint capital of Punjab &amp; Haryana</td></tr>
+          <tr><td class="st-state">Dadra &amp; Nagar Haveli and Daman &amp; Diu</td><td class="st-cap">Daman</td><td class="st-lang">No</td><td class="st-yr">Merged in 2020 (from 2 UTs to 1)</td></tr>
+          <tr class="highlight-row"><td class="st-state">Lakshadweep</td><td class="st-cap">Kavaratti</td><td class="st-lang">No</td><td class="st-yr">Smallest UT by area &amp; population</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- IMPORTANT FIRSTS -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Important <span>Firsts in India</span> — Repeatedly Asked</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Category</th><th>First</th><th>Name / Place</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">President</td><td>First President of India</td><td class="st-cap">Dr. Rajendra Prasad</td></tr>
+          <tr><td class="st-state">PM</td><td>First Prime Minister</td><td class="st-cap">Jawaharlal Nehru</td></tr>
+          <tr><td class="st-state">PM</td><td>First Woman PM</td><td class="st-cap">Indira Gandhi (1966)</td></tr>
+          <tr><td class="st-state">President</td><td>First Woman President</td><td class="st-cap">Pratibha Patil (2007)</td></tr>
+          <tr><td class="st-state">CJI</td><td>First Chief Justice of India</td><td class="st-cap">H.J. Kania</td></tr>
+          <tr><td class="st-state">CJI</td><td>First Woman CJI</td><td class="st-cap">None yet (as of 2025)</td></tr>
+          <tr><td class="st-state">Space</td><td>First Indian in space</td><td class="st-cap">Rakesh Sharma (1984)</td></tr>
+          <tr><td class="st-state">Space</td><td>First Indian woman in space</td><td class="st-cap">Kalpana Chawla (1997)</td></tr>
+          <tr><td class="st-state">Governor-Gen</td><td>First Indian Governor General</td><td class="st-cap">C. Rajagopalachari (1948)</td></tr>
+          <tr><td class="st-state">Bharat Ratna</td><td>First Bharat Ratna recipient</td><td class="st-cap">C. Rajagopalachari, S. Radhakrishnan, C.V. Raman (1954)</td></tr>
+          <tr><td class="st-state">INA</td><td>First INA: Indian National Army</td><td class="st-cap">Founded by Subhas Chandra Bose; Mohan Singh earlier</td></tr>
+          <tr><td class="st-state">Olympics</td><td>First Olympic gold (individual)</td><td class="st-cap">Abhinav Bindra (Shooting, 2008)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- DAMS & RIVERS -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Major Dams, <span>Rivers &amp; Lakes</span></h2>
+    </div>
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>🏗️ Highest Dams</h4>
+        <p>Tehri Dam (Uttarakhand) – 261m – tallest in India<br>Bhakra Dam (Himachal) – 226m<br>Sardar Sarovar (Gujarat) – Narmada river</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌊 Longest River</h4>
+        <p>Ganga – 2525 km<br>Godavari – Longest peninsular river (1465 km)<br>Indus – origin: Tibet (Sengge Zangbo)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏞️ Largest Lakes</h4>
+        <p>Wular Lake (J&K) – largest freshwater lake<br>Chilika Lake (Odisha) – largest brackish water, largest coastal lagoon<br>Vembanad (Kerala) – longest lake in India</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>⛰️ Mountain Passes</h4>
+        <p>Zoji La – J&K (connects Srinagar–Leh)<br>Nathu La – Sikkim (Indo-China trade)<br>Khyber Pass – Afghanistan–Pakistan (historic)<br>Rohtang Pass – Himachal Pradesh</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📍 Extreme Points</h4>
+        <p>Northernmost: Siachen Glacier / Indira Col<br>Southernmost: Indira Point (A&amp;N Islands)<br>Easternmost: Kibithu (Arunachal Pradesh)<br>Westernmost: Ghuar Mota (Gujarat)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏆 Bharat Ratna — Recent</h4>
+        <p>2024: LK Advani, MS Swaminathan, Karpoori Thakur, Chaudhary Charan Singh, PV Narasimha Rao<br>Total recipients: 53 (as of 2024)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GK: HISTORY ===== -->
+  <div id="gk-history" class="section">
+    <div class="section-header">
+      <h2>History <span>GK</span> — Ancient · Medieval · Modern</h2>
+      <p>10–12 Qs from History in SSC CGL GK. Ancient India + Freedom Struggle = highest weight.</p>
+    </div>
+
+    <!-- ANCIENT INDIA -->
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Ancient <span>Indian History</span></h2>
+    </div>
+
+    <div class="gk-card">
+      <h3>🏛️ Indus Valley Civilisation (IVC) — 2500–1700 BCE</h3>
+      <p class="def">Bronze Age civilisation; Harappan Culture. Discovered by: Dayaram Sahni (Harappa, 1921) and R.D. Banerji (Mohenjo-daro, 1922).</p>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Site</th><th>Modern Location</th><th>Key Find</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Harappa</td><td class="st-cap">Pakistan (Punjab)</td><td>Granaries, Coffin burial</td></tr>
+            <tr><td class="st-state">Mohenjo-daro</td><td class="st-cap">Pakistan (Sindh)</td><td>Great Bath, Dancing Girl bronze statue</td></tr>
+            <tr><td class="st-state">Lothal</td><td class="st-cap">Gujarat, India</td><td>First dockyard in world, bead factory</td></tr>
+            <tr><td class="st-state">Dholavira</td><td class="st-cap">Gujarat, India</td><td>UNESCO WHS; 10-letter signboard, water reservoirs</td></tr>
+            <tr><td class="st-state">Kalibangan</td><td class="st-cap">Rajasthan, India</td><td>Ploughed fields, fire altars</td></tr>
+            <tr><td class="st-state">Banawali</td><td class="st-cap">Haryana, India</td><td>Both pre-Harappan &amp; Harappan phases</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tip" style="margin-top:10px;">⚡ IVC had no iron tools. Script is undeciphered. No evidence of kings/armies. Town planning with grid pattern and underground drainage — unique for the era.</div>
+    </div>
+
+    <div class="gk-card blue-card" style="margin-top:14px;">
+      <h3>📚 Vedic Period &amp; Key Texts</h3>
+      <p class="def">Early Vedic (1500–1000 BCE): Rig Veda composed. Later Vedic (1000–600 BCE): agriculture, caste system solidified.</p>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Text</th><th>Content</th><th>Significance</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Rig Veda</td><td>1028 hymns (suktas)</td><td>Oldest text; Gayatri Mantra from RV 3.62.10</td></tr>
+            <tr><td class="st-state">Sama Veda</td><td>Melodic chants</td><td>"India's first musical text"</td></tr>
+            <tr><td class="st-state">Yajur Veda</td><td>Sacrificial rituals</td><td>Priests' manual</td></tr>
+            <tr><td class="st-state">Atharva Veda</td><td>Magic, spells, medicine</td><td>Most recent of 4 Vedas</td></tr>
+            <tr><td class="st-state">Upanishads</td><td>Philosophy, Brahman–Atman</td><td>108 total; form Vedanta</td></tr>
+            <tr><td class="st-state">Arthashastra</td><td>Political economy, statecraft</td><td>Kautilya (Chanakya); Chandragupta Maurya era</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="gk-card green-card" style="margin-top:14px;">
+      <h3>☸️ Buddhism &amp; Jainism — Frequently Asked</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Topic</th><th>Buddhism</th><th>Jainism</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Founder</td><td>Siddhartha Gautama (563–483 BCE)</td><td>Vardhamana Mahavira (599–527 BCE) — 24th Tirthankara</td></tr>
+            <tr><td class="st-state">Birth Place</td><td>Lumbini (Nepal)</td><td>Vaishali (Bihar)</td></tr>
+            <tr><td class="st-state">Enlightenment</td><td>Bodh Gaya (Uruvela)</td><td>Jrimbhikagrama</td></tr>
+            <tr><td class="st-state">First Sermon</td><td>Sarnath (Dharmachakra Pravartana)</td><td>—</td></tr>
+            <tr><td class="st-state">Death</td><td>Kushinagar (Mahaparinirvana)</td><td>Pavapuri (Bihar)</td></tr>
+            <tr><td class="st-state">Core Teaching</td><td>Four Noble Truths, Eightfold Path, Middle Path</td><td>Triratna: Right Faith, Right Knowledge, Right Conduct; Ahimsa</td></tr>
+            <tr><td class="st-state">Texts</td><td>Tripitaka (Pali language)</td><td>Agamas (Prakrit)</td></tr>
+            <tr><td class="st-state">Buddhist Councils</td><td>1st: Rajagriha (Ajatashatru); 2nd: Vaishali; 3rd: Pataliputra (Ashoka); 4th: Kashmir (Kanishka)</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="gk-card" style="margin-top:14px;">
+      <h3>👑 Mauryan Empire (321–185 BCE)</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>King</th><th>Key Facts</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Chandragupta Maurya</td><td>Founded Mauryan Empire; defeated Seleucus Nicator (Greek); mentor: Chanakya/Kautilya; last days as Jain monk</td></tr>
+            <tr><td class="st-state">Bindusara</td><td>"Amitraghata" (slayer of enemies); Ajivika sect patronage; son = Ashoka</td></tr>
+            <tr><td class="st-state">Ashoka (269–232 BCE)</td><td>Kalinga War (261 BCE) → converted to Buddhism; Dhamma policy; Rock Edicts; Lion Capital at Sarnath</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tip">⚡ Ashoka's Major Rock Edict XIII: describes Kalinga war's horrors. Edicts written in Brahmi script (deciphered by James Prinsep, 1837).</div>
+    </div>
+
+    <div class="gk-card blue-card" style="margin-top:14px;">
+      <h3>🌟 Gupta Empire (319–550 CE) — "Golden Age"</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>King / Scholar</th><th>Contribution</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Chandragupta I</td><td>Founded Gupta dynasty; "Maharajadhiraja" title</td></tr>
+            <tr><td class="st-state">Samudragupta</td><td>"Napoleon of India"; Allahabad Pillar inscription; patronised arts</td></tr>
+            <tr><td class="st-state">Chandragupta II (Vikramaditya)</td><td>Fa Hien's visit; iron pillar; Navratnas; Shakari (defeated Shakas)</td></tr>
+            <tr><td class="st-state">Kalidasa</td><td>Meghaduta, Abhijnanasakuntalam, Kumarasambhava</td></tr>
+            <tr><td class="st-state">Aryabhata</td><td>Zero concept, π≈3.14, Earth rotates, Solar year = 365.35 days</td></tr>
+            <tr><td class="st-state">Varahamihira</td><td>Brihatsamhita; astronomer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- MEDIEVAL -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Medieval <span>India</span> — Delhi Sultanate &amp; Mughals</h2>
+    </div>
+
+    <div class="gk-card yellow-card">
+      <h3>⚔️ Delhi Sultanate (1206–1526) — 5 Dynasties</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Dynasty</th><th>Founder</th><th>Key King / Fact</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Slave (Mamluk)</td><td>Qutub-ud-din Aibak</td><td>Qutub Minar begun; Iltutmish completed it; Razia Sultana (first woman sultan)</td></tr>
+            <tr><td class="st-state">Khalji</td><td>Jalal-ud-din Khalji</td><td>Alauddin Khalji: market reforms, Mongol repulsion, Chittor conquest</td></tr>
+            <tr><td class="st-state">Tughlaq</td><td>Ghiyas-ud-din Tughlaq</td><td>Muhammad bin Tughlaq: shifted capital Delhi→Daulatabad; token currency</td></tr>
+            <tr><td class="st-state">Sayyid</td><td>Khizr Khan</td><td>Weakest dynasty; Timur's nominee</td></tr>
+            <tr><td class="st-state">Lodi</td><td>Bahlul Lodi</td><td>Ibrahim Lodi defeated by Babur in First Battle of Panipat (1526)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="gk-card red-card" style="margin-top:14px;">
+      <h3>👑 Mughal Empire (1526–1857)</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Emperor</th><th>Reign</th><th>Key Facts</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Babur</td><td>1526–1530</td><td>1st Battle Panipat (1526); Khanwa (1527); Chanderi (1528); Ghagra (1529); wrote Baburnama</td></tr>
+            <tr><td class="st-state">Humayun</td><td>1530–56</td><td>Lost to Sher Shah Suri (Battle of Chausa, Kanauj); regained throne 1555; Purana Qila</td></tr>
+            <tr><td class="st-state">Akbar</td><td>1556–1605</td><td>2nd Panipat (1556) vs Hemu; Din-i-Ilahi; Ibadat Khana; Navratnas; Fatehpur Sikri; abolished jizya</td></tr>
+            <tr><td class="st-state">Jahangir</td><td>1605–1627</td><td>Nur Jahan's influence; Tuzuk-i-Jahangiri; Thomas Roe visit</td></tr>
+            <tr><td class="st-state">Shah Jahan</td><td>1627–1658</td><td>Taj Mahal (1632–1653); Red Fort; Jama Masjid; "Prince of Builders"</td></tr>
+            <tr><td class="st-state">Aurangzeb</td><td>1658–1707</td><td>Reimposed jizya; Deccan campaigns; Shivaji conflict; longest reign (49 yrs)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- MODERN -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Modern India — <span>Freedom Struggle</span></h2>
+    </div>
+
+    <div class="gk-card purple-card">
+      <h3>📅 Key Events — Chronological (Most Repeated)</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Year</th><th>Event</th><th>Key Details</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">1757</td><td>Battle of Plassey</td><td>British (Clive) vs Siraj-ud-Daula; start of British rule</td></tr>
+            <tr><td class="st-state">1764</td><td>Battle of Buxar</td><td>British victory → real political power in India</td></tr>
+            <tr><td class="st-state">1857</td><td>Revolt of 1857</td><td>First War of Independence; Mangal Pandey; Rani Lakshmibai; Bahadur Shah Zafar</td></tr>
+            <tr><td class="st-state">1885</td><td>INC Founded</td><td>A.O. Hume; Dadabhai Naoroji first president</td></tr>
+            <tr><td class="st-state">1905</td><td>Partition of Bengal</td><td>Curzon; reversed 1911; led to Swadeshi Movement</td></tr>
+            <tr><td class="st-state">1906</td><td>Muslim League Founded</td><td>Dhaka; Aga Khan III</td></tr>
+            <tr><td class="st-state">1919</td><td>Jallianwala Bagh</td><td>April 13; Gen. Dyer; 379+ killed; Rabindranath Tagore returned knighthood</td></tr>
+            <tr><td class="st-state">1920</td><td>Non-Cooperation Movement</td><td>Gandhi; Khilafat issue; withdrawn after Chauri Chaura (1922)</td></tr>
+            <tr><td class="st-state">1930</td><td>Dandi March / Salt Satyagraha</td><td>March 12 – April 6; 240 miles; Gandhi's most iconic act</td></tr>
+            <tr><td class="st-state">1930</td><td>Poona Pact</td><td>1932; Gandhi vs Ambedkar; reserved seats for Depressed Classes</td></tr>
+            <tr><td class="st-state">1942</td><td>Quit India Movement</td><td>August 8; "Do or Die"; Gandhi arrested; Aruna Asaf Ali hoisted flag</td></tr>
+            <tr><td class="st-state">1947</td><td>Independence</td><td>August 15; Mountbatten Plan; Partition into India &amp; Pakistan</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tricks-grid" style="margin-top:16px;">
+      <div class="trick-card yellow">
+        <h3>⚔️ Important Battles</h3>
+        <div class="example">
+          1st Panipat (1526): Babur vs Ibrahim Lodi<br>
+          2nd Panipat (1556): Akbar vs Hemu<br>
+          3rd Panipat (1761): Ahmad Shah Durrani vs Marathas<br>
+          Haldighati (1576): Akbar vs Maharana Pratap<br>
+          Plassey (1757): Clive vs Siraj-ud-Daula<br>
+          Buxar (1764): British vs Mir Qasim + Nawab + Mughal
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>📜 Important Acts — British Era</h3>
+        <div class="example">
+          1773: Regulating Act (first control of EIC)<br>
+          1784: Pitt's India Act<br>
+          1833: Charter Act (governor general of India)<br>
+          1858: Govt of India Act (Crown rule begins)<br>
+          1919: Montagu-Chelmsford Reforms<br>
+          1935: Govt of India Act (longest; basis of our constitution)<br>
+          1947: Indian Independence Act
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>👤 Viceroys — Key</h3>
+        <div class="example">
+          Lord Canning: 1st Viceroy (1858)<br>
+          Lord Curzon: Partition of Bengal 1905<br>
+          Lord Minto II: Morley-Minto reforms 1909<br>
+          Lord Chelmsford: Rowlatt Act 1919<br>
+          Lord Irwin: Salt March era; Gandhi-Irwin Pact<br>
+          Lord Mountbatten: Last Viceroy; Indian Independence
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>🔥 Revolutionary Movements</h3>
+        <div class="example">
+          Bal Gangadhar Tilak: "Swaraj is my birthright"<br>
+          Bhagat Singh, Sukhdev, Rajguru: hanged 1931<br>
+          Subhas Chandra Bose: INA; "Jai Hind"; Azad Hind Fauj<br>
+          Lala Lajpat Rai: died after lathi charge (Simon Commission)<br>
+          Ram Prasad Bismil: Kakori Conspiracy 1925
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GK: GEOGRAPHY ===== -->
+  <div id="gk-geography" class="section">
+    <div class="section-header">
+      <h2>Geography <span>GK</span> — India &amp; World</h2>
+      <p>6–8 Qs every year. Physical India, climate, resources, and world geography basics.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Physical <span>India</span></h2>
+    </div>
+
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>📐 Area &amp; Boundaries</h4>
+        <p>Area: 3,287,263 km² (7th largest)<br>Land boundary: 15,200 km<br>Coastline: 7,516.6 km (including islands)<br>Neighbours: Pakistan, China, Nepal, Bhutan, Bangladesh, Myanmar, Sri Lanka (sea), Maldives (sea)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏔️ Himalayan Peaks in India</h4>
+        <p>Kangchenjunga – 8586m – highest in India (Sikkim/Nepal border)<br>Nanda Devi – 7816m – highest entirely in India<br>K2 – 8611m – in Pakistan-administered territory (2nd world)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌊 Coastal Features</h4>
+        <p>Western coast: Malabar, Konkan, Gujarat coasts<br>Eastern coast: Coromandel, Northern Circars<br>Largest delta: Sundarbans (Ganga-Brahmaputra)<br>Largest lagoon: Chilika Lake (Odisha)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌡️ Climate Types in India</h4>
+        <p>Tropical Monsoon (most of India)<br>Arid/Semi-Arid (Rajasthan/Gujarat)<br>Alpine/Tundra (Himalayas above 3600m)<br>Tropical Wet (Kerala, A&amp;N Islands)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌾 Soil Types</h4>
+        <p>Alluvial – most fertile; Gangetic plains; paddy, wheat<br>Black (Regur) – Deccan; cotton; self-ploughing<br>Red &amp; Yellow – Peninsular plateau<br>Laterite – Kerala, Assam; cashew, coffee<br>Arid – Rajasthan; low water retention</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌿 Forest/Vegetation Zones</h4>
+        <p>Tropical Rainforest: W. Ghats, NE<br>Tropical Deciduous: Sal, Teak; most common type<br>Thorny Scrub: Rajasthan, Punjab<br>Mangroves: Sundarbans, Bhitarkanika<br>Alpine: Himalayan slopes above 3600m</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Indian <span>Rivers</span> — Origin, Tributaries, States</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>River</th><th>Origin</th><th>Flows Into</th><th>Key Tributaries / Facts</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Ganga</td><td>Gangotri Glacier (Uttarakhand)</td><td class="st-cap">Bay of Bengal</td><td>Yamuna, Ghaghra, Son, Gandak; longest in India</td></tr>
+          <tr><td class="st-state">Yamuna</td><td>Yamunotri Glacier</td><td class="st-cap">Prayagraj (joins Ganga)</td><td>Chambal, Betwa, Ken; passes Delhi, Agra</td></tr>
+          <tr><td class="st-state">Brahmaputra</td><td>Chemayungdung glacier (Tibet)</td><td class="st-cap">Bay of Bengal</td><td>Called Tsangpo in Tibet, Jamuna in Bangladesh; highest water volume</td></tr>
+          <tr><td class="st-state">Godavari</td><td>Trimbakeshwar (Nashik, MH)</td><td class="st-cap">Bay of Bengal</td><td>Longest peninsular river (1465 km); "Dakshin Ganga"</td></tr>
+          <tr><td class="st-state">Krishna</td><td>Mahabaleshwar (MH)</td><td class="st-cap">Bay of Bengal</td><td>Bhima, Tungabhadra; 2nd longest peninsular</td></tr>
+          <tr><td class="st-state">Kaveri</td><td>Talakaveri (Coorg, Karnataka)</td><td class="st-cap">Bay of Bengal</td><td>"Ganga of South"; Shivasamudram Falls</td></tr>
+          <tr><td class="st-state">Narmada</td><td>Amarkantak (MP)</td><td class="st-cap">Arabian Sea</td><td>Flows W; rifts through Vindhyas &amp; Satpura; Sardar Sarovar Dam</td></tr>
+          <tr><td class="st-state">Tapti/Tapi</td><td>Multai (Betul, MP)</td><td class="st-cap">Arabian Sea</td><td>Parallel to Narmada; flows through Surat</td></tr>
+          <tr><td class="st-state">Indus</td><td>Mansarovar (Tibet)</td><td class="st-cap">Arabian Sea (Pakistan)</td><td>Jhelum, Chenab, Ravi, Beas, Sutlej (Punjab rivers)</td></tr>
+          <tr><td class="st-state">Mahanadi</td><td>Raipur (Chhattisgarh)</td><td class="st-cap">Bay of Bengal</td><td>Hirakud Dam (longest earthen dam in India)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">World <span>Geography</span> — Key Facts for SSC</h2>
+    </div>
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>🌍 Continents by Size</h4>
+        <p>1. Asia 2. Africa 3. North America 4. South America 5. Antarctica 6. Europe 7. Australia<br>Most populous: Asia<br>Least populated: Antarctica</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏔️ Highest Peaks (World)</h4>
+        <p>Mt. Everest – 8848.86m (Nepal/China)<br>K2 – 8611m (Pakistan)<br>Kangchenjunga – 8586m (India/Nepal)<br>Aconcagua – highest outside Asia (Argentina)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌊 Oceans by Size</h4>
+        <p>1. Pacific (largest) 2. Atlantic 3. Indian 4. Southern 5. Arctic (smallest)<br>Deepest: Pacific – Mariana Trench (11,034m)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌊 Longest Rivers (World)</h4>
+        <p>1. Nile (Africa) – 6650 km<br>2. Amazon (S. America) – 6400 km<br>3. Yangtze (China) – 6300 km<br>4. Mississippi-Missouri (USA)<br>5. Yenisei (Russia)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏜️ Deserts</h4>
+        <p>Largest cold desert: Antarctica<br>Largest hot desert: Sahara (Africa)<br>India's hot desert: Thar (Rajasthan)<br>India's cold desert: Ladakh</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>⏰ Important Lines/Circles</h4>
+        <p>Tropic of Cancer (23.5°N): passes through India (8 states)<br>Tropic of Capricorn (23.5°S)<br>Arctic Circle (66.5°N)<br>Standard Meridian of India: 82.5°E (Mirzapur, UP)</p>
+      </div>
+    </div>
+
+    <div class="gk-card" style="margin-top:8px;">
+      <h3>🗺️ Tropic of Cancer — States it Passes Through (India)</h3>
+      <p class="def">Gujarat → Rajasthan → Madhya Pradesh → Chhattisgarh → Jharkhand → West Bengal → Tripura → Mizoram (8 states). Mnemonic: <strong>Gujrat Rajma MP Chhattis Jha Wes Trip Mizo</strong></p>
+    </div>
+  </div>
+
+  <!-- ===== GK: SCIENCE ===== -->
+  <div id="gk-science" class="section">
+    <div class="section-header">
+      <h2>Science <span>GK</span> — Physics · Chemistry · Biology</h2>
+      <p>8–10 Qs from Science in SSC CGL. Biology (human body, diseases, vitamins) carries highest weight.</p>
+    </div>
+
+    <!-- PHYSICS -->
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Physics — <span>Laws, Units &amp; Instruments</span></h2>
+    </div>
+
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>⚡ SI Units — Repeated Every Year</h4>
+        <p>Length: metre (m)<br>Mass: kilogram (kg)<br>Time: second (s)<br>Current: ampere (A)<br>Temperature: kelvin (K)<br>Amount: mole (mol)<br>Luminous intensity: candela (cd)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🔭 Instruments</h4>
+        <p>Barometer – atmospheric pressure<br>Seismograph – earthquake intensity<br>Hygrometer – humidity<br>Anemometer – wind speed<br>Lactometer – purity of milk<br>Sphygmomanometer – blood pressure<br>Manometer – gas/fluid pressure</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📏 Newton's Laws</h4>
+        <p>1st: Inertia – body at rest stays at rest<br>2nd: F = ma<br>3rd: Every action = equal &amp; opposite reaction<br>Gravity: F = Gm₁m₂/r²<br>g = 9.8 m/s² (Earth surface)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌡️ Temperature Scales</h4>
+        <p>°C to °F: (°C × 9/5) + 32<br>°C to K: °C + 273.15<br>Absolute zero: –273.15°C = 0 K<br>Body temp: 37°C = 98.6°F</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>💡 Famous Scientists &amp; Inventions</h4>
+        <p>Newton: laws of motion, gravitation<br>Einstein: E=mc², relativity<br>Faraday: electromagnetic induction<br>Edison: electric bulb (incandescent)<br>Marconi: radio (wireless telegraphy)<br>Marie Curie: radioactivity (2 Nobel prizes)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🔊 Sound &amp; Light</h4>
+        <p>Speed of sound in air: ~343 m/s (20°C)<br>Speed of light: 3×10⁸ m/s<br>Ultrasound: >20,000 Hz<br>Infrasound: &lt;20 Hz<br>Rainbow: VIBGYOR (refraction + dispersion)</p>
+      </div>
+    </div>
+
+    <!-- CHEMISTRY -->
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Chemistry — <span>Elements, Compounds &amp; Reactions</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Common Name</th><th>Chemical Name</th><th>Formula</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Common Salt</td><td>Sodium Chloride</td><td class="st-cap">NaCl</td></tr>
+          <tr><td class="st-state">Baking Soda</td><td>Sodium Bicarbonate</td><td class="st-cap">NaHCO₃</td></tr>
+          <tr><td class="st-state">Washing Soda</td><td>Sodium Carbonate (decahydrate)</td><td class="st-cap">Na₂CO₃·10H₂O</td></tr>
+          <tr><td class="st-state">Bleaching Powder</td><td>Calcium Hypochlorite</td><td class="st-cap">Ca(ClO)₂</td></tr>
+          <tr><td class="st-state">Plaster of Paris</td><td>Calcium Sulphate Hemihydrate</td><td class="st-cap">CaSO₄·½H₂O</td></tr>
+          <tr><td class="st-state">Limestone</td><td>Calcium Carbonate</td><td class="st-cap">CaCO₃</td></tr>
+          <tr><td class="st-state">Vinegar</td><td>Acetic Acid (5% solution)</td><td class="st-cap">CH₃COOH</td></tr>
+          <tr><td class="st-state">Laughing Gas</td><td>Nitrous Oxide</td><td class="st-cap">N₂O</td></tr>
+          <tr><td class="st-state">Heavy Water</td><td>Deuterium Oxide</td><td class="st-cap">D₂O</td></tr>
+          <tr><td class="st-state">Dry Ice</td><td>Solid Carbon Dioxide</td><td class="st-cap">CO₂</td></tr>
+          <tr><td class="st-state">Rust</td><td>Ferric Oxide</td><td class="st-cap">Fe₂O₃</td></tr>
+          <tr><td class="st-state">Marble</td><td>Calcium Carbonate</td><td class="st-cap">CaCO₃</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tricks-grid" style="margin-top:16px;">
+      <div class="trick-card yellow">
+        <h3>🧪 pH Scale Facts</h3>
+        <div class="example">
+          pH &lt; 7 = Acidic (HCl, Vinegar, lemon)<br>
+          pH = 7 = Neutral (pure water)<br>
+          pH &gt; 7 = Basic/Alkaline (NaOH, soap)<br><br>
+          Human blood pH: 7.35–7.45 (slightly basic)<br>
+          Gastric juice: ~2 (highly acidic)<br>
+          Milk: 6.5–6.8 (slightly acidic)<br>
+          Baking soda: ~8.3
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔋 Important Fuels &amp; Energy</h3>
+        <div class="example">
+          CNG = Compressed Natural Gas (mainly CH₄)<br>
+          LPG = Liquefied Petroleum Gas (propane + butane)<br>
+          Biogas = mainly CH₄ from cattle dung<br>
+          Calorific value: highest → Hydrogen (150 MJ/kg)<br>
+          Coal types: Anthracite &gt; Bituminous &gt; Lignite &gt; Peat<br>
+          Uranium used in: nuclear reactors (fission)
+        </div>
+      </div>
+    </div>
+
+    <!-- BIOLOGY -->
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Biology — <span>Human Body, Diseases &amp; Vitamins</span></h2>
+    </div>
+
+    <div class="gk-card green-card">
+      <h3>💊 Vitamins — Deficiency Diseases (Most Repeated)</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Vitamin</th><th>Chemical Name</th><th>Deficiency Disease</th><th>Source</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">A</td><td>Retinol</td><td class="st-cap">Night blindness, Xerophthalmia</td><td>Carrot, egg, milk</td></tr>
+            <tr><td class="st-state">B1</td><td>Thiamine</td><td class="st-cap">Beriberi</td><td>Cereals, legumes</td></tr>
+            <tr><td class="st-state">B2</td><td>Riboflavin</td><td class="st-cap">Ariboflavinosis (cracked lips)</td><td>Milk, eggs</td></tr>
+            <tr><td class="st-state">B3</td><td>Niacin</td><td class="st-cap">Pellagra (3Ds: Dermatitis, Diarrhoea, Dementia)</td><td>Meat, nuts</td></tr>
+            <tr><td class="st-state">B9</td><td>Folic Acid</td><td class="st-cap">Megaloblastic anaemia; neural tube defects</td><td>Leafy greens</td></tr>
+            <tr><td class="st-state">B12</td><td>Cobalamin</td><td class="st-cap">Pernicious anaemia</td><td>Meat, dairy (not in plants)</td></tr>
+            <tr><td class="st-state">C</td><td>Ascorbic Acid</td><td class="st-cap">Scurvy (bleeding gums)</td><td>Citrus, amla (amla = highest C content)</td></tr>
+            <tr><td class="st-state">D</td><td>Calciferol</td><td class="st-cap">Rickets (children), Osteomalacia (adults)</td><td>Sunlight, fish liver oil</td></tr>
+            <tr><td class="st-state">E</td><td>Tocopherol</td><td class="st-cap">Infertility, muscular dystrophy</td><td>Nuts, seeds, vegetable oils</td></tr>
+            <tr><td class="st-state">K</td><td>Phylloquinone</td><td class="st-cap">Excessive bleeding (no clotting)</td><td>Leafy greens, liver</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tip">⚡ Fat-soluble vitamins: A, D, E, K (mnemonic: ADEK). Water-soluble: B-complex + C.</div>
+    </div>
+
+    <div class="gk-card blue-card" style="margin-top:14px;">
+      <h3>🦠 Diseases — Causative Agent (SSC Favourite)</h3>
+      <div class="table-wrap" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Disease</th><th>Caused By</th><th>Vector / Transmission</th></tr></thead>
+          <tbody>
+            <tr><td class="st-state">Malaria</td><td>Plasmodium (protozoa)</td><td class="st-cap">Female Anopheles mosquito</td></tr>
+            <tr><td class="st-state">Dengue</td><td>Dengue virus (flavivirus)</td><td class="st-cap">Aedes aegypti mosquito</td></tr>
+            <tr><td class="st-state">Tuberculosis</td><td>Mycobacterium tuberculosis (bacteria)</td><td class="st-cap">Air droplets</td></tr>
+            <tr><td class="st-state">Cholera</td><td>Vibrio cholerae (bacteria)</td><td class="st-cap">Contaminated water/food</td></tr>
+            <tr><td class="st-state">Typhoid</td><td>Salmonella typhi (bacteria)</td><td class="st-cap">Contaminated food/water</td></tr>
+            <tr><td class="st-state">AIDS</td><td>HIV (retrovirus)</td><td class="st-cap">Blood, sexual contact</td></tr>
+            <tr><td class="st-state">Rabies</td><td>Rabies virus (Lyssavirus)</td><td class="st-cap">Animal bite (dogs, bats)</td></tr>
+            <tr><td class="st-state">Kala-azar</td><td>Leishmania (protozoa)</td><td class="st-cap">Sandfly (Phlebotomus)</td></tr>
+            <tr><td class="st-state">Filariasis</td><td>Wuchereria bancrofti (worm)</td><td class="st-cap">Culex mosquito</td></tr>
+            <tr><td class="st-state">Polio</td><td>Poliovirus</td><td class="st-cap">Faecal-oral route</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="gk-fact-grid" style="margin-top:16px;">
+      <div class="gk-fact-card">
+        <h4>🩸 Blood Facts</h4>
+        <p>Normal WBC: 4000–11000/μL<br>Normal RBC: 4.5–5.5 million/μL<br>Platelet: 1.5–4 lakh/μL<br>Haemoglobin carries O₂; contains iron<br>Universal donor: O–<br>Universal recipient: AB+</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🫀 Human Body — Key Organs</h4>
+        <p>Largest organ: Skin<br>Largest internal organ: Liver<br>Smallest bone: Stapes (ear)<br>Largest bone: Femur (thigh)<br>Hardest substance: Enamel (tooth)<br>Longest cell: Nerve cell (neuron)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🧬 Cell Biology Basics</h4>
+        <p>Powerhouse: Mitochondria<br>Kitchen of cell: Chloroplast<br>Control centre: Nucleus<br>Protein synthesis: Ribosome<br>Suicidal bags: Lysosomes<br>Cell wall: present in plants, absent in animals</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌱 Plant Biology</h4>
+        <p>Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂<br>Chlorophyll absorbs: red &amp; blue light, reflects green<br>Transpiration: water loss through stomata<br>Rhizobium bacteria: nitrogen fixation in legumes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GK: POLITY & ECONOMY ===== -->
+  <div id="gk-polity" class="section">
+    <div class="section-header">
+      <h2>Polity <span>&amp; Economy</span> GK</h2>
+      <p>6–8 Qs from Polity every year. Constitutional articles, fundamental rights, and Parliament structure are most tested.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Constitution — <span>Key Articles &amp; Features</span></h2>
+    </div>
+
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>📜 Constitution Basics</h4>
+        <p>Adopted: Nov 26, 1949<br>In force: Jan 26, 1950<br>Original articles: 395<br>Original schedules: 8<br>Current: ~448 articles, 12 schedules<br>Longest written constitution in world</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏛️ Sources of Constitution</h4>
+        <p>Govt of India Act 1935 → federal structure<br>UK → Parliamentary system, Rule of Law<br>USA → Fundamental Rights, Judicial Review<br>Ireland → DPSP<br>USSR (Soviet) → Fundamental Duties, Socialism<br>Canada → Centre-state relations</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>⚖️ Preamble Keywords</h4>
+        <p>Sovereign Socialist Secular Democratic Republic<br>Justice: Social, Economic, Political<br>Liberty: Thought, Expression, Belief, Faith, Worship<br>Equality of status and opportunity<br>Fraternity with Dignity of Individual<br>"Socialist" &amp; "Secular" added by 42nd Amendment (1976)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏛️ Parliament Structure</h4>
+        <p>Bicameral Parliament:<br>Lok Sabha (Lower): max 552 members; 5-yr term<br>Rajya Sabha (Upper): max 250; permanent body (1/3 retire every 2 yrs)<br>President is part of Parliament<br>Joint sitting: Lok Sabha majority prevails</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Fundamental Rights <span>(Articles 12–35)</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Right</th><th>Articles</th><th>Key Provisions</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Right to Equality</td><td class="st-cap">14–18</td><td>Equality before law; no discrimination (religion, race, caste, sex); no untouchability (Art 17)</td></tr>
+          <tr><td class="st-state">Right to Freedom</td><td class="st-cap">19–22</td><td>6 freedoms (speech, assembly, etc.); protection against arbitrary arrest (Art 22)</td></tr>
+          <tr><td class="st-state">Right Against Exploitation</td><td class="st-cap">23–24</td><td>No trafficking, forced labour; no child labour under 14 in hazardous work</td></tr>
+          <tr><td class="st-state">Right to Religion</td><td class="st-cap">25–28</td><td>Freedom of conscience; manage religious affairs; no religious instruction in state schools</td></tr>
+          <tr><td class="st-state">Cultural &amp; Educational Rights</td><td class="st-cap">29–30</td><td>Minorities can conserve culture; right to establish institutions</td></tr>
+          <tr><td class="st-state">Right to Constitutional Remedies</td><td class="st-cap">32</td><td>"Heart and soul of Constitution" (Ambedkar); 5 writs: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Important <span>Articles — Frequently Asked</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Article</th><th>Subject</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Art 1</td><td>India, that is Bharat, shall be a Union of States</td></tr>
+          <tr><td class="st-state">Art 14</td><td>Equality before law</td></tr>
+          <tr><td class="st-state">Art 17</td><td>Abolition of untouchability</td></tr>
+          <tr><td class="st-state">Art 19</td><td>Freedom of speech, assembly, movement, profession</td></tr>
+          <tr><td class="st-state">Art 21</td><td>Right to life and personal liberty (most litigated article)</td></tr>
+          <tr><td class="st-state">Art 21A</td><td>Right to Education (6–14 yrs) – added 86th Amendment 2002</td></tr>
+          <tr><td class="st-state">Art 32</td><td>Right to move SC for enforcement of Fundamental Rights</td></tr>
+          <tr><td class="st-state">Art 44</td><td>Uniform Civil Code (DPSP)</td></tr>
+          <tr><td class="st-state">Art 51A</td><td>Fundamental Duties (added by 42nd Amendment; total 11 now)</td></tr>
+          <tr><td class="st-state">Art 72</td><td>President's power to grant pardons, reprieves</td></tr>
+          <tr><td class="st-state">Art 110</td><td>Definition of Money Bill</td></tr>
+          <tr><td class="st-state">Art 123</td><td>President's Ordinance-making power</td></tr>
+          <tr><td class="st-state">Art 148</td><td>Comptroller and Auditor General (CAG)</td></tr>
+          <tr><td class="st-state">Art 170</td><td>Composition of State Legislative Assemblies</td></tr>
+          <tr><td class="st-state">Art 280</td><td>Finance Commission</td></tr>
+          <tr><td class="st-state">Art 300A</td><td>Right to property (now legal right, not FR)</td></tr>
+          <tr><td class="st-state">Art 324</td><td>Election Commission of India</td></tr>
+          <tr><td class="st-state">Art 356</td><td>President's Rule in states</td></tr>
+          <tr><td class="st-state">Art 370</td><td>Special status of J&K (abrogated 2019)</td></tr>
+          <tr><td class="st-state">Art 395</td><td>Repeal of Indian Independence Act &amp; Govt of India Act</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Economy — <span>Key Concepts &amp; Organisations</span></h2>
+    </div>
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>🏦 RBI &amp; Banking</h4>
+        <p>RBI est: 1935 (nationalised 1949)<br>HQ: Mumbai<br>Governor: appointed by Govt of India<br>SBI est: 1955 (Imperial Bank → SBI)<br>NABARD: National Bank for Agri &amp; Rural Development<br>SEBI: Securities and Exchange Board (est. 1988)</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📊 GDP &amp; Planning</h4>
+        <p>GDP = C + I + G + (X – M)<br>NITI Aayog replaced Planning Commission (2015)<br>India's fiscal year: April 1 – March 31<br>Green Revolution: 1960s; Norman Borlaug + MS Swaminathan<br>White Revolution: Operation Flood; Verghese Kurien</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌐 International Organisations</h4>
+        <p>UN est: 1945; HQ: New York<br>IMF: International Monetary Fund; HQ: Washington DC<br>World Bank: HQ: Washington DC<br>WTO est: 1995; HQ: Geneva (replaced GATT)<br>WHO: World Health Organisation; HQ: Geneva<br>UNICEF: New York</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🏅 Important Awards</h4>
+        <p>Nobel Prize: Physics, Chemistry, Medicine, Literature, Peace, Economics<br>Booker Prize: English fiction<br>Pulitzer Prize: USA journalism/arts<br>Oscars: Academy Awards (films)<br>Grammy: music<br>Ramon Magsaysay: "Asia's Nobel"</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🚀 India's Space — ISRO</h4>
+        <p>ISRO est: 1969; HQ: Bengaluru<br>Chandrayaan-1 (2008): discovered water on Moon<br>Chandrayaan-3 (2023): soft landing near south pole (1st country)<br>Mangalyaan (2014): 1st Asian nation to reach Mars orbit<br>Gaganyaan: India's human spaceflight mission</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📋 Schedules of Constitution</h4>
+        <p>1st: States &amp; UTs<br>2nd: Salaries of officials<br>5th: Scheduled Areas<br>7th: Union/State/Concurrent Lists<br>8th: 22 official languages<br>9th: Laws beyond judicial review<br>10th: Anti-defection law<br>12th: Municipalities</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">20 GK Tips for <span>SSC CGL</span></h2>
+    </div>
+    <ul class="tips-list">
+      <li><span class="num-gk">01</span><div><strong>Static GK = guaranteed marks</strong> States/UTs/Capitals never change. 5-7 Qs come from this alone. Revise the states table 3 times in the last week.</div></li>
+      <li><span class="num-gk">02</span><div><strong>Vitamins: memorise deficiency diseases in order A→K</strong> Night blindness → Beriberi → Riboflavinosis → Pellagra → Anaemia → Scurvy → Rickets → Infertility → Bleeding. 2 Qs guaranteed.</div></li>
+      <li><span class="num-gk">03</span><div><strong>Buddhist Councils: 1st Rajagriha, 2nd Vaishali, 3rd Pataliputra (Ashoka), 4th Kashmir (Kanishka)</strong> This sequence appears almost every year. Do not confuse Ashoka's council with Kanishka's.</div></li>
+      <li><span class="num-gk">04</span><div><strong>Panipat battles: year + contenders + outcome</strong> 3 battles of Panipat — memorise all 3 with years. SSC asks "who defeated whom" type questions frequently.</div></li>
+      <li><span class="num-gk">05</span><div><strong>IVC Key Sites: Lothal (Gujarat) = dockyard; Dholavira = UNESCO + signboard</strong> These two sites are asked more than Harappa and Mohenjo-daro in recent papers.</div></li>
+      <li><span class="num-gk">06</span><div><strong>Art 21 = most litigated article</strong> Right to life covers: right to education, right to livelihood, right to privacy (2017). Any question about expanded rights → Art 21.</div></li>
+      <li><span class="num-gk">07</span><div><strong>Rivers: know which flow west vs east</strong> Narmada + Tapi flow WEST into Arabian Sea. All others (Ganga, Godavari, Krishna, Kaveri, Mahanadi) flow EAST into Bay of Bengal. This is a trap question.</div></li>
+      <li><span class="num-gk">08</span><div><strong>Chandrayaan-3: India = first nation to land near Moon's south pole</strong> 2023 achievement. Any space-related current affairs: Gaganyaan, PSLV, GSLV type questions.</div></li>
+      <li><span class="num-gk">09</span><div><strong>GK Science: causative agent type questions</strong> Memorise: Malaria = Plasmodium (mosquito), TB = Mycobacterium (air), Cholera = Vibrio (water). SSC asks "caused by" questions constantly.</div></li>
+      <li><span class="num-gk">10</span><div><strong>Universal donor = O–, Universal recipient = AB+</strong> Blood group questions appear almost every year. Also: Rh+ means Rh antigen is present.</div></li>
+      <li><span class="num-gk">11</span><div><strong>Chemical names table is a goldmine</strong> Baking soda vs Washing soda confusion is a classic trap. NaHCO₃ = baking soda. Na₂CO₃ = washing soda. Plaster of Paris ≠ Gypsum.</div></li>
+      <li><span class="num-gk">12</span><div><strong>Gupta = "Golden Age"; Samudragupta = "Napoleon of India"</strong> Chandragupta II had Fa Hien's visit. These 3 facts appear in almost every SSC paper since 2010.</div></li>
+      <li><span class="num-gk">13</span><div><strong>Rajya Sabha = permanent body; never dissolved</strong> 1/3 members retire every 2 years. Lok Sabha maximum = 552 seats. Joint session: presided by Lok Sabha Speaker.</div></li>
+      <li><span class="num-gk">14</span><div><strong>Largest: Chilika (brackish), Wular (freshwater), Vembanad (longest)</strong> Three different "largest lake" categories — SSC exploits this to confuse. Know all three.</div></li>
+      <li><span class="num-gk">15</span><div><strong>"Socialist" and "Secular" added by 42nd Amendment 1976</strong> The original Preamble did NOT have these words. 44th Amendment (1978) restored some rights post-Emergency. These are repeated every year.</div></li>
+      <li><span class="num-gk">16</span><div><strong>First PM Nehru, First President Rajendra Prasad, First CJI H.J. Kania</strong> Plus: first woman PM = Indira Gandhi, first woman President = Pratibha Patil. Know ALL "firsts" in the firsts table.</div></li>
+      <li><span class="num-gk">17</span><div><strong>Tropic of Cancer passes through 8 Indian states — memorise them</strong> Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram. SSC tests this annually.</div></li>
+      <li><span class="num-gk">18</span><div><strong>Fundamental Duties: 11 in total (Art 51A)</strong> Added by 42nd Amendment (1976); 11th added by 86th Amendment (2002). FDs are non-justiciable but courts can enforce indirectly.</div></li>
+      <li><span class="num-gk">19</span><div><strong>Dandi March = March 12, 1930 (not April)</strong> Started March 12, ended April 6 at Dandi. 241 miles (not 240). Gandhi walked 24 days. Aruna Asaf Ali ≠ Dandi; she hoisted flag in Quit India Movement.</div></li>
+      <li><span class="num-gk">20</span><div><strong>SSC CGL GK repeats PYQs in disguised form every 2–3 years</strong> Solve last 10 years of SSC CGL GK separately. You'll see the same pattern: 1 capital Q, 1 vitamin Q, 1 battle Q, 1 article Q, 1 science Q. Prepare topic-wise, not randomly.</div></li>
+    </ul>
+  </div>
+
+  <!-- ===== NUMBER SYSTEM ===== -->
+  <div id="number-system" class="section">
+    <div class="section-header">
+      <h2>Number System — <span>Divisibility, LCM/HCF &amp; Remainders</span></h2>
+      <p>2–3 Qs in Tier 1 · Foundation for 50% of all maths topics. These rules = instant marks.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Divisibility Rules — <span>Memorise All</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Divisible by</th><th>Rule</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr class="highlight-row"><td class="val-primary">2</td><td>Last digit is 0, 2, 4, 6, or 8</td><td>3748 → ends 8 ✓</td></tr>
+          <tr><td class="val-primary">3</td><td>Sum of digits divisible by 3</td><td>231 → 2+3+1=6 ✓</td></tr>
+          <tr><td class="val-primary">4</td><td>Last 2 digits divisible by 4</td><td>1732 → 32÷4=8 ✓</td></tr>
+          <tr class="highlight-row"><td class="val-primary">5</td><td>Last digit is 0 or 5</td><td>4705 → ends 5 ✓</td></tr>
+          <tr><td class="val-primary">6</td><td>Divisible by BOTH 2 and 3</td><td>312 → even + 3+1+2=6 ✓</td></tr>
+          <tr><td class="val-primary">7</td><td>Double last digit, subtract from rest; if result div by 7 → yes</td><td>343 → 34–(2×3)=28 → 28÷7=4 ✓</td></tr>
+          <tr class="highlight-row"><td class="val-primary">8</td><td>Last 3 digits divisible by 8</td><td>5832 → 832÷8=104 ✓</td></tr>
+          <tr><td class="val-primary">9</td><td>Sum of digits divisible by 9</td><td>729 → 7+2+9=18 ✓</td></tr>
+          <tr><td class="val-primary">10</td><td>Last digit is 0</td><td>3460 → ends 0 ✓</td></tr>
+          <tr class="highlight-row"><td class="val-primary">11</td><td>Alternating digit sum: (odd positions) – (even positions) = 0 or 11</td><td>2728 → (2+2)–(7+8)=–11 → div ✓</td></tr>
+          <tr><td class="val-primary">12</td><td>Divisible by BOTH 3 and 4</td><td>144 → div by 3 and 4 ✓</td></tr>
+          <tr><td class="val-primary">25</td><td>Last 2 digits: 00, 25, 50, or 75</td><td>4725 → ends 25 ✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">LCM &amp; HCF — <span>Formulas &amp; Tricks</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>📌 LCM × HCF = Product of two numbers</h3>
+        <div class="example">
+          LCM(a,b) × HCF(a,b) = a × b
+          e.g. LCM(12,18)=36, HCF=6
+          36 × 6 = 12 × 18 = 216 ✓
+          ⚠️ Works only for TWO numbers, NOT three!
+          HCF always ≤ both numbers.
+          LCM always ≥ both numbers.
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔑 HCF of fractions</h3>
+        <div class="example">
+          HCF of fractions = HCF of numerators / LCM of denominators
+          LCM of fractions = LCM of numerators / HCF of denominators
+          e.g. HCF of 2/3 and 4/9:
+          HCF(2,4)=2; LCM(3,9)=9 → HCF = 2/9
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>⚙️ Repeated division method</h3>
+        <div class="example">
+          Step 1: Divide larger by smaller.
+          Step 2: Divide previous divisor by remainder.
+          Step 3: Repeat until remainder = 0.
+          Last divisor = HCF.
+          HCF(48, 18): 48÷18 rem 12 → 18÷12 rem 6 → 12÷6 rem 0 → HCF=6
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ SSC Trap — Word Problems</h3>
+        <div class="example">
+          "Max tiles to cover floor l×b" → HCF(l, b)
+          "Containers that exactly hold X and Y litres" → HCF
+          "First time two bells ring together" → LCM
+          "Largest number that divides a, b, c exactly" → HCF
+          "Smallest number divisible by a, b, c" → LCM
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Remainders &amp; <span>Important Properties</span></h2>
+    </div>
+    <div class="formula-box">
+      <strong style="color:var(--accent1)">REMAINDER RULES (SSC PYQ Favourites):</strong><br>
+      Remainder when 2¹⁰ ÷ 3 → Pattern: 2¹=2, 2²=4, 2³=8... remainder with 3 cycles: 2,1,2,1... → 2¹⁰ → even power → rem=1<br>
+      Any number² – 1 is divisible by 8 if the number is odd. (SSC PYQ repeated fact)<br>
+      Remainder of n! ÷ p (where p≤n is prime) = 0. e.g. 7! ÷ 5 → remainder = 0<br><br>
+      <strong style="color:var(--accent3)">UNIT DIGIT PATTERNS (Power Cycles):</strong><br>
+      Powers of 2: unit digit cycles → 2,4,8,6,2,4,8,6... (period 4)<br>
+      Powers of 3: 3,9,7,1,3,9,7,1... (period 4)<br>
+      Powers of 7: 7,9,3,1,7,9,3,1... (period 4)<br>
+      Powers of 8: 8,4,2,6,8,4,2,6... (period 4)<br>
+      Powers of 4: 4,6,4,6... (period 2)<br>
+      Powers of 9: 9,1,9,1... (period 2)<br>
+      1 and 5 and 6: unit digit ALWAYS same (1,5,6 respectively)<br><br>
+      <strong style="color:var(--accent4)">PRIME NUMBERS (1–100 — Memorise):</strong><br>
+      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97<br>
+      Total = 25 prime numbers from 1–100<br>
+      1 is NOT prime. 2 is the ONLY even prime number.
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Number Types — <span>Quick Definitions for SSC</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>Definition</th><th>Examples / Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Natural Numbers</td><td>Positive integers starting from 1</td><td>1, 2, 3 … (excludes 0)</td></tr>
+          <tr><td class="val-primary">Whole Numbers</td><td>Natural numbers + 0</td><td>0, 1, 2, 3 …</td></tr>
+          <tr><td class="val-primary">Integers</td><td>Whole numbers + negative integers</td><td>…–2, –1, 0, 1, 2…</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Rational Numbers</td><td>Can be written as p/q where q≠0</td><td>1/2, 0.75, 3, –7</td></tr>
+          <tr><td class="val-primary">Irrational Numbers</td><td>Cannot be written as p/q; non-terminating non-repeating</td><td>√2, π, e, √3</td></tr>
+          <tr><td class="val-primary">Perfect Number</td><td>Sum of proper divisors = number itself</td><td>6 (1+2+3=6), 28 (1+2+4+7+14=28)</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Co-prime Numbers</td><td>HCF = 1 (no common factor other than 1)</td><td>(4, 9), (8, 15) — need not be prime themselves</td></tr>
+          <tr><td class="val-primary">Composite Number</td><td>Has more than 2 factors (divisible by other than 1 and itself)</td><td>4, 6, 8, 9, 10…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== ALGEBRA ===== -->
+  <div id="algebra" class="section">
+    <div class="section-header">
+      <h2>Algebra — <span>Identities, Tricks &amp; SSC Patterns</span></h2>
+      <p>3–4 Qs Tier 1 · 5–7 Qs Tier 2. SSC loves identity-based substitution — master these formulas.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">All Algebraic <span>Identities</span></h2>
+    </div>
+    <div class="formula-box">
+      <strong style="color:var(--accent1)">BASIC SQUARES & PRODUCTS:</strong><br>
+      (a+b)² = a² + 2ab + b²<br>
+      (a–b)² = a² – 2ab + b²<br>
+      (a+b)² + (a–b)² = 2(a²+b²)<br>
+      (a+b)² – (a–b)² = 4ab<br>
+      (a+b)(a–b) = a² – b²<br>
+      (a+b+c)² = a²+b²+c²+2ab+2bc+2ca<br><br>
+
+      <strong style="color:var(--accent3)">CUBES:</strong><br>
+      (a+b)³ = a³ + 3a²b + 3ab² + b³ = a³+b³+3ab(a+b)<br>
+      (a–b)³ = a³ – 3a²b + 3ab² – b³ = a³–b³–3ab(a–b)<br>
+      a³+b³ = (a+b)(a²–ab+b²) = (a+b)³–3ab(a+b)<br>
+      a³–b³ = (a–b)(a²+ab+b²) = (a–b)³+3ab(a–b)<br><br>
+
+      <strong style="color:var(--accent4)">GOLDEN RULE — IF a+b+c=0:</strong><br>
+      a³+b³+c³ = 3abc  ← appears in almost EVERY SSC CGL paper<br>
+      Also: a²+b²+c² = –2(ab+bc+ca) when a+b+c=0<br><br>
+
+      <strong style="color:var(--accent2)">FACTORING SHORTCUT (a²–b²):</strong><br>
+      999²–998² = (999+998)(999–998) = 1997 × 1 = 1997 (instant!)<br>
+      Any diff of squares Q: factor as (a+b)(a–b) first.
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">SSC-Specific <span>Algebra Patterns</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>🔑 x + 1/x = k Pattern</h3>
+        <div class="example">
+          If x + 1/x = k, then:
+          x² + 1/x² = k² – 2
+          x³ + 1/x³ = k³ – 3k = k(k²–3)
+          x⁴ + 1/x⁴ = (x²+1/x²)² – 2 = (k²–2)²–2
+
+          SSC TRAP: If x + 1/x = 2, then x = 1.
+          Substitute x=1 to verify any expression.
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔑 x – 1/x = k Pattern</h3>
+        <div class="example">
+          If x – 1/x = k, then:
+          x² + 1/x² = k² + 2
+          x³ – 1/x³ = k³ + 3k = k(k²+3)
+
+          Verify: if x – 1/x = 0, then x = 1 or –1.
+          Substitute to cross-check options instantly.
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🔑 a + b + c = 0 Trick</h3>
+        <div class="example">
+          Given: a+b+c = 0 → a³+b³+c³ = 3abc
+          Corollary: (a+b) = –c, (b+c) = –a, (a+c) = –b
+          Use these to simplify complex fractions!
+          Example: (a+b)(b+c) = (–c)(–a) = ac
+          Any expression with "a+b+c=0" given
+          → look for the 3abc pattern first.
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ Value Substitution Method</h3>
+        <div class="example">
+          For identity Qs: put a=1, b=1 (or simple values).
+          LHS and RHS must match. Eliminates wrong options.
+          Also: for equations like x²+y²=xy,
+          put x=y=0 or x=y=1 to check options.
+          Never substitute 0 if division by variable exists.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Linear &amp; Quadratic <span>Equations</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>Standard Form</th><th>Solution / Key Property</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Linear (1 var)</td><td>ax + b = 0</td><td>x = –b/a</td></tr>
+          <tr><td class="val-primary">Linear (2 vars)</td><td>ax + by = c; dx + ey = f</td><td>Solve by substitution or elimination</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Quadratic</td><td>ax²+bx+c=0</td><td>x = [–b ± √(b²–4ac)] / 2a</td></tr>
+          <tr><td class="val-primary">Sum of roots</td><td>α+β = –b/a</td><td>Product of roots: αβ = c/a</td></tr>
+          <tr><td class="val-primary">Discriminant D</td><td>D = b²–4ac</td><td>D&gt;0: 2 real roots; D=0: equal roots; D&lt;0: no real roots</td></tr>
+          <tr class="highlight-row"><td class="val-primary">SSC trick</td><td>Form equation with roots α,β</td><td>x² – (α+β)x + αβ = 0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="formula-box">
+      <strong style="color:var(--accent1)">INEQUALITIES (for SSC CGL):</strong><br>
+      AM ≥ GM ≥ HM (Arithmetic Mean ≥ Geometric Mean ≥ Harmonic Mean)<br>
+      For positive numbers a,b: AM = (a+b)/2; GM = √(ab); HM = 2ab/(a+b)<br>
+      AM = GM only when a = b<br><br>
+      <strong style="color:var(--accent3)">SURDS RULES:</strong><br>
+      √a × √b = √(ab) | √a / √b = √(a/b) | (√a)² = a<br>
+      Rationalise: 1/(√a+√b) = (√a–√b)/(a–b) — multiply by conjugate<br>
+      √2 ≈ 1.414 | √3 ≈ 1.732 | √5 ≈ 2.236 | √6 ≈ 2.449 | √7 ≈ 2.646
+    </div>
+  </div>
+
+  <!-- ===== RATIO & PROFIT/LOSS ===== -->
+  <div id="ratio-pl" class="section">
+    <div class="section-header">
+      <h2>Ratio &amp; Proportion + <span>Profit &amp; Loss + Mixture</span></h2>
+      <p>4–6 Qs combined in Tier 1. Among the highest-scoring topics if formulas are memorised.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Ratio &amp; <span>Proportion</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>📐 Basic Rules</h3>
+        <div class="example">
+          a:b :: c:d → a×d = b×c (Product of means = product of extremes)
+          Compounded ratio of a:b and c:d = ac:bd
+          Duplicate ratio of a:b = a²:b²
+          Triplicate ratio of a:b = a³:b³
+          Sub-duplicate ratio of a:b = √a:√b
+          Inverse ratio of a:b = b:a
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔀 Dividing in Ratio</h3>
+        <div class="example">
+          Total T divided in ratio a:b:c →
+          Part A = T × a/(a+b+c)
+          Part B = T × b/(a+b+c)
+          Part C = T × c/(a+b+c)
+          e.g. Rs 720 in ratio 3:4:5 →
+          A=720×3/12=180; B=240; C=300
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>⚡ Proportion Types</h3>
+        <div class="example">
+          DIRECT proportion: y = kx (both increase together)
+          INVERSE proportion: y = k/x (one up, other down)
+          FOURTH proportional: a:b::c:x → x = bc/a
+          THIRD proportional: a:b::b:x → x = b²/a
+          MEAN proportional between a,b: x = √(ab)
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ Partnership Profit Split</h3>
+        <div class="example">
+          If time is same: split profit in ratio of capitals.
+          If time differs: Profit ∝ Capital × Time
+          A: Rs 6000 for 6 months; B: Rs 8000 for 5 months
+          A : B = 6000×6 : 8000×5 = 36000 : 40000 = 9:10
+          Total profit 19000 → A gets 9000, B gets 10000
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Profit &amp; Loss — <span>Complete Formulas</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Scenario</th><th>Formula</th><th>Remember</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Profit %</td><td>(SP–CP)/CP × 100</td><td class="val-frac">Always on CP unless specified</td></tr>
+          <tr><td class="val-primary">Loss %</td><td>(CP–SP)/CP × 100</td><td class="val-frac">Always on CP</td></tr>
+          <tr class="highlight-row"><td class="val-primary">SP (profit x%)</td><td>SP = CP × (100+x)/100</td><td class="val-frac">Multiply factor &gt; 1</td></tr>
+          <tr><td class="val-primary">SP (loss x%)</td><td>SP = CP × (100–x)/100</td><td class="val-frac">Multiply factor &lt; 1</td></tr>
+          <tr><td class="val-primary">CP from SP+profit%</td><td>CP = SP × 100/(100+x)</td><td class="val-frac">Most common SSC Q</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Two articles: one profit x%, one loss x%</td><td>Net loss = x²/100 %</td><td class="val-frac">Always a loss! Never profit.</td></tr>
+          <tr><td class="val-primary">Dishonest dealer (short weighs)</td><td>Profit% = (Error/True wt – Error) × 100</td><td class="val-frac">Uses 900g instead of 1kg</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Mark up + Discount</td><td>SP = MP × (1–d/100)</td><td class="val-frac">MP = Marked/Listed price</td></tr>
+          <tr><td class="val-primary">Two successive discounts d₁, d₂</td><td>Net discount = d₁+d₂–(d₁×d₂/100)</td><td class="val-frac">Same formula as successive % change</td></tr>
+          <tr><td class="val-primary">CP of x articles = SP of y articles</td><td>Profit% = (x–y)/y × 100</td><td class="val-frac">Classic SSC PYQ pattern</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Mixture &amp; <span>Alligation — The Arrow Method</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>🎯 Alligation Formula</h3>
+        <div class="example">
+          Two things mixed at prices/concentrations C₁ and C₂
+          to get mean price/concentration Cm:
+          Ratio of quantities = (C₂ – Cm) : (Cm – C₁)
+          Draw a cross (X):
+            C₁        C₂
+               \  /  
+                Cm
+               /  \
+          (C₂–Cm)  (C₁–Cm)  ← ratio of mixing
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>💧 Mixture Problems</h3>
+        <div class="example">
+          DILUTION: Milk of volume V, concentration c₁.
+          Replace x litres with water n times:
+          Final conc = c₁ × (1 – x/V)ⁿ
+          e.g. 20L milk, 4L removed and replaced 3 times:
+          Final = 20×(16/20)³ = 20×(4/5)³ = 20×0.512 = 10.24L
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>⚡ Average + Mixture Combined</h3>
+        <div class="example">
+          Average price of mix = (n₁×p₁ + n₂×p₂) / (n₁+n₂)
+          Alligation gives the RATIO directly:
+          e.g. Rs 12/kg and Rs 18/kg mixed to get Rs 14/kg:
+          (18–14) : (14–12) = 4:2 = 2:1
+          → 2 parts of cheap + 1 part of expensive
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ Averages — Key Formulas</h3>
+        <div class="example">
+          Average = Sum / Count
+          New avg after adding element x to n numbers:
+          New avg = (old avg × n + x) / (n+1)
+          If avg of n consecutive numbers = middle term
+          Sum of 1 to n = n(n+1)/2
+          Sum of squares 1²+2²+…+n² = n(n+1)(2n+1)/6
+          Sum of cubes 1³+2³+…+n³ = [n(n+1)/2]²
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DATA INTERPRETATION ===== -->
+  <div id="di" class="section">
+    <div class="section-header">
+      <h2>Data Interpretation — <span>Strategy &amp; Types</span></h2>
+      <p>3–5 Qs Tier 1 · 5–8 Qs Tier 2. Pure speed + calculation accuracy. No new concepts — only reading and arithmetic.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">DI Types &amp; <span>Approach</span></h2>
+    </div>
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>📊 Bar Graph DI</h4>
+        <p>Read x-axis and y-axis labels FIRST.<br>Compare bars visually before calculating.<br>% change = (New–Old)/Old×100<br>Q types: max/min value, % increase, ratio between years<br>⚡ Estimate before exact calc — eliminate options.</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🥧 Pie Chart DI</h4>
+        <p>Central angle = (Value/Total)×360°<br>Percentage = (Angle/360)×100<br>If total given, Value = (Sector%/100)×Total<br>Q types: sector value, ratio between sectors, % more/less<br>⚡ Work with % directly; avoid converting to degrees.</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📈 Line Graph DI</h4>
+        <p>Track trends: which period saw max rise/fall.<br>Rate of change = slope of line (steep = fast change)<br>Q types: average over years, compound growth rate, ratio<br>⚡ Look at the scale carefully — SSC makes y-axis start at non-zero values to mislead.</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📋 Table DI</h4>
+        <p>Most calculation-heavy type. Read question FIRST then go to table.<br>Q types: % of total, rank by value, year-on-year growth<br>⚡ Calculate only what is needed — don't fill the whole table. Eliminate by approximation first.</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🎡 Mixed DI (Tier 2)</h4>
+        <p>Data split across 2 formats (e.g., bar + table).<br>Step 1: Read BOTH sets completely before any Q.<br>Step 2: Identify which format answers which Q.<br>Most time-consuming — do last in exam.<br>⚡ If two Qs need same sub-calculation, do it once.</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>⚡ Speed Tricks for All DI</h4>
+        <p>Use 10% anchor: 10% of 480 = 48 → 15% = 48+24=72<br>Ratio check: if A:B = 3:5, A = 3/(3+5) of total<br>% difference: (A–B)/smaller × 100 (careful which is base)<br>Approximate: 33% ≈ 1/3, 67% ≈ 2/3, 12.5% = 1/8<br>Cross-multiply for ratio comparisons: faster than division</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">DI Question <span>Types &amp; Formulas</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Q Type</th><th>Formula</th><th>SSC Tip</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">% increase</td><td>(New–Old)/Old × 100</td><td class="val-frac">Old = base (denominator)</td></tr>
+          <tr><td class="val-primary">% decrease</td><td>(Old–New)/Old × 100</td><td class="val-frac">Old = base always</td></tr>
+          <tr class="highlight-row"><td class="val-primary">% of total</td><td>Part/Total × 100</td><td class="val-frac">Check if total is row or column total</td></tr>
+          <tr><td class="val-primary">Ratio A:B</td><td>Divide both by HCF</td><td class="val-frac">Express as fraction and simplify</td></tr>
+          <tr><td class="val-primary">Average of n years</td><td>Sum of all values ÷ n</td><td class="val-frac">Add visually for bar charts</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Which year max growth rate</td><td>Check (this yr – prev yr) / prev yr</td><td class="val-frac">Don't confuse absolute with % growth</td></tr>
+          <tr><td class="val-primary">X is what % more than Y</td><td>(X–Y)/Y × 100</td><td class="val-frac">Base = Y (the reference)</td></tr>
+          <tr><td class="val-primary">CAGR (Compound Annual Growth)</td><td>(Final/Initial)^(1/n) – 1</td><td class="val-frac">Rare in Tier 1; possible in Tier 2</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== COMPUTER KNOWLEDGE ===== -->
+  <div id="computer" class="section">
+    <div class="section-header">
+      <h2>Computer Knowledge — <span>Tier 2 Complete Guide</span></h2>
+      <p>20 Qs · 60 marks · Session II · No negative marking. Easy full marks if prepared. Do NOT skip this!</p>
+    </div>
+
+    <div class="gk-fact-grid">
+      <div class="gk-fact-card">
+        <h4>💾 Storage Units</h4>
+        <p>1 Byte = 8 bits<br>1 KB = 1024 Bytes<br>1 MB = 1024 KB<br>1 GB = 1024 MB<br>1 TB = 1024 GB<br>1 PB = 1024 TB<br>Smallest: Bit (0 or 1)<br>Nibble = 4 bits</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🖥️ Generations of Computers</h4>
+        <p>1st (1940s): Vacuum tubes (ENIAC)<br>2nd (1950s): Transistors<br>3rd (1960s): Integrated Circuits (IC)<br>4th (1971+): Microprocessors (Intel 4004)<br>5th (present): AI, Parallel Processing<br>ENIAC = first general-purpose computer</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🌐 Networking</h4>
+        <p>LAN: Local Area Network (room/building)<br>WAN: Wide Area Network (city/country)<br>MAN: Metropolitan Area Network<br>IP Address: unique device address<br>HTTP: web protocol | HTTPS: secure<br>DNS: Domain Name System<br>Router: connects different networks<br>Switch: connects devices in same LAN</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>🔒 Security Terms</h4>
+        <p>Virus: replicates, attaches to files<br>Worm: spreads over networks, no host file<br>Trojan: disguised as legitimate software<br>Phishing: fake website/email to steal info<br>Firewall: blocks unauthorised network access<br>Antivirus: detects/removes malicious software<br>Encryption: converts data to unreadable form</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📁 OS Concepts</h4>
+        <p>OS: manages hardware and software<br>Windows, Linux, macOS, Android, iOS<br>CPU = brain of computer (ALU + CU)<br>RAM: volatile (lost on power off)<br>ROM: non-volatile (permanent)<br>Cache: fastest memory, closest to CPU<br>Virtual Memory: uses HDD as extra RAM</p>
+      </div>
+      <div class="gk-fact-card">
+        <h4>📊 MS Office Essentials</h4>
+        <p>Word: .docx | Excel: .xlsx | PPT: .pptx<br>Excel: SUM, AVERAGE, IF, VLOOKUP, COUNT<br>Freeze panes: View → Freeze Panes<br>Pivot Table: summarise large data<br>Mail Merge: Word + Excel data connection<br>Macro: automated task recording<br>F12 = Save As | Ctrl+S = Save</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Keyboard Shortcuts — <span>All High-Freq SSC Questions</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Shortcut</th><th>Function</th><th>Shortcut</th><th>Function</th></tr></thead>
+        <tbody>
+          <tr><td class="val-primary">Ctrl+C</td><td>Copy</td><td class="val-primary">Ctrl+V</td><td>Paste</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Ctrl+X</td><td>Cut</td><td class="val-primary">Ctrl+Z</td><td>Undo</td></tr>
+          <tr><td class="val-primary">Ctrl+Y</td><td>Redo</td><td class="val-primary">Ctrl+A</td><td>Select All</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Ctrl+S</td><td>Save</td><td class="val-primary">Ctrl+P</td><td>Print</td></tr>
+          <tr><td class="val-primary">Ctrl+F</td><td>Find</td><td class="val-primary">Ctrl+H</td><td>Find &amp; Replace</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Ctrl+B</td><td>Bold</td><td class="val-primary">Ctrl+I</td><td>Italic</td></tr>
+          <tr><td class="val-primary">Ctrl+U</td><td>Underline</td><td class="val-primary">Ctrl+K</td><td>Insert Hyperlink</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Alt+F4</td><td>Close window</td><td class="val-primary">Alt+Tab</td><td>Switch window</td></tr>
+          <tr><td class="val-primary">Win+E</td><td>Open File Explorer</td><td class="val-primary">Win+D</td><td>Show Desktop</td></tr>
+          <tr class="highlight-row"><td class="val-primary">Win+R</td><td>Open Run dialog</td><td class="val-primary">Win+L</td><td>Lock screen</td></tr>
+          <tr><td class="val-primary">F1</td><td>Help</td><td class="val-primary">F5</td><td>Refresh</td></tr>
+          <tr class="highlight-row"><td class="val-primary">F12</td><td>Save As</td><td class="val-primary">Delete</td><td>Delete selected</td></tr>
+          <tr><td class="val-primary">Shift+Delete</td><td>Permanent delete (no Recycle Bin)</td><td class="val-primary">Ctrl+Shift+Esc</td><td>Task Manager directly</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">Important Computer <span>Full Forms</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="trick-card yellow">
+        <h3>Hardware Full Forms</h3>
+        <div class="example">
+          CPU = Central Processing Unit
+          ALU = Arithmetic Logic Unit
+          RAM = Random Access Memory
+          ROM = Read Only Memory
+          GPU = Graphics Processing Unit
+          HDD = Hard Disk Drive
+          SSD = Solid State Drive
+          USB = Universal Serial Bus
+          HDMI = High-Definition Multimedia Interface
+          VGA = Video Graphics Array
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>Network Full Forms</h3>
+        <div class="example">
+          HTTP = HyperText Transfer Protocol
+          HTTPS = HTTP Secure
+          FTP = File Transfer Protocol
+          IP = Internet Protocol
+          TCP = Transmission Control Protocol
+          DNS = Domain Name System
+          URL = Uniform Resource Locator
+          ISP = Internet Service Provider
+          WiFi = Wireless Fidelity
+          VPN = Virtual Private Network
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>Software / File Full Forms</h3>
+        <div class="example">
+          OS = Operating System
+          GUI = Graphical User Interface
+          API = Application Programming Interface
+          PDF = Portable Document Format
+          HTML = HyperText Markup Language
+          CSS = Cascading Style Sheets
+          SQL = Structured Query Language
+          AI = Artificial Intelligence
+          ML = Machine Learning
+          BIOS = Basic Input/Output System
+        </div>
+      </div>
+      <div class="trick-card red">
+        <h3>⚠️ SSC Most-Asked Computer Qs</h3>
+        <div class="example">
+          1. Which is fastest memory? → Cache (L1&gt;L2&gt;L3)
+          2. What opens Windows Explorer? → Win+E
+          3. "Save As" shortcut? → F12
+          4. What is phishing? → Fake identity attack
+          5. HTTP port? → 80 | HTTPS port? → 443
+          6. 1st virus name? → Creeper (1971)
+          7. WWW invented by? → Tim Berners-Lee (1989)
+          8. First computer? → ENIAC (1945)
+          9. Father of computers? → Charles Babbage
+          10. Programming language: machine code = 0s &amp; 1s
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SURE-SHOT PYQs ===== -->
+  <div id="sure-shot" class="section">
+    <div class="section-header">
+      <h2>Sure-Shot <span>PYQ Patterns</span> — Guaranteed Every Year</h2>
+      <p>Compiled from 10+ years of SSC CGL papers. These topic-patterns repeat almost every exam — master them first.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">🔢 Maths — <span>Guaranteed Patterns</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="ss-card">
+        <h3>📐 Geometry: Circle Chord/Angle Qs</h3>
+        <div class="ss-body">
+          Angle in semicircle = 90° (appears every year)<br>
+          Angle subtended at centre = 2 × angle at circumference<br>
+          Tangent ⊥ radius at point of contact<br>
+          Two tangents from external point are equal<br>
+          Chord bisected by perpendicular from centre<br>
+          Common Q: "PA and PB are tangents, find angle APB given angle AOB" → use 180°–(AOB/2)
+        </div>
+      </div>
+      <div class="ss-card blue-top">
+        <h3>⏱️ Trains/Boats: Standard Types</h3>
+        <div class="ss-body">
+          Train crossing a pole: time = length/speed<br>
+          Train crossing a platform: time = (train+platform)/speed<br>
+          Two trains same direction: rel. speed = |s₁–s₂|<br>
+          Two trains opp. direction: rel. speed = s₁+s₂<br>
+          Boat upstream: effective speed = b–w<br>
+          Boat downstream: effective speed = b+w<br>
+          Boat speed = (down+up)/2; Water speed = (down–up)/2
+        </div>
+      </div>
+      <div class="ss-card green-top">
+        <h3>💰 CI Pattern (2-year trap)</h3>
+        <div class="ss-body">
+          SSC gives SI for 2 years and asks CI — or vice versa.<br>
+          If SI for 2 years = x, rate = x/(2P) × 100<br>
+          CI – SI (2 years) = P(R/100)²<br>
+          This difference formula appears in &gt;80% of CI Qs.<br>
+          Another pattern: "A sum doubles in N years at SI → rate = 100/N%"<br>
+          Population growth ≡ CI formula — treat same way.
+        </div>
+      </div>
+      <div class="ss-card red-top">
+        <h3>📊 Algebra: Symmetric Expression Qs</h3>
+        <div class="ss-body">
+          Given a+b = k, ab = m → find a²+b², a³+b³<br>
+          a²+b² = (a+b)² – 2ab = k² – 2m<br>
+          a³+b³ = (a+b)(a²–ab+b²) = k(k²–3m)<br>
+          Given x+1/x = 3 → x²+1/x² = 7; x³+1/x³ = 18<br>
+          SSC repeats this EXACT structure every 2–3 papers.
+        </div>
+      </div>
+      <div class="ss-card purple-top">
+        <h3>📐 Trig: Value Substitution</h3>
+        <div class="ss-body">
+          "Find max/min of asinθ+bcosθ" → ±√(a²+b²)<br>
+          "If sinθ+cosecθ = 2, find sin^n θ + cosec^n θ" → always 2<br>
+          "If cosθ = 3/5, find sinθ" → 4/5 (Pythagorean triple 3-4-5)<br>
+          Standard triplets to memorise: (3,4,5), (5,12,13), (8,15,17), (7,24,25)<br>
+          Height-distance Qs: always draw the diagram, label opposite/adjacent.
+        </div>
+      </div>
+      <div class="ss-card orange-top">
+        <h3>📦 Mensuration: Conversion Qs</h3>
+        <div class="ss-body">
+          "Sphere melted into cylinder/cone" → volumes equal<br>
+          "Side doubled/tripled" → Area ×4/9; Volume ×8/27<br>
+          "Wire bent into circle/square" → perimeters equal<br>
+          SSC loves: "A circle inscribed in a square" — radius = side/2<br>
+          "Square inscribed in circle" — diagonal = 2r = side√2<br>
+          Frustum formula is asked in Tier 2 frequently.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">📘 English — <span>Guaranteed Patterns</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="ss-card purple-top">
+        <h3>🎯 Cloze Test Pattern (5 Qs every paper)</h3>
+        <div class="ss-body">
+          Step 1: Read the full passage once for context BEFORE filling blanks.<br>
+          Step 2: Use part-of-speech: is it a noun/verb/adj/adverb needed?<br>
+          Step 3: Use collocations: "make a decision" not "do a decision"<br>
+          Step 4: Check preposition after blank: "depend ON", "consist OF", "agree WITH"<br>
+          Step 5: Eliminate by context — the tone (formal/informal) eliminates 2 options instantly.
+        </div>
+      </div>
+      <div class="ss-card blue-top">
+        <h3>🔤 Error Spotting Patterns</h3>
+        <div class="ss-body">
+          "Each of the boys have…" → ERROR: "has" (each = singular)<br>
+          "Neither…nor" → verb agrees with the nearer subject<br>
+          "He is one of those who works…" → ERROR: "work" (antecedent = "those")<br>
+          "More than one book was…" → correct as is (singular)<br>
+          "No sooner…than" (NOT "when") — fixed pattern<br>
+          "Between you and I" → ERROR: "me" (object of preposition)<br>
+          Preposition: "discuss the matter" (no "about") / "reach the station" (no "at")
+        </div>
+      </div>
+      <div class="ss-card green-top">
+        <h3>📚 Vocabulary: Repeating Root Words</h3>
+        <div class="ss-body">
+          Syn of LOQUACIOUS → talkative, garrulous, verbose<br>
+          Ant of TACITURN → talkative, loquacious (same set!)<br>
+          Repeating vocab clusters: mendacious/mendacity, obsequious/sycophant<br>
+          Syn of EPHEMERAL → transient, fleeting, transitory, momentary<br>
+          Ant of SANGUINE → pessimistic, despondent, melancholic<br>
+          Syn of DILETTANTE → dabbler, amateur (not expert)<br>
+          "One-word substitution" top picks: Philologist (language), Numismatist (coins), Epicure (food lover)
+        </div>
+      </div>
+      <div class="ss-card red-top">
+        <h3>📝 RC: Strategy for Full Marks</h3>
+        <div class="ss-body">
+          Step 1: Read questions FIRST (main idea, tone, inference Qs).<br>
+          Step 2: Skim passage for keywords from each Q.<br>
+          Step 3: "Author implies/suggests" = look for indirect clues, NOT literal words.<br>
+          Step 4: "Title of the passage" Q → pick most comprehensive option, not too narrow.<br>
+          Step 5: "The author's tone is…" → positive=optimistic, negative=pessimistic, neutral=analytical/objective.<br>
+          Step 6: NEVER use outside knowledge — answer from passage ONLY.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">🧠 Reasoning — <span>Guaranteed Patterns</span></h2>
+    </div>
+    <div class="tricks-grid">
+      <div class="ss-card">
+        <h3>🔢 Number Series: Sure-Shot Types</h3>
+        <div class="ss-body">
+          Type: Prime number series — 2,3,5,7,11,13,? → 17<br>
+          Type: n²+1 series — 2,5,10,17,26,? → 37 (n²+1)<br>
+          Type: Alternating ±k — 1,4,2,5,3,6,? → 4 (two interlaced +1 series)<br>
+          Type: Fibonacci variant — 2,3,5,8,13,21 → sum of prev two<br>
+          Type: ×2–1 — 1,1,2,3,5,8 vs 1,2,4,7,11 (diff: 1,2,3,4…)<br>
+          Step: Always compute differences first. Then differences of differences.<br>
+          If still unclear → check ratios. Then square/cube relationship.
+        </div>
+      </div>
+      <div class="ss-card blue-top">
+        <h3>🔤 Coding-Decoding: Top Patterns</h3>
+        <div class="ss-body">
+          Check if letters are shifted (A→C = +2) or reversed (A→Z)<br>
+          Check if alternate letters coded (ACEG type)<br>
+          Check numerical value: A=1, B=2 ... Z=26 OR A=26, B=25…<br>
+          Opposite alphabet: A↔Z, B↔Y, C↔X … (A+Z=27 always)<br>
+          New SSC pattern: statement-based coding — "sky is blue" = "ta ra mi" → find word for 'is'<br>
+          Process: list all coded sentences; find common words to isolate each code.
+        </div>
+      </div>
+      <div class="ss-card green-top">
+        <h3>🩸 Blood Relations: Quick Method</h3>
+        <div class="ss-body">
+          Draw a family tree diagram immediately.<br>
+          Male = □, Female = ○, Marriage = ═, Child = ↓<br>
+          "Introduce myself" type: Person + relation → find gender first.<br>
+          SSC trap: "X's father's mother's son" → grandfather's son = father's brother (uncle)<br>
+          "X is the only son of Y's father" → X is Y's brother<br>
+          "A is the mother of B's father" → A is B's paternal grandmother<br>
+          Always identify gender from pronouns (he/she) before drawing.
+        </div>
+      </div>
+      <div class="ss-card red-top">
+        <h3>🧩 Syllogism: Venn Diagram Method</h3>
+        <div class="ss-body">
+          Rule: "All A are B" → circle A inside circle B<br>
+          "No A is B" → circles A and B don't overlap<br>
+          "Some A are B" → circles A and B partially overlap<br>
+          "Some A are not B" → part of A outside B<br>
+          CONCLUSION CHECK: Draw all possible diagrams. If conclusion holds in ALL → definite. If in some → maybe.<br>
+          SSC trap: "Either/Or" conclusions — check if one or the other must follow when neither follows individually.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:28px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">🌍 GK — <span>Guaranteed Patterns (Every Paper)</span></h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Topic</th><th>Guaranteed Q Pattern</th><th>Key Answer to Know</th></tr></thead>
+        <tbody>
+          <tr><td class="st-state">Vitamins</td><td>Deficiency disease of Vitamin __ is __?</td><td class="val-frac">A=Night blindness; B1=Beriberi; C=Scurvy; D=Rickets; K=Bleeding</td></tr>
+          <tr><td class="st-state">Battles of Panipat</td><td>1st/2nd/3rd Battle of Panipat — who defeated whom?</td><td class="val-frac">1526: Babur>Ibrahim Lodi | 1556: Akbar>Hemu | 1761: Ahmad Shah Abdali>Marathas</td></tr>
+          <tr class="highlight-row"><td class="st-state">Constitutional Articles</td><td>Article __ deals with __?</td><td class="val-frac">21=Life &amp; liberty; 32=Writs; 44=UCC; 51A=FDs; 356=President's Rule</td></tr>
+          <tr><td class="st-state">National Parks</td><td>__ National Park is located in __?</td><td class="val-frac">Jim Corbett(UK), Kaziranga(Assam), Gir(Gujarat), Periyar(Kerala), Ranthambore(Raj)</td></tr>
+          <tr><td class="st-state">Scientists / Inventions</td><td>Who invented __ / discovered __?</td><td class="val-frac">Penicillin=Fleming; X-ray=Röntgen; Telephone=Bell; WWW=Berners-Lee</td></tr>
+          <tr class="highlight-row"><td class="st-state">Rivers</td><td>Which river flows through / originates from __ ?</td><td class="val-frac">Narmada &amp; Tapi flow West; All others East; Brahmaputra=Tsangpo in Tibet</td></tr>
+          <tr><td class="st-state">Blood Groups</td><td>Universal donor/recipient?</td><td class="val-frac">Donor=O–; Recipient=AB+; Rh+ has Rh antigen</td></tr>
+          <tr><td class="st-state">Capitals / HQ</td><td>HQ of __ is located in __?</td><td class="val-frac">RBI=Mumbai; SEBI=Mumbai; ISRO=Bengaluru; IMF&WB=Washington DC; WHO=Geneva</td></tr>
+          <tr class="highlight-row"><td class="st-state">IVC Sites</td><td>__ site associated with __?</td><td class="val-frac">Lothal=dockyard; Dholavira=UNESCO+signboard; Kalibangan=fire altars</td></tr>
+          <tr><td class="st-state">Preamble</td><td>Which word was NOT in original Preamble?</td><td class="val-frac">Socialist &amp; Secular added by 42nd Amendment (1976)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== QUICK REVISION ===== -->
+  <div id="quick-rev" class="section">
+    <div class="section-header">
+      <h2>⚡ Quick Revision — <span>Last-Day Cheat Sheet</span></h2>
+      <p>Everything that matters in one page per subject. Revise this the night before the exam.</p>
+    </div>
+
+    <div class="gk-card yellow-card" style="margin-bottom:20px;">
+      <h3>🏆 EXAM DAY STRATEGY — Read This First</h3>
+      <p class="def">Order: GK (8 min) → English (12 min) → Reasoning (18 min) → Maths (22 min). Never spend &gt;2 min on any single Q. Skip and return. Attempt only if ≥60% confident (negative marking). Target: GK 18+, English 19+, Reasoning 21+, Maths 15+ = 145+ overall. Tier 1 cutoff typically 130–150 for General category.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:0;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">🔢 Maths — <span>Last-Day Flash Cards</span></h2>
+    </div>
+    <div class="qr-grid">
+      <div class="qr-card">
+        <h4>🧮 Must-Know Identities</h4>
+        <p>
+          <strong>(a+b)² = a²+2ab+b²</strong><br>
+          <strong>(a–b)² = a²–2ab+b²</strong><br>
+          <strong>a²–b² = (a+b)(a–b)</strong><br>
+          <strong>If a+b+c=0 → a³+b³+c³=3abc</strong><br>
+          a³+b³=(a+b)(a²–ab+b²)<br>
+          (a+b)³=a³+b³+3ab(a+b)<br>
+          x+1/x=k → x²+1/x²=k²–2
+        </p>
+      </div>
+      <div class="qr-card qr-blue">
+        <h4>📐 Geometry Flash</h4>
+        <p>
+          <strong>Angle in semicircle = 90°</strong><br>
+          <strong>Tangent ⊥ radius at contact point</strong><br>
+          Sum of angles in triangle = 180°<br>
+          Exterior angle = sum of opp. interior angles<br>
+          Pythagoras: a²+b²=c²<br>
+          Triplets: 3-4-5, 5-12-13, 8-15-17<br>
+          Area of equil. △ = (√3/4)a²
+        </p>
+      </div>
+      <div class="qr-card qr-green">
+        <h4>📊 Mensuration Flash</h4>
+        <p>
+          <strong>Cylinder: V=πr²h; TSA=2πr(r+h)</strong><br>
+          <strong>Cone: V=⅓πr²h; CSA=πrl; l=√(r²+h²)</strong><br>
+          Sphere: V=4/3πr³; SA=4πr²<br>
+          Hemisphere: V=2/3πr³; TSA=3πr²<br>
+          Cube diagonal = a√3<br>
+          Cuboid diagonal = √(l²+b²+h²)<br>
+          Frustum CSA = π(R+r)l
+        </p>
+      </div>
+      <div class="qr-card qr-red">
+        <h4>⏱️ Trig Flash</h4>
+        <p>
+          sin30=1/2; cos30=√3/2; tan30=1/√3<br>
+          sin45=1/√2; cos45=1/√2; tan45=1<br>
+          sin60=√3/2; cos60=1/2; tan60=√3<br>
+          <strong>sin²θ+cos²θ=1 (always)</strong><br>
+          <strong>1+tan²θ=sec²θ</strong><br>
+          <strong>1+cot²θ=cosec²θ</strong><br>
+          asinθ+bcosθ: max=+√(a²+b²)
+        </p>
+      </div>
+      <div class="qr-card qr-purple">
+        <h4>💰 Arithmetic Flash</h4>
+        <p>
+          SI=PRT/100; CI=P(1+R/100)ⁿ–P<br>
+          <strong>CI–SI(2yr)=P(R/100)²</strong><br>
+          Speed=Distance/Time<br>
+          <strong>Work=LCM method (fastest)</strong><br>
+          Together: T=ab/(a+b)<br>
+          Profit%=(SP–CP)/CP×100<br>
+          Alligation ratio=(C₂–Cm):(Cm–C₁)
+        </p>
+      </div>
+      <div class="qr-card qr-orange">
+        <h4>🔢 Number Flash</h4>
+        <p>
+          Div by 11: (odd pos sum)–(even pos sum)=0 or 11<br>
+          LCM×HCF = product of two numbers<br>
+          <strong>HCF of fractions = HCF(num)/LCM(den)</strong><br>
+          Unit digit of 2ⁿ: cycle 2,4,8,6 (period 4)<br>
+          Primes 1–100 = 25 primes<br>
+          Perfect squares never end in 2,3,7,8<br>
+          Digital sum trick: DS(A×B)=DS(A)×DS(B)
+        </p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:20px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">📘 English — <span>Last-Day Flash Cards</span></h2>
+    </div>
+    <div class="qr-grid">
+      <div class="qr-card qr-purple">
+        <h4>📝 Grammar Non-Negotiables</h4>
+        <p>
+          <strong>Each/Everyone/Nobody = singular verb</strong><br>
+          Neither…nor → verb agrees with nearer subject<br>
+          "Between you and me" (NOT "I")<br>
+          "discuss" never takes "about"<br>
+          "reach" never takes "at"<br>
+          Relative clause: who (subject), whom (object)<br>
+          No sooner … than (NOT "when")
+        </p>
+      </div>
+      <div class="qr-card qr-blue">
+        <h4>🔤 Active ↔ Passive Rules</h4>
+        <p>
+          Active: Subject + Verb + Object<br>
+          Passive: Object + "to be" + Past Participle<br>
+          <strong>Tense of "to be" matches original tense</strong><br>
+          Present: is/am/are + V3<br>
+          Past: was/were + V3<br>
+          Future: will be + V3<br>
+          By + agent (optional, can omit)
+        </p>
+      </div>
+      <div class="qr-card qr-green">
+        <h4>🎭 Direct ↔ Indirect Rules</h4>
+        <p>
+          Said + that (statements); asked + if/whether (questions)<br>
+          Present → Past; Past → Past Perfect<br>
+          Will → Would; Can → Could; May → Might<br>
+          "now" → then; "here" → there; "today" → that day<br>
+          "yesterday" → the previous day / the day before<br>
+          "tomorrow" → the next day / the following day<br>
+          1st person pronoun changes to reporting subject
+        </p>
+      </div>
+      <div class="qr-card qr-red">
+        <h4>📚 High-Freq Vocab Pairs</h4>
+        <p>
+          <strong>Ephemeral=fleeting; Loquacious=talkative</strong><br>
+          Taciturn=silent; Sanguine=optimistic<br>
+          Obsequious=overly flattering; Mendacious=lying<br>
+          Enervate=weaken; Enervated≠energised!<br>
+          Fortuitous=by chance (not = fortunate!)<br>
+          Disinterested=impartial; Uninterested=bored<br>
+          Inflammable=flammable (SAME, not opposite!)
+        </p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:20px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">🧠 Reasoning — <span>Last-Day Flash Cards</span></h2>
+    </div>
+    <div class="qr-grid">
+      <div class="qr-card">
+        <h4>🔢 Series Quick Rules</h4>
+        <p>
+          Step 1: Find differences of consecutive terms.<br>
+          Step 2: Find difference of differences.<br>
+          Step 3: Check ratios if differences unclear.<br>
+          <strong>EJOTY: E=5, J=10, O=15, T=20, Y=25</strong><br>
+          Opposite alphabet: A↔Z, B↔Y (sum=27 always)<br>
+          Fibonacci type: each = sum of prev two<br>
+          Alternating series: split into two separate series.
+        </p>
+      </div>
+      <div class="qr-card qr-blue">
+        <h4>🕐 Clock &amp; Calendar</h4>
+        <p>
+          Angle between hands = |30H–5.5M|<br>
+          Hands overlap: every 65 5/11 minutes<br>
+          Hands at 90°: 44 times per day<br>
+          <strong>Odd days: Jan=3,Feb=0/1,Mar=3,Apr=2</strong><br>
+          May=3,Jun=2,Jul=3,Aug=3,Sep=2,Oct=3,Nov=2,Dec=3<br>
+          Leap year: divisible by 4 (century: div by 400)<br>
+          28 Feb 2024 + 1 day = 29 Feb (2024 is leap year)
+        </p>
+      </div>
+      <div class="qr-card qr-green">
+        <h4>🧭 Direction &amp; Ranking</h4>
+        <p>
+          After turns: N→E→S→W (clockwise)<br>
+          N→W→S→E (anticlockwise)<br>
+          Shadow in morning = W; Shadow in evening = E<br>
+          <strong>Rank: Position from top + from bottom – 1 = Total</strong><br>
+          e.g. 5th from top, 8th from bottom → total = 12<br>
+          Mirror image: left-right flipped (top-bottom unchanged)<br>
+          Water image: top-bottom flipped (left-right unchanged)
+        </p>
+      </div>
+      <div class="qr-card qr-red">
+        <h4>🧩 Puzzle Tips</h4>
+        <p>
+          Linear seating: fix one person at a position.<br>
+          Circular seating: fix one person as reference (n–1)! arrangements.<br>
+          Syllogism: draw ALL possible Venn diagrams.<br>
+          If conclusion holds in ALL cases → Follows.<br>
+          If only in some → Does NOT follow (as definite conclusion).<br>
+          Either/Or: check if one MUST follow when neither individually does.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top:20px;margin-bottom:14px;border:none;">
+      <h2 style="font-size:18px;">🌍 GK — <span>Last-Day Flash Cards</span></h2>
+    </div>
+    <div class="qr-grid">
+      <div class="qr-card qr-orange">
+        <h4>📜 History Flash</h4>
+        <p>
+          <strong>Panipat 1: 1526 (Babur); 2: 1556 (Akbar); 3: 1761 (Abdali)</strong><br>
+          IVC: Lothal=dockyard; Dholavira=UNESCO<br>
+          Gupta = Golden Age; Samudragupta = Napoleon of India<br>
+          Chandragupta II had Fa Hien visit<br>
+          Quit India: 1942; Dandi March: 1930<br>
+          1st Buddhist Council: Rajagriha; 2nd: Vaishali<br>
+          3rd: Pataliputra (Ashoka); 4th: Kashmir (Kanishka)
+        </p>
+      </div>
+      <div class="qr-card">
+        <h4>🗺️ Geography Flash</h4>
+        <p>
+          Narmada &amp; Tapi → West (Arabian Sea)<br>
+          All others → East (Bay of Bengal)<br>
+          Tropic of Cancer: GJ, RJ, MP, CG, JH, WB, Tripura, Mizoram<br>
+          Largest lake: Chilika(brackish), Wular(freshwater)<br>
+          <strong>Brahmaputra = Tsangpo in Tibet = Jamuna in Bangladesh</strong><br>
+          Highest peak in India: K2 (if including PoK) or Kangchenjunga (inside India)<br>
+          Sundarbans = largest mangrove forest (India + Bangladesh)
+        </p>
+      </div>
+      <div class="qr-card qr-blue">
+        <h4>⚗️ Science Flash</h4>
+        <p>
+          <strong>Malaria=Plasmodium(mosquito); TB=Mycobacterium(air)</strong><br>
+          Cholera=Vibrio cholerae(water); Rabies=virus(dog bite)<br>
+          NaHCO₃=Baking soda; Na₂CO₃=Washing soda<br>
+          CaCO₃=Limestone; CaSO₄·½H₂O=Plaster of Paris<br>
+          pH&lt;7=acid; pH=7=neutral; pH&gt;7=base<br>
+          Universal donor=O–; Universal recipient=AB+<br>
+          Vitamin C=Ascorbic acid; Vitamin D=Calciferol
+        </p>
+      </div>
+      <div class="qr-card qr-purple">
+        <h4>🏛️ Polity Flash</h4>
+        <p>
+          <strong>Preamble: Socialist+Secular added 42nd Amendment (1976)</strong><br>
+          FDs: 42nd Amend (1976); 11th FD: 86th Amend (2002)<br>
+          Lok Sabha max: 552; Rajya Sabha: permanent, 250 max<br>
+          President removes via "Impeachment" (Art 61)<br>
+          CAG: Art 148; Election Commission: Art 324<br>
+          Joint Session: presided by Lok Sabha Speaker<br>
+          5 Writs: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto
+        </p>
+      </div>
+    </div>
+
+    <div class="gk-card green-card" style="margin-top:20px;">
+      <h3>✅ Last 48 Hours Checklist</h3>
+      <p class="def">
+        □ Revise all trig values table (0°–90°) &nbsp;|&nbsp; □ Review all algebraic identities &nbsp;|&nbsp; □ Go through Panipat + Buddhist Councils &nbsp;|&nbsp; □ Check Vitamin deficiency list<br>
+        □ Memorise 5 writs + important articles &nbsp;|&nbsp; □ Revise tropic of cancer states &nbsp;|&nbsp; □ Review river direction (east/west) &nbsp;|&nbsp; □ LCM method for time-work<br>
+        □ Check Keyboard shortcuts (Win+E, F12) &nbsp;|&nbsp; □ Review CI–SI formula &nbsp;|&nbsp; □ Blood groups: O– donor, AB+ recipient &nbsp;|&nbsp; □ EJOTY rule for letter series<br>
+        □ Solve 5 DI sets quickly &nbsp;|&nbsp; □ Practice 10 Cloze test sentences &nbsp;|&nbsp; □ Note: attempt Qs only if 60%+ confident (negative marking) &nbsp;|&nbsp; □ Sleep 7+ hours before exam.
+      </p>
+    </div>
+  </div>
+
+</div><!-- end container -->
 
 <script>
-  const allTabs = ['squares-cubes','percentages','digital-sum','tricks','exam-tips',
-                   'eng-overview','eng-vocab','eng-patterns','eng-grammar','eng-idioms','eng-tips','lr'];
+  const allTabs = ['exam-overview','squares-cubes','percentages','digital-sum','tricks',
+                   'geo-mensuration','trigonometry','arithmetic','exam-tips',
+                   'eng-overview','eng-vocab','eng-patterns','eng-grammar','eng-idioms','eng-tips','lr',
+                   'gk-static','gk-history','gk-geography','gk-science','gk-polity',
+                   'number-system','algebra','ratio-pl','di','computer','sure-shot','quick-rev'];
 
   function showTab(id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
