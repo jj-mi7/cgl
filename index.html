@@ -4745,7 +4745,10 @@
                    'gk-static','gk-history','gk-geography','gk-science','gk-polity',
                    'number-system','algebra','ratio-pl','di','computer','sure-shot','quick-rev'];
 
-  function showTab(id) {
+  const TAB_KEY    = 'ssc_active_tab';
+  const SCROLL_PFX = 'ssc_scroll_';
+
+  function showTab(id, restoreScroll) {
     if (!document.getElementById(id)) return;
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -4753,11 +4756,41 @@
     const idx = allTabs.indexOf(id);
     if (idx !== -1) document.querySelectorAll('.tab-btn')[idx].classList.add('active');
     location.hash = id;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    if (restoreScroll) {
+      const saved = parseInt(localStorage.getItem(SCROLL_PFX + id) || '0', 10);
+      // Use two rAF frames so content has time to render before we scroll
+      requestAnimationFrame(() => requestAnimationFrame(() =>
+        window.scrollTo({ top: saved, behavior: 'instant' })
+      ));
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    try { localStorage.setItem(TAB_KEY, id); } catch(e) {}
   }
 
-  const initial = location.hash.replace('#', '');
-  showTab(allTabs.includes(initial) ? initial : allTabs[0]);
+  // Persist scroll position (debounced, 200 ms)
+  let _st;
+  window.addEventListener('scroll', () => {
+    clearTimeout(_st);
+    _st = setTimeout(() => {
+      const active = document.querySelector('.section.active');
+      if (active) {
+        try { localStorage.setItem(SCROLL_PFX + active.id, window.scrollY); } catch(e) {}
+      }
+    }, 200);
+  }, { passive: true });
+
+  // On load: prefer URL hash → then localStorage tab → then first tab
+  const hashTab  = location.hash.replace('#', '');
+  const savedTab = (() => { try { return localStorage.getItem(TAB_KEY); } catch(e) { return null; } })();
+  const initial  = allTabs.includes(hashTab) ? hashTab
+                 : allTabs.includes(savedTab) ? savedTab
+                 : allTabs[0];
+
+  // restoreScroll=true only when we're resuming (no explicit hash navigation)
+  showTab(initial, !hashTab);
 </script>
 
 
