@@ -4746,13 +4746,18 @@
                    'number-system','algebra','ratio-pl','di','computer','sure-shot','quick-rev'];
 
   function showTab(id) {
+    if (!document.getElementById(id)) return;
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     const idx = allTabs.indexOf(id);
-    document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+    if (idx !== -1) document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+    location.hash = id;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  const initial = location.hash.replace('#', '');
+  showTab(allTabs.includes(initial) ? initial : allTabs[0]);
 </script>
 
 
