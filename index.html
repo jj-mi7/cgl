@@ -1087,7 +1087,8 @@
       Any number² – 1 is divisible by 8 if the number is odd. (CAT PYQ repeated fact)<br>
       Remainder of n! ÷ p (where p≤n is prime) = 0. e.g. 7! ÷ 5 → remainder = 0<br>
       The product of n consecutive integers is always divisible by n!. e.g. 5×6×7 (3 consecutive) is divisible by 3!=6 → 210÷6=35 ✓<br>
-      Last n digits (CRT method): since 10ⁿ = 2ⁿ × 5ⁿ, to find the last n digits of a number, find its remainder mod 2ⁿ and mod 5ⁿ separately, then combine the two using the Chinese Remainder Theorem.<br><br>
+      Last n digits (CRT method): since 10ⁿ = 2ⁿ × 5ⁿ, to find the last n digits of a number, find its remainder mod 2ⁿ and mod 5ⁿ separately, then combine the two using the Chinese Remainder Theorem.<br>
+      e.g. Last 2 digits of 3⁴⁷: mod 4 → 3≡–1, so 3⁴⁷≡(–1)⁴⁷≡3 (mod 4). mod 25 → order of 3 is 20, 47 mod 20=7, 3⁷=2187≡12 (mod 25). Combine: need x≡3(mod4), x≡12(mod25) → x=87. So 3⁴⁷ ends in <strong>87</strong>.<br><br>
       <strong style="color:var(--accent3)">UNIT DIGIT PATTERNS (Power Cycles):</strong><br>
       Powers of 2: unit digit cycles → 2,4,8,6,2,4,8,6... (period 4)<br>
       Powers of 3: 3,9,7,1,3,9,7,1... (period 4)<br>
@@ -1397,8 +1398,8 @@
           Sum of 1 to n = n(n+1)/2
           Sum of squares 1²+2²+…+n² = n(n+1)(2n+1)/6
           Sum of cubes 1³+2³+…+n³ = [n(n+1)/2]²
-          Sum of first n odd natural numbers = n²
-          Sum of first n even natural numbers = n(n+1)
+          Sum of first n odd natural numbers = n² (e.g. n=5: 1+3+5+7+9=25=5² ✓)
+          Sum of first n even natural numbers = n(n+1) (e.g. n=5: 2+4+6+8+10=30=5×6 ✓)
         </div>
       </div>
     </div>
@@ -2063,16 +2064,6 @@
         <div class="example">
           48×25 = 48÷4×100 = 1200<br>
           64×125 = 64÷8×1000 = 8000
-        </div>
-      </div>
-      <div class="trick-card red">
-        <h3>Same tens digit, units sum to 10</h3>
-        <p>For (10x+y)(10x+z) where y+z=10: answer = <code>x(x+1)</code> followed by <code>y×z</code> (pad to 2 digits).</p>
-        <div class="example">
-          43 × 47 → x=4,y=3,z=7 (3+7=10)<br>
-          x(x+1)=4×5=20, y×z=3×7=21<br>
-          → 2021 ✓<br>
-          62 × 68 → x(x+1)=6×7=42, y×z=2×8=16 → 4216 ✓
         </div>
       </div>
       <div class="trick-card green">
