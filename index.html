@@ -871,6 +871,32 @@
           52² = (50+2)² = 2500 + 200 + 4 = 2704
         </div>
       </div>
+      <div class="trick-card yellow">
+        <h3>🟡 Square of numbers ending in 1</h3>
+        <p>For (10x+1)²: take x², then 2x, then 1 — place value with carries: <code>x² | 2x | 1</code>.</p>
+        <div class="example">
+          61² → x=6: 36 | 12 | 1 → 3600+120+1 = 3721 ✓<br>
+          91² → x=9: 81 | 18 | 1 → 8100+180+1 = 8281 ✓
+        </div>
+      </div>
+      <div class="trick-card blue">
+        <h3>🔵 Squares of Repunits (11, 111…)</h3>
+        <p>Squares of numbers made entirely of 1s follow a rising-then-falling digit pattern.</p>
+        <div class="example">
+          11² = 121<br>
+          111² = 12321<br>
+          1111² = 1234321
+        </div>
+      </div>
+      <div class="trick-card green">
+        <h3>🟢 Perfect square — second-last digit rule</h3>
+        <p>If a perfect square ends in <code>6</code>, its second-last (tens) digit is always <strong>odd</strong>. For any other ending digit, the second-last digit is always <strong>even</strong>.</p>
+        <div class="example">
+          16 (4²) → ends 6, tens digit 1 (odd) ✓<br>
+          36 (6²) → ends 6, tens digit 3 (odd) ✓<br>
+          25 (5²) → ends 5, tens digit 2 (even) ✓
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1041,6 +1067,15 @@
           "Smallest number divisible by a, b, c" → LCM
         </div>
       </div>
+      <div class="trick-card yellow">
+        <h3>📌 HCF/LCM — Number Representation</h3>
+        <div class="example">
+          If HCF(a,b) = h, the numbers can be written as ha and hb (a,b co-prime).
+          Then LCM(a,b) = hab.
+          ⚠️ Also: HCF of two numbers is always a factor of BOTH their sum and their difference.
+          e.g. HCF(12,18)=6 → sum=30 (÷6 ✓), diff=6 (÷6 ✓)
+        </div>
+      </div>
     </div>
 
     <div class="section-header" style="margin-top:24px;margin-bottom:14px;border:none;">
@@ -1050,7 +1085,9 @@
       <strong style="color:var(--accent1)">REMAINDER RULES (CAT PYQ Favourites):</strong><br>
       Remainder when 2¹⁰ ÷ 3 → Pattern: 2¹=2, 2²=4, 2³=8... remainder with 3 cycles: 2,1,2,1... → 2¹⁰ → even power → rem=1<br>
       Any number² – 1 is divisible by 8 if the number is odd. (CAT PYQ repeated fact)<br>
-      Remainder of n! ÷ p (where p≤n is prime) = 0. e.g. 7! ÷ 5 → remainder = 0<br><br>
+      Remainder of n! ÷ p (where p≤n is prime) = 0. e.g. 7! ÷ 5 → remainder = 0<br>
+      The product of n consecutive integers is always divisible by n!. e.g. 5×6×7 (3 consecutive) is divisible by 3!=6 → 210÷6=35 ✓<br>
+      Last n digits (CRT method): since 10ⁿ = 2ⁿ × 5ⁿ, to find the last n digits of a number, find its remainder mod 2ⁿ and mod 5ⁿ separately, then combine the two using the Chinese Remainder Theorem.<br><br>
       <strong style="color:var(--accent3)">UNIT DIGIT PATTERNS (Power Cycles):</strong><br>
       Powers of 2: unit digit cycles → 2,4,8,6,2,4,8,6... (period 4)<br>
       Powers of 3: 3,9,7,1,3,9,7,1... (period 4)<br>
@@ -1360,6 +1397,8 @@
           Sum of 1 to n = n(n+1)/2
           Sum of squares 1²+2²+…+n² = n(n+1)(2n+1)/6
           Sum of cubes 1³+2³+…+n³ = [n(n+1)/2]²
+          Sum of first n odd natural numbers = n²
+          Sum of first n even natural numbers = n(n+1)
         </div>
       </div>
     </div>
