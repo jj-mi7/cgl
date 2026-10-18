@@ -725,6 +725,19 @@
     .pattern-card .examples, .lr-card .examples { font-size: 10.5px; }
     .hero h1 { font-size: 22px; }
   }
+
+  /* Vocab tables: wrap text on mobile instead of scrolling sideways */
+  @media (max-width: 768px) {
+    #vocab .table-wrap { overflow-x: visible; }
+    #vocab table { min-width: 0 !important; width: 100%; table-layout: auto; }
+    #vocab th, #vocab td {
+      white-space: normal;
+      word-break: normal;
+      overflow-wrap: anywhere;
+      vertical-align: top;
+    }
+    #vocab tbody td:first-child { width: 32%; }
+  }
 </style>
 </head>
 <body>
